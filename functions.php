@@ -363,5 +363,11 @@ remove_action('wp_print_styles', 'print_emoji_styles');
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 
+// Link to Pattern Library
+function register_my_custom_menu_page() {
+    add_menu_page( 'GameUIPatterns Pattern Library', 'Pattern Library', 'manage_options', '../wp-content/themes/gameuipatterns/pattern-library/dist/index.html', '', 'dashicons-book', 3 );
+}
+add_action( 'admin_menu', 'register_my_custom_menu_page' );
+
 
 ?>
