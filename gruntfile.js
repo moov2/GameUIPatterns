@@ -8,7 +8,7 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'styles/',
+                    cwd: '',
                     src: ['*.css', '!*.min.css'],
                     dest: '.',
                     ext: '.min.css'
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'styles/style.css': 'styles/main.scss'  // 'destination': 'source'
+                    'styles/Site.css': 'styles/Site.scss'  // 'destination': 'source'
                 }
             }
         },
@@ -43,8 +43,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'style-release.css': 'styles/style.css',
-                    'admin--login-release.css': 'styles/admin--login.css'
+                    'style.css': 'styles/Site.css'
                 }
             }
         }

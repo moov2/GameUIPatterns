@@ -1,7 +1,7 @@
 {
   "name": "gameuipatterns",
   "version": "1.0.0",
-  "description": "Library of video game UI patterns.",
+  "description": "A website focused on user interface designs found in video games.",
   "main": "index.php",
   "dependencies": {
     "grunt": "^1.0.1",
