@@ -17,8 +17,7 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
+		<aside>
 
 			<!-- header -->
 			<header class="header clear" role="banner">
@@ -39,3 +38,8 @@
 
 			</header>
 			<!-- /header -->
+
+		</aside>
+
+		<!-- wrapper -->
+		<div class="wrapper">
