@@ -6,9 +6,41 @@ Author URI: http://www.moov2.com/
 Description: A website focused on user interface designs found in video games.
 Version: 1.0
 */
-/*/////////////////////////////////////////////
+/*/////////////////////////////////////////
 /// MAIN
 */
+/*/////////////////////////////////////////
+/// VARS
+*/
+/*/////////////////
+/// COLOURS
+*/
+/*/////////////////
+/// BREAKPOINTS
+*/
+/*/////////////////////////////////////////
+/// ACTIVE STATES
+*/
+/*/////////////////////////////////////////
+/// MEDIA QUERIES
+*/
+/**
+ * Mixins for defining media queries. These mixins should always be used
+ * to define media query breakpoints.
+ */
+/**
+ * Only use in rare circumstances, favour `bp-min-width`.
+ */
+/*/////////////////////////////////////////
+/// REM
+*/
+/**
+ * Useful mixin to assist with using REM units with a PX fallback.
+ * Mixin is courtesy of Hugo Giraudel
+ * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ *
+ * Example usage is `@include rem(font-size, 1.6rem);`
+ */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -441,6 +473,27 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+/*/////////////////////////////////////////
+/// ASIDE
+*/
+@media all and (min-width: 768px) {
+  aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100px;
+  }
+}
+
+/*/////////////////////////////////////////
+/// WRAPPER
+*/
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=Site.css.map */
