@@ -350,10 +350,10 @@ function create_post_type_gameui()
 
 // Remove jQuery Migrate Script from header and Load jQuery from Google API
 function stop_loading_wp_embed_and_jquery() {
-	if (!is_admin()) {
-		wp_deregister_script('wp-embed');
-		wp_deregister_script('jquery');  // Bonus: remove jquery too if it's not required
-	}
+    if (!is_admin()) {
+        wp_deregister_script('wp-embed');
+        wp_deregister_script('jquery');  // Bonus: remove jquery too if it's not required
+    }
 }
 add_action('init', 'stop_loading_wp_embed_and_jquery');
 
@@ -372,34 +372,33 @@ add_action( 'admin_menu', 'register_my_custom_menu_page' );
 // Allow SVG files to be uploaded to the media library
 add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
 
-  global $wp_version;
-  if ( $wp_version !== '4.7.1' ) {
-     return $data;
-  }
+    global $wp_version;
+    if ( $wp_version !== '4.7.1' ) {
+        return $data;
+    }
 
-  $filetype = wp_check_filetype( $filename, $mimes );
+    $filetype = wp_check_filetype( $filename, $mimes );
 
-  return [
-      'ext'             => $filetype['ext'],
-      'type'            => $filetype['type'],
-      'proper_filename' => $data['proper_filename']
-  ];
+    return [
+        'ext'             => $filetype['ext'],
+        'type'            => $filetype['type'],
+        'proper_filename' => $data['proper_filename']
+    ];
 
 }, 10, 4 );
 
 function cc_mime_types( $mimes ){
-  $mimes['svg'] = 'image/svg+xml';
-  return $mimes;
+    $mimes['svg'] = 'image/svg+xml';
+    return $mimes;
 }
 add_filter( 'upload_mimes', 'cc_mime_types' );
 
 function fix_svg() {
-  echo '<style type="text/css">
-        .attachment-266x266, .thumbnail img {
-             width: 100% !important;
-             height: auto !important;
-        }
-        </style>';
+    echo '<style type="text/css">
+    .attachment-266x266, .thumbnail img {
+        height: auto !important;
+    }
+    </style>';
 }
 add_action( 'admin_head', 'fix_svg' );
 
