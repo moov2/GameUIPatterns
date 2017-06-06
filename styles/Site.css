@@ -49,6 +49,7 @@ Version: 1.0
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 html {
   line-height: 1.15;
   /* 1 */
@@ -489,7 +490,18 @@ template {
 }
 
 /*/////////////////////////////////////////
+/// BODY
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+/*/////////////////////////////////////////
 /// HEADING
+*/
+/*/////////////////////////////////////////
+/// HTML
 */
 /*/////////////////////////////////////////
 /// WRAPPER
