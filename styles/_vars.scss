@@ -28,3 +28,12 @@ $bp-tablet: 768px;
 $bp-desktop: 1024px;
 $bp-desktop-medium: 1440px;
 $bp-desktop-large: 1920px;
+
+
+$base-unit: 12px;
+
+$spacing-tiny: $base-unit;
+$spacing-small: $base-unit*2;
+$spacing-normal: $base-unit*3;
+$spacing-large: $base-unit*4;
+$spacing-huge: $base-unit*6;
