@@ -2,5 +2,11 @@
 /// HTML
 */////////////////////////////////////////
 
+/* apply a natural box layout model to all elements, but allowing components to change */
 html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
