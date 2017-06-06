@@ -32,7 +32,8 @@ module.exports = function(grunt) {
                     style: 'expanded'
                 },
                 files: {
-                    'styles/Site.css': 'styles/Site.scss'  // 'destination': 'source'
+                    'styles/Site.css': 'styles/Site.scss',  // 'destination': 'source'
+                    'pattern-library/src/assets/toolkit/styles/toolkit.scss': 'styles/Site.scss'  // 'destination': 'source'
                 }
             }
         },
