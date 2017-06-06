@@ -1,0 +1,29 @@
+/*/////////////////////////////////////////
+/// HEADER
+*/////////////////////////////////////////
+
+header {
+
+    .logo {
+        min-width: 100px;
+        width: 100px;
+    }
+
+    form {
+        margin-left: auto;
+    }
+
+    [type=checkbox] {
+        &:checked + nav {
+            display: block;
+        }
+    }
+
+    nav {
+        display: none;
+
+        @include bp-min-width($bp-tablet) {
+            display: block;
+        }
+    }
+}
