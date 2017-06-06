@@ -7,10 +7,14 @@ Description: A website focused on user interface designs found in video games.
 Version: 1.0
 */
 
-/*/////////////////////////////////////////////
+/*/////////////////////////////////////////
 /// MAIN
-*/////////////////////////////////////////////
+*/////////////////////////////////////////
 
 @import 'vars.scss';
+
+@import 'mixins/active-states.scss';
+@import 'mixins/media-queries.scss';
+@import 'mixins/rem.scss';
 
 @import 'normalize.scss';
