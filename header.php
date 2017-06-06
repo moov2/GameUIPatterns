@@ -19,37 +19,27 @@
 
 		<aside>
 
-			<!-- header -->
-			<header class="header clear" role="banner">
+			<header class="header display--flex" role="banner">
 
-					<!-- logo -->
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo">
 						</a>
 					</div>
-					<!-- /logo -->
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php gameui_nav(); ?>
-					</nav>
-					<!-- /nav -->
+					<form>
+						<label for="hamburger">Menu</label>
+						<input name="hamburger" id="hamburger" type="checkbox"></input>
+						<nav class="nav" role="navigation">
+							<?php gameui_nav(); ?>
+							<p class="copyright">
+								&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
+							</p>
+						</nav>
+					</form>
 
 			</header>
-			<!-- /header -->
 
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
-				</p>
-				<!-- /copyright -->
-
-			</footer>
-			<!-- /footer -->
 
 		</aside>
 
