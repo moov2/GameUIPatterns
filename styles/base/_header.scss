@@ -3,6 +3,7 @@
 */////////////////////////////////////////
 
 header {
+    padding: $spacing-tiny;
 
     .logo {
         min-width: 100px;
@@ -11,6 +12,24 @@ header {
 
     form {
         margin-left: auto;
+    }
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+
+        &:before {
+            display: inline-block;
+            content: "";
+            height: 25px;
+            width: 25px;
+            background-image: url('img/icons/bars.svg');
+            background-size: 25px 25px;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            display: none;
+        }
     }
 
     [type=checkbox] {

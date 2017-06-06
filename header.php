@@ -19,7 +19,7 @@
 
 		<aside>
 
-			<header class="header display--flex" role="banner">
+			<header class="header" role="banner">
 
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
@@ -27,19 +27,16 @@
 						</a>
 					</div>
 
-					<form>
-						<label for="hamburger">Menu</label>
-						<input name="hamburger" id="hamburger" type="checkbox"></input>
-						<nav class="nav" role="navigation">
-							<?php gameui_nav(); ?>
-							<p class="copyright">
-								&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
-							</p>
-						</nav>
-					</form>
+					<label for="hamburger">Menu</label>
+					<input name="hamburger" type="checkbox" id="hamburger" class="display--hidden"></input>
+					<nav class="nav" role="navigation">
+						<?php gameui_nav(); ?>
+						<p class="copyright">
+							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
+						</p>
+					</nav>
 
 			</header>
-
 
 		</aside>
 
