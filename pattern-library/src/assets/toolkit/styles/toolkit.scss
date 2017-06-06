@@ -479,6 +479,9 @@ template {
 /*/////////////////////////////////////////
 /// ASIDE
 */
+aside {
+  background-color: #f8f8f8;
+}
 @media all and (min-width: 768px) {
   aside {
     position: fixed;
@@ -499,6 +502,28 @@ body {
 }
 
 /*/////////////////////////////////////////
+/// HEADER
+*/
+header .logo {
+  min-width: 100px;
+  width: 100px;
+}
+header form {
+  margin-left: auto;
+}
+header [type=checkbox]:checked + nav {
+  display: block;
+}
+header nav {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  header nav {
+    display: block;
+  }
+}
+
+/*/////////////////////////////////////////
 /// HEADING
 */
 /*/////////////////////////////////////////
@@ -515,11 +540,34 @@ html {
 }
 
 /*/////////////////////////////////////////
+/// IMAGE
+*/
+img, svg {
+  max-width: 100%;
+}
+
+/*/////////////////////////////////////////
 /// WRAPPER
 */
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+/*/////////////////////////////////////////
+/// DISPLAY
+*/
+.display--block {
+  display: block;
+}
+.display--flex {
+  display: flex;
+}
+.display--inline {
+  display: inline;
+}
+.display--inline-block {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=toolkit.scss.map */
