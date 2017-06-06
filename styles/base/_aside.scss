@@ -3,6 +3,7 @@
 */////////////////////////////////////////
 
 aside {
+    background-color: $color-white-off;
 
     @include bp-min-width($bp-tablet) {
         position: fixed;
