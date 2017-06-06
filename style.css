@@ -504,12 +504,32 @@ body {
 /*/////////////////////////////////////////
 /// HEADER
 */
+header {
+  padding: 12px;
+}
 header .logo {
   min-width: 100px;
   width: 100px;
 }
 header form {
   margin-left: auto;
+}
+header label {
+  display: inline-block;
+  cursor: pointer;
+}
+header label:before {
+  display: inline-block;
+  content: "";
+  height: 25px;
+  width: 25px;
+  background-image: url("img/icons/bars.svg");
+  background-size: 25px 25px;
+}
+@media all and (min-width: 768px) {
+  header label {
+    display: none;
+  }
 }
 header [type=checkbox]:checked + nav {
   display: block;
@@ -530,13 +550,13 @@ header nav {
 /// HTML
 */
 /* apply a natural box layout model to all elements, but allowing components to change */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
 }
 
 /*/////////////////////////////////////////
@@ -547,11 +567,20 @@ img, svg {
 }
 
 /*/////////////////////////////////////////
+/// NAV
+*/
+nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/*/////////////////////////////////////////
 /// WRAPPER
 */
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 12px;
 }
 
 /*/////////////////////////////////////////
@@ -571,4 +600,23 @@ img, svg {
 }
 .display--inline-block {
   display: inline-block;
+}
+
+/*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+.display--hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+body:hover .display--hidden a,
+body:hover .display--hidden input,
+body:hover .display--hidden button {
+  display: none !important;
 }
