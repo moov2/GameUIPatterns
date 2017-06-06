@@ -310,7 +310,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
 	Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called gameui
+// Create custom post type called gameui
 function create_post_type_gameui()
 {
     register_taxonomy_for_object_type('category', 'gameui'); // Register Taxonomies for Category
