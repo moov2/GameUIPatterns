@@ -5,11 +5,11 @@
 aside {
     background-color: $color-white-off;
 
-    @include bp-min-width($bp-tablet) {
+    @include bp-min-width($bp-desktop) {
         position: fixed;
         left: 0;
         top: 0;
         height: 100%;
-        width: 100px;
+        width: 200px;
     }
 }
