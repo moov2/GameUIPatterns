@@ -1,25 +1,14 @@
-/*/////////////////////////////////////////
-/// VARS
-*/////////////////////////////////////////
+/**
+ * -----------------------------------------------------------------------------
+ * $VARS
+ * -----------------------------------------------------------------------------
+ */
 
+$aside-width: 300px;
 
-/*/////////////////
-/// COLOURS
-*//////////////////
-
-$color-white: #fff;
-$color-white-off: #f8f8f8;
-$color-grey: #bbb;
-$color-black: #212121;
-
-$color-primary: #000;
-$color-secondary: #000;
-$color-teritiary: #000;
-
-
-/*/////////////////
-/// BREAKPOINTS
-*//////////////////
+/**
+ * BREAKPOINTS
+ */
 
 $bp-mobile-small: 320px;
 $bp-mobile: 375px;
@@ -29,11 +18,59 @@ $bp-desktop: 1024px;
 $bp-desktop-medium: 1440px;
 $bp-desktop-large: 1920px;
 
+/**
+ * CONTENT
+ */
+
+$content-width: 850px;
+$content-width-large: 1560px;
+
+/**
+ * COLOURS
+ */
+
+$color-white: #fff;
+$color-grey-lightest: #f8f8f8;
+$color-grey-light: #ebebeb;
+$color-grey: #909090;
+$color-black: #151615;
+
+$color-primary: #000;
+$color-secondary: #000;
+$color-teritiary: #000;
+
+
+
+
 
 $base-unit: 12px;
 
-$spacing-tiny: $base-unit;
-$spacing-small: $base-unit*2;
-$spacing-normal: $base-unit*3;
-$spacing-large: $base-unit*4;
-$spacing-huge: $base-unit*6;
+$spacing-tiny: .5rem;
+$spacing-small: 1rem;
+$spacing-default: 2rem;
+$spacing-large: 4rem;
+$spacing-huge: 6rem;
+
+/**
+ * FONT
+ */
+
+$font-family-default: 'Roboto', sans-serif;
+$font-family-heading: 'Roboto', sans-serif;
+
+$font-size-small: 1rem;
+$font-size-default: 20px;
+$font-size-large: 1.825rem;
+
+$font-size-heading: 4.5rem;
+$font-size-subheading: 3rem;
+
+$font-size-heading-mobile: 3rem;
+$font-size-subheading-mobile: 2rem;
+
+$font-weight-default: 400;
+$font-weight-bold: 700;
+
+$line-height-compact: 1;
+$line-height-default: 1.4;
+$line-height-loose: 1.7;

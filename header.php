@@ -23,7 +23,8 @@
 
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo">
+							<img class="logo__icon" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo">
+							<p class="logo__text"><?php printf( get_bloginfo ( 'name' ) ); ?></p>
 						</a>
 					</div>
 
@@ -39,6 +40,3 @@
 			</header>
 
 		</aside>
-
-		<!-- wrapper -->
-		<div class="wrapper">

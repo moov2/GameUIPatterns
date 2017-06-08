@@ -1,15 +1,20 @@
 <?php get_header(); ?>
 
 	<main role="main">
-		<!-- section -->
-		<section>
-
-			<h1><?php the_title(); ?></h1>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+				<!-- section -->
+				<section class="section padding--top-large">
+					<div class="section__content">
+
+						<h1><?php the_title(); ?></h1>
+
+					</div>
+				</section>
 
 				<?php the_content(); ?>
 

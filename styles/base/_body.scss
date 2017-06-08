@@ -1,11 +1,19 @@
-/*/////////////////////////////////////////
-/// BODY
-*/////////////////////////////////////////
+/**
+ * -----------------------------------------------------------------------------
+ * $BODY
+ * -----------------------------------------------------------------------------
+ */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
 
 body {
+    padding-left: $aside-width;
+
+    box-sizing: border-box;
     min-height: 100%;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
+
+    color: $color-black;
+    font-family: $font-family-default;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
 }

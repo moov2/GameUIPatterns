@@ -7,25 +7,40 @@ Description: A website focused on user interface designs found in video games.
 Version: 1.0
 */
 
-/*/////////////////////////////////////////
-/// MAIN
-*/////////////////////////////////////////
+/**
+ * -----------------------------------------------------------------------------
+ * $MAIN
+ * -----------------------------------------------------------------------------
+ */
 
-@import 'vars.scss';
+@import "vars";
 
-@import 'mixins/active-states.scss';
-@import 'mixins/media-queries.scss';
-@import 'mixins/rem.scss';
+@import "mixins/active-states";
+@import "mixins/clearfix";
+@import "mixins/media-queries";
+@import "mixins/rem";
 
-@import 'normalize.scss';
+@import "normalize";
 
-@import 'base/aside.scss';
-@import 'base/body.scss';
-@import 'base/header.scss';
-@import 'base/heading.scss';
-@import 'base/html.scss';
-@import 'base/image.scss';
-@import 'base/nav.scss';
-@import 'base/wrapper.scss';
+@import "base/aside";
+@import "base/body";
+@import "base/header";
+@import "base/heading";
+@import "base/html";
+@import "base/image";
+@import "base/link";
+@import "base/list";
+@import "base/nav";
+@import "base/paragraph";
+@import "base/section";
 
-@import 'trumps/display.scss';
+@import "components/box";
+@import "components/list";
+@import "components/logo";
+
+@import "trumps/background";
+@import "trumps/display";
+@import "trumps/flex";
+@import "trumps/text";
+@import "trumps/spacing";
+@import "trumps/width";

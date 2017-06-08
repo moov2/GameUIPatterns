@@ -1,14 +1,10 @@
-/*/////////////////////////////////////////
-/// HEADER
-*/////////////////////////////////////////
+/**
+ * -----------------------------------------------------------------------------
+ * $HEADER
+ * -----------------------------------------------------------------------------
+ */
 
 header {
-    padding: $spacing-tiny;
-
-    .logo {
-        min-width: 100px;
-        width: 100px;
-    }
 
     form {
         margin-left: auto;
@@ -34,14 +30,6 @@ header {
 
     [type=checkbox] {
         &:checked + nav {
-            display: block;
-        }
-    }
-
-    nav {
-        display: none;
-
-        @include bp-min-width($bp-tablet) {
             display: block;
         }
     }

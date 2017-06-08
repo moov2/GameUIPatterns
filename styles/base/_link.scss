@@ -1,0 +1,25 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $LINK
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Styles for the hyperlink elements.
+ */
+
+a {
+    color: $color-primary;
+    display: inline-block;
+    font-weight: $font-weight-default;
+    max-width: 100%;
+    text-decoration: none;
+
+    transition: color $animation-duration-default $animation-timing-default;
+
+    &:active,
+    &:focus,
+    &:hover {
+        text-decoration: underline;
+    }
+}

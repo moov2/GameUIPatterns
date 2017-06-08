@@ -1,0 +1,23 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $BACKGROUND
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Utility classes for adding background properties.
+ */
+
+.bg--cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**
+ * Colours
+ */
+
+.bg--color-grey-lightest {
+    background-color: $color-grey-lightest;
+}

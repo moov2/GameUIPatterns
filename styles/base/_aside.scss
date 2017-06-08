@@ -1,15 +1,22 @@
-/*/////////////////////////////////////////
-/// ASIDE
-*/////////////////////////////////////////
+/**
+ * -----------------------------------------------------------------------------
+ * $ASIDE
+ * -----------------------------------------------------------------------------
+ */
 
 aside {
-    background-color: $color-white-off;
+    max-width: $aside-width;
+    width: 100%;
+
+    background-color: $color-grey-lightest;
 
     @include bp-min-width($bp-tablet) {
         position: fixed;
         left: 0;
         top: 0;
         height: 100%;
-        width: 100px;
+        z-index: 10;
+
+        border-right: 1px solid $color-grey-light;
     }
 }

@@ -1,0 +1,62 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $LIST
+ * -----------------------------------------------------------------------------
+ */
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .list__item {
+        box-sizing: border-box;
+        position: relative;
+    }
+
+/**
+ * Displays items adjacent to each other.
+ *
+    <ul class="list list--horizontal">
+        <li class="list__item">
+            First List Item
+        </li><li class="list__item">
+            Second List Item
+        </li>
+        ...
+    </ul>
+ *
+ */
+
+.list--double {
+    > .list__item {
+        width: 50%;
+    }
+}
+
+/**
+ * Add bullet points to each list item.
+ */
+.list--bullets {
+    @include rem(margin-bottom, $spacing-default);
+    @include rem(margin-left, $spacing-small * 3);
+
+    .list__item {
+        list-style: disc;
+    }
+}
+
+/**
+ * Add a dividing border between each list item.
+ */
+.list--divided {
+    .list__item {
+        padding-bottom: $spacing-tiny;
+        padding-top: $spacing-tiny;
+
+        border-bottom: 1px solid $color-grey-light;
+
+        &:last-child { border-bottom: 0; }
+    }
+}
