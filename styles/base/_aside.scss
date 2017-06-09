@@ -5,12 +5,13 @@
  */
 
 aside {
-    max-width: $aside-width;
     width: 100%;
 
     background-color: $color-grey-lightest;
 
     @include bp-min-width($bp-desktop) {
+        max-width: $aside-width;
+
         position: fixed;
         left: 0;
         top: 0;

@@ -513,12 +513,12 @@ template {
  * -----------------------------------------------------------------------------
  */
 aside {
-  max-width: 300px;
   width: 100%;
   background-color: #f8f8f8;
 }
 @media all and (min-width: 1024px) {
   aside {
+    max-width: 300px;
     position: fixed;
     left: 0;
     top: 0;
@@ -534,13 +534,17 @@ aside {
  * -----------------------------------------------------------------------------
  */
 body {
-  padding-left: 300px;
   box-sizing: border-box;
   min-height: 100%;
   color: #151615;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   line-height: 1.4;
+}
+@media all and (min-width: 1024px) {
+  body {
+    padding-left: 300px;
+  }
 }
 
 /**
