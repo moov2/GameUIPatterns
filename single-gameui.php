@@ -53,7 +53,7 @@
 					<ul class="list flex flex--direction-row flex--justify-between">
 						<li class="list__item width--45">
 
-							<?php echo "<h3>When to use</h3>"; ?>
+							<h3>When to use</h3>
 
 							<?php if(get_field('when_to_use'))
 							{
@@ -63,9 +63,9 @@
 						</li>
 						<li class="list__item width--45">
 
-							<?php echo "<h3>Solution</h3>";
+							<h3>Solution</h3>
 
-							if(get_field('solution'))
+							<?php if(get_field('solution'))
 							{
 								echo get_field('solution');
 							}; ?>
@@ -87,9 +87,9 @@
 			<section class="section margin--bottom-huge">
 				<div class="section__content">
 
-					<?php echo "<h3>Technical Details</h3>";
+					<h3>Technical Details</h3>
 
-					if(get_field('technical_details'))
+					<?php if(get_field('technical_details'))
 					{
 						echo get_field('technical_details');
 					}
