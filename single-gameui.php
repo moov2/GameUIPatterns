@@ -42,7 +42,11 @@
 			<section class="section section--wide section--blueprint margin--bottom-huge">
 				<div class="section__content">
 
-					<?php the_post_thumbnail(); ?>
+					<?php
+					if(get_field('blueprint_svg_code'))
+					{
+						echo get_field('blueprint_svg_code');
+					}; ?>
 
 				</div>
 			</section>
