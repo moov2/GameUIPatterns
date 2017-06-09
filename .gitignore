@@ -114,5 +114,10 @@ wp-content/plugins/hello.php
 /sitemap.xml.gz
 
 /styles/Site.css
+/styles/style.css
+/styles/style.min.css
+/pattern-library/src/assets/toolkit/styles/toolkit.scss
+/pattern-library/src/assets/toolkit/styles/toolkit.scss.map
+
 
 # End of https://www.gitignore.io/api/node,sass,grunt,windows,wordpress
