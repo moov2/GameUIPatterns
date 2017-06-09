@@ -18,7 +18,10 @@ if ( $connected->have_posts() ) :
                         <?php the_post_thumbnail(); // Fullsize image for the single post ?>
                     <?php endif; ?>
                     <!-- /post thumbnail -->
-                    <?php the_title(); ?>
+                    <?php if(get_field('display_title'))
+                    {
+                        echo get_field('display_title');
+                    }?>
                 </li>
             <?php endwhile; ?>
         </ul>
