@@ -520,12 +520,9 @@ aside {
     left: 0;
     top: 0;
     height: 100%;
-<<<<<<< HEAD
     z-index: 10;
     border-right: 1px solid #ebebeb;
-=======
     width: 200px;
->>>>>>> master
   }
 }
 
@@ -688,7 +685,6 @@ nav ul {
   padding-left: 0;
 }
 
-<<<<<<< HEAD
 /**
  * -----------------------------------------------------------------------------
  * $PARAGRAPH
@@ -713,16 +709,6 @@ p {
 }
 p:last-child {
   margin-bottom: 0;
-=======
-/*/////////////////////////////////////////
-/// WRAPPER
-*/
-.wrapper {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 12px;
-  position: relative;
->>>>>>> master
 }
 
 /**
