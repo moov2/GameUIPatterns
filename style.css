@@ -17,6 +17,9 @@ Version: 1.0
  * -----------------------------------------------------------------------------
  */
 /**
+ * BORDERS
+ */
+/**
  * BREAKPOINTS
  */
 /**
@@ -522,7 +525,6 @@ aside {
     height: 100%;
     z-index: 10;
     border-right: 1px solid #ebebeb;
-    width: 200px;
   }
 }
 
@@ -576,6 +578,10 @@ header [type=checkbox]:checked + nav {
  * -----------------------------------------------------------------------------
  */
 h1, h2, h3, h4, h5, h6 {
+  padding-left: 10px;
+  padding-left: 1rem;
+  padding-right: 10px;
+  padding-right: 1rem;
   margin-top: 0;
   font-weight: 700;
 }
@@ -614,7 +620,6 @@ html {
  * -----------------------------------------------------------------------------
  */
 img, svg {
-  display: block;
   max-width: 100%;
 }
 
@@ -738,10 +743,6 @@ section:after,
 .section:after {
   clear: both;
 }
-section:last-child,
-.section:last-child {
-  margin-bottom: 0;
-}
 @media all and (min-width: 768px) {
   section,
   .section {
@@ -767,6 +768,22 @@ section:last-child,
 }
 .section--content-right .section__content {
   margin-right: 0;
+}
+
+.section--blueprint .section__content {
+  padding-bottom: 60px;
+  padding-bottom: 6rem;
+  padding-top: 60px;
+  padding-top: 6rem;
+  background-image: url(img/blueprint-bg-tile.png);
+  background-repeat: repeat;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.section--examples {
+  background-color: #151615;
+  color: #fff;
 }
 
 /**
@@ -820,24 +837,22 @@ section:last-child,
  * Add bullet points to each list item.
  */
 .list--bullets {
-  margin-bottom: 20px;
-  margin-bottom: 2rem;
-  margin-left: 30px;
-  margin-left: 3rem;
+  padding-left: 30px;
+  padding-left: 3rem;
 }
-.list--bullets .list__item {
+.list--bullets > .list__item {
   list-style: disc;
 }
 
 /**
  * Add a dividing border between each list item.
  */
-.list--divided .list__item {
+.list--divided > .list__item {
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   border-bottom: 1px solid #ebebeb;
 }
-.list--divided .list__item:last-child {
+.list--divided > .list__item:last-child {
   border-bottom: 0;
 }
 
@@ -857,6 +872,7 @@ section:last-child,
 }
 
 .logo__icon {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 100px;
@@ -1065,6 +1081,14 @@ body:hover .display--hidden button {
  */
 .text--italic {
   font-style: italic;
+}
+
+.text--grey-light {
+  color: #ebebeb;
+}
+
+.text--grey {
+  color: #909090;
 }
 
 /**
@@ -1352,6 +1376,13 @@ body:hover .display--hidden button {
 .padding--horizontal-none {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+@media all and (min-width: 1024px) {
+  .padding--horizontal-none\@desktop {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
 
 .padding--left-tiny {
