@@ -39,10 +39,9 @@
  * Add bullet points to each list item.
  */
 .list--bullets {
-    @include rem(margin-bottom, $spacing-default);
-    @include rem(margin-left, $spacing-small * 3);
+    @include rem(padding-left, $spacing-small * 3);
 
-    .list__item {
+    > .list__item {
         list-style: disc;
     }
 }
@@ -51,7 +50,7 @@
  * Add a dividing border between each list item.
  */
 .list--divided {
-    .list__item {
+    > .list__item {
         padding-bottom: $spacing-tiny;
         padding-top: $spacing-tiny;
 

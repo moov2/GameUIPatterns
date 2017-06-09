@@ -16,8 +16,6 @@ section,
     display: block;
     position: relative;
 
-    &:last-child { margin-bottom: 0; }
-
     @media all and (min-width: $bp-tablet) {
         padding: 0;
     }
@@ -36,3 +34,20 @@ section,
         .section--content-left & { margin-left: 0; }
         .section--content-right & { margin-right: 0; }
     }
+
+.section--blueprint {
+    .section__content {
+        @include rem(padding-bottom, $spacing-huge);
+        @include rem(padding-top, $spacing-huge);
+
+        background-image: url(img/blueprint-bg-tile.png);
+        background-repeat: repeat;
+        border-radius: $border-radius-default;
+        text-align: center;
+    }
+}
+
+.section--examples {
+    background-color: $color-black;
+    color: $color-white;
+}

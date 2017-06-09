@@ -1,78 +1,114 @@
 <?php get_header(); ?>
 
 <main role="main">
-	<!-- section -->
-	<section>
 
-		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<!-- article -->
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<h3><?php the_category(); ?> /</h3>
+			<section class="section margin--bottom-huge padding--top-large">
+				<div class="section__content">
 
-				<!-- post title -->
-				<h1>
-					<?php the_title(); ?>
-				</h1>
-				<!-- /post title -->
+					<p class="padding--horizontal-none@desktop margin--bottom-small text--grey"><?php the_category(', '); ?> /</p>
 
-				<h2>Description</h2>
+					<!-- post title -->
+					<h1 class="padding--horizontal-none@desktop">
+						<?php the_title(); ?>
+					</h1>
+					<!-- /post title -->
 
-				<?php
-				if(get_field('description'))
-				{
-					echo get_field('description');
-				}
+					<div class="box padding--horizontal-small padding--vertical-default bg--color-grey-lightest">
 
-				the_post_thumbnail();
+						<?php
+						if(get_field('description'))
+						{
+							echo get_field('description');
+						}; ?>
 
-				echo "<h2>When to use</h2>";
+					</div>
 
-				if(get_field('when_to_use'))
-				{
-					echo get_field('when_to_use');
-				}
+				</div>
+			</section>
 
-				echo "<h2>Solution</h2>";
+			<section class="section section--wide section--blueprint margin--bottom-huge">
+				<div class="section__content">
 
-				if(get_field('solution'))
-				{
-					echo get_field('solution');
-				}
+					<?php the_post_thumbnail(); ?>
 
-				get_template_part('partials/gameui', 'examples');
+				</div>
+			</section>
 
-				echo "<h2>Technical Details</h2>";
+			<section class="section section--wide margin--bottom-huge">
+				<div class="section__content">
 
-				if(get_field('technical_details'))
-				{
-					echo get_field('technical_details');
-				}
+					<ul class="list flex flex--direction-row flex--justify-between">
+						<li class="list__item width--45">
 
-				comments_template();
+							<?php echo "<h3>When to use</h3>"; ?>
 
-				?>
+							<?php if(get_field('when_to_use'))
+							{
+								echo get_field('when_to_use');
+							}; ?>
 
-				</article>
-				<!-- /article -->
+						</li>
+						<li class="list__item width--45">
 
-			<?php endwhile; ?>
+							<?php echo "<h3>Solution</h3>";
 
-		<?php else: ?>
+							if(get_field('solution'))
+							{
+								echo get_field('solution');
+							}; ?>
 
-			<!-- article -->
-			<article>
+						</li>
+					</ul>
 
-				<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+				</div>
+			</section>
 
-			</article>
-			<!-- /article -->
+			<section class="section section--fill section--examples margin--bottom-huge">
+				<div class="section__content">
 
-		<?php endif; ?>
+					<?php get_template_part('partials/gameui', 'examples'); ?>
 
-	</section>
-	<!-- /section -->
+				</div>
+			</section>
+
+			<section class="section margin--bottom-huge">
+				<div class="section__content">
+
+					<?php echo "<h3>Technical Details</h3>";
+
+					if(get_field('technical_details'))
+					{
+						echo get_field('technical_details');
+					}
+
+					comments_template();
+
+					?>
+
+				</div>
+			</section>
+		</article>
+		<!-- /article -->
+
+	<?php endwhile; ?>
+
+	<?php else: ?>
+
+		<!-- article -->
+		<article>
+
+			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+
+		</article>
+		<!-- /article -->
+
+	<?php endif; ?>
+
 </main>
 
 <?php get_footer(); ?>

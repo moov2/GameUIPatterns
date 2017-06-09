@@ -70,6 +70,11 @@
 .padding--horizontal-large { @include rem(padding-left, $spacing-large); @include rem(padding-right, $spacing-large); }
 .padding--horizontal-huge { @include rem(padding-left, $spacing-huge); @include rem(padding-right, $spacing-huge); }
 .padding--horizontal-none { padding-left: 0 !important; padding-right: 0 !important; }
+.padding--horizontal-none\@desktop {
+    @media all and (min-width: $bp-desktop) {
+        padding-left: 0 !important; padding-right: 0 !important;
+    }
+}
 
 .padding--left-tiny { @include rem(padding-left, $spacing-tiny); }
 .padding--left-small { @include rem(padding-left, $spacing-small); }
