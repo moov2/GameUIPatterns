@@ -19,11 +19,11 @@
 
 		<aside>
 
-			<header class="header" role="banner">
+			<header class="header padding--default" role="banner">
 
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-							<img class="logo__icon" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo">
+							<img class="logo__icon margin--bottom-small" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo">
 							<p class="logo__text"><?php printf( get_bloginfo ( 'name' ) ); ?></p>
 						</a>
 					</div>
