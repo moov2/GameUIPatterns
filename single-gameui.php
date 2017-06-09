@@ -9,7 +9,15 @@
 			<!-- article -->
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-				<h3><?php the_category(); ?> /</h3>
+				<?php
+					$categories = get_the_category();
+
+					if ( ! empty( $categories ) ) {
+						echo "<h3>";
+					    echo esc_html( $categories[0]->name );
+						echo " / </h3>";
+					}
+				?>
 
 				<!-- post title -->
 				<h1>
