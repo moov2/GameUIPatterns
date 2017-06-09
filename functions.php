@@ -379,11 +379,7 @@ function create_post_type_gameexample()
             'editor',
             'thumbnail'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
-        'can_export' => true, // Allows export in Tools > Export
-        'taxonomies' => array(
-            'post_tag',
-            'category'
-        ) // Add Category and Post Tags support
+        'can_export' => true // Allows export in Tools > Export
     ));
 }
 
