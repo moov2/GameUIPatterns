@@ -261,6 +261,7 @@ add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comment
 add_action('wp_enqueue_scripts', 'gameui_styles'); // Add Theme Stylesheet
 add_action('init', 'register_gameui_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_gameui'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_gameexample'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -347,6 +348,54 @@ function create_post_type_gameui()
         ) // Add Category and Post Tags support
     ));
 }
+
+// Create custom post type called gameui
+function create_post_type_gameexample()
+{
+    register_taxonomy_for_object_type('category', 'gameexample'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'gameexample');
+    register_post_type('gameexample', // Register Custom Post Type
+        array(
+        'labels' => array(
+            'name' => __('Game Example', 'gameexample'), // Rename these to suit
+            'singular_name' => __('Game Example', 'gameexample'),
+            'add_new' => __('Add New', 'gameexample'),
+            'add_new_item' => __('Add New Game Example', 'gameexample'),
+            'edit' => __('Edit', 'gameexample'),
+            'edit_item' => __('Edit Game Example', 'gameexample'),
+            'new_item' => __('New Game Example', 'gameexample'),
+            'view' => __('View Game Example', 'gameexample'),
+            'view_item' => __('View Game Example', 'gameexample'),
+            'search_items' => __('Search Game Example', 'gameexample'),
+            'not_found' => __('No Game Example found', 'gameexample'),
+            'not_found_in_trash' => __('No Game Examples found in Trash', 'gameexample')
+        ),
+        'menu_icon' => 'dashicons-book',
+        'public' => true,
+        'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
+        'has_archive' => true,
+        'supports' => array(
+            'title',
+            'editor',
+            'thumbnail'
+        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        'can_export' => true, // Allows export in Tools > Export
+        'taxonomies' => array(
+            'post_tag',
+            'category'
+        ) // Add Category and Post Tags support
+    ));
+}
+
+function my_connection_types() {
+    p2p_register_connection_type( array(
+        'name' => 'posts_to_pages',
+        'from' => 'gameui',
+        'to' => 'gameexample'
+    ) );
+}
+add_action( 'p2p_init', 'my_connection_types' );
+
 
 // Remove jQuery Migrate Script from header and Load jQuery from Google API
 function stop_loading_wp_embed_and_jquery() {
