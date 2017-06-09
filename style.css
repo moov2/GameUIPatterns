@@ -578,10 +578,6 @@ header [type=checkbox]:checked + nav {
  * -----------------------------------------------------------------------------
  */
 h1, h2, h3, h4, h5, h6 {
-  padding-left: 10px;
-  padding-left: 1rem;
-  padding-right: 10px;
-  padding-right: 1rem;
   margin-top: 0;
   font-weight: 700;
 }
@@ -701,10 +697,6 @@ nav ul {
 p {
   margin-bottom: 20px;
   margin-bottom: 2rem;
-  padding-left: 10px;
-  padding-left: 1rem;
-  padding-right: 10px;
-  padding-right: 1rem;
   font-weight: 400;
   line-height: 1.4;
   box-sizing: border-box;
@@ -885,6 +877,88 @@ section:after,
   text-align: center;
 }
 
+/**
+ * -----------------------------------------------------------------------------
+ * $TRANSFORM
+ * -----------------------------------------------------------------------------
+ */
+.animate {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.animate--rotate-30 {
+  -webkit-animation-name: rotate-30;
+          animation-name: rotate-30;
+}
+.animate--rotate-90 {
+  -webkit-animation-name: rotate-90;
+          animation-name: rotate-90;
+}
+
+.animate-duration--four {
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+/**
+ * ROTATE
+ */
+@-webkit-keyframes rotate-30 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes rotate-30 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rotate-90 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes rotate-90 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
 /**
  * -----------------------------------------------------------------------------
  * $BACKGROUND
@@ -1510,6 +1584,57 @@ body:hover .display--hidden button {
 .padding--vertical-none {
   padding-bottom: 0 !important;
   padding-top: 0 !important;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $TRANSFORM
+ * -----------------------------------------------------------------------------
+ */
+.transform-origin--left-top {
+  -webkit-transform-origin: left top;
+      -ms-transform-origin: left top;
+          transform-origin: left top;
+}
+.transform-origin--left-center {
+  -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center;
+}
+.transform-origin--left-bottom {
+  -webkit-transform-origin: left bottom;
+      -ms-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+.transform-origin--center-top {
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+}
+.transform-origin--center-center {
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+}
+.transform-origin--center-bottom {
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+.transform-origin--right-top {
+  -webkit-transform-origin: right top;
+      -ms-transform-origin: right top;
+          transform-origin: right top;
+}
+.transform-origin--right-center {
+  -webkit-transform-origin: right center;
+      -ms-transform-origin: right center;
+          transform-origin: right center;
+}
+.transform-origin--right-bottom {
+  -webkit-transform-origin: right bottom;
+      -ms-transform-origin: right bottom;
+          transform-origin: right bottom;
 }
 
 /**
