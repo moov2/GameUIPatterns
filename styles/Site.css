@@ -893,16 +893,19 @@ section:after,
 
 .rate__control {
   cursor: pointer;
-  color: #fff;
 }
-.rate__control:before {
-  content: attr(data-text);
+.rate__control svg {
+  max-width: 2rem;
+  fill: #fff;
 }
-.rate__control--up {
-  background: #000;
+.rate__control svg:hover, .rate__control svg:focus, .rate__control svg:active {
+  fill: #000;
 }
-.rate__control--down {
-  background: #000;
+.rate__control--down svg {
+  transform: rotate(180deg);
+}
+.rate__control--voted svg {
+  fill: #000;
 }
 
 .rate--voted:before {

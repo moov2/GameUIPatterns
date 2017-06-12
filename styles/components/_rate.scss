@@ -13,21 +13,29 @@
 
 .rate__control {
     cursor: pointer;
-    color: $color-white;
 
-    &:before{
-        content: attr(data-text);
-    }
+    svg {
+        max-width: $spacing-default;
+        fill: $color-white;
 
-    &--up{
-        background: $color-primary;
+        @include active-states() {
+            fill: $color-primary;
+        }
     }
 
     &--down {
-        background: $color-primary;
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    &--voted {
+        svg {
+            fill: $color-primary;
+        }
     }
 }
 
 .rate--voted:before{
-        content: attr(data-text);
+    content: attr(data-text);
 }
