@@ -22,7 +22,6 @@ if ( $connected->have_posts() ) :
                     {
                         echo get_field('display_title');
                     }?>
-                    <?=function_exists('thumbs_rating_getlink') ? thumbs_rating_getlink() : ''?>
                 </li>
             <?php endwhile; ?>
         </ul>
