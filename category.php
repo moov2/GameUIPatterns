@@ -1,8 +1,10 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
-		<section>
+<main role="main">
+	<!-- section -->
+	<section class="section padding--top-large">
+
+		<div class="section__content">
 
 			<h1><?php single_cat_title(); ?></h1>
 
@@ -10,8 +12,10 @@
 
 			<?php get_template_part('pagination'); ?>
 
-		</section>
-		<!-- /section -->
-	</main>
+		</div>
+
+	</section>
+	<!-- /section -->
+</main>
 
 <?php get_footer(); ?>
