@@ -907,6 +907,9 @@ section:after,
 .rate__control--voted svg {
   fill: #000;
 }
+.rate__control--voted svg:hover, .rate__control--voted svg:focus, .rate__control--voted svg:active {
+  fill: #0d0d0d;
+}
 
 /**
  * -----------------------------------------------------------------------------
