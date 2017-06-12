@@ -632,7 +632,7 @@ img, svg {
  * Styles for the hyperlink elements.
  */
 a {
-  color: #000;
+  color: #151615;
   display: inline-block;
   font-weight: 400;
   max-width: 100%;
@@ -794,6 +794,31 @@ section:after,
   box-sizing: border-box;
   display: block;
   position: relative;
+}
+
+.box--description {
+  padding-bottom: 20px;
+  padding-bottom: 2rem;
+  padding-left: 20px;
+  padding-left: 2rem;
+  padding-right: 20px;
+  padding-right: 2rem;
+  padding-top: 20px;
+  padding-top: 2rem;
+  background-color: #f8f8f8;
+}
+@media all and (min-width: 768px) {
+  .box--description {
+    border-radius: 3px;
+  }
+}
+.box--description a {
+  color: #ef6c07;
+  text-decoration: underline;
+}
+.box--description a:hover {
+  color: #ef6c07;
+  text-decoration: none;
 }
 
 /**
