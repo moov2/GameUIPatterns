@@ -886,10 +886,9 @@ section:after,
  * $RATE
  * -----------------------------------------------------------------------------
  */
-.rate--voted {
-  display: none;
-  -webkit-transition: all 0.3s;
-          transition: all 0.3s;
+.rate {
+  width: 50px;
+  text-align: center;
 }
 
 .rate__control {
@@ -909,10 +908,6 @@ section:after,
 }
 .rate__control--voted svg {
   fill: #000;
-}
-
-.rate--voted:before {
-  content: attr(data-text);
 }
 
 /**

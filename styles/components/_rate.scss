@@ -5,10 +5,8 @@
  */
 
 .rate {
-    &--voted{
-        display: none;
-        transition: (all 0.3s);
-    }
+    width: 50px;
+    text-align: center;
 }
 
 .rate__control {
@@ -34,8 +32,4 @@
             fill: $color-primary;
         }
     }
-}
-
-.rate--voted:before{
-    content: attr(data-text);
 }
