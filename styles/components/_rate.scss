@@ -30,6 +30,10 @@
     &--voted {
         svg {
             fill: $color-primary;
+
+            @include active-states() {
+                fill: lighten($color-primary, 5%);
+            }
         }
     }
 }
