@@ -26,7 +26,7 @@
 					</h1>
 					<!-- /post title -->
 
-					<div class="box padding--horizontal-small padding--vertical-default bg--color-grey-lightest">
+					<div class="box box--description">
 
 						<?php
 						if(get_field('description'))

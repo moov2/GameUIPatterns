@@ -17,8 +17,16 @@ if ( $connected->have_posts() ) :
                     <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
                         <?php the_post_thumbnail(); // Fullsize image for the single post ?>
                     <?php endif; ?>
+<<<<<<< HEAD
                     <?php if(get_field('display_title')) { echo '<h4>' . get_field('display_title') . '</h4>'; }?>
                     <?=function_exists('thumbs_rating_getlink') ? thumbs_rating_getlink() : ''?>
+=======
+                    <!-- /post thumbnail -->
+                    <?php if(get_field('display_title'))
+                    {
+                        echo get_field('display_title');
+                    }?>
+>>>>>>> master
                 </li>
             <?php endwhile; ?>
         </ul>
