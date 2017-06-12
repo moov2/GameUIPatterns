@@ -15,9 +15,7 @@ a {
     max-width: 100%;
     text-decoration: none;
 
-    &:active,
-    &:focus,
-    &:hover {
+    @include active-states() {
         text-decoration: underline;
     }
 }
