@@ -40,7 +40,7 @@ section,
         @include rem(padding-bottom, $spacing-huge);
         @include rem(padding-top, $spacing-huge);
 
-        background-image: url(img/blueprint-bg-tile.png);
+        background-image: url(/wp-content/themes/GameUIPatterns/img/blueprint-bg-tile.png);
         background-repeat: repeat;
         border-radius: $border-radius-default;
         text-align: center;
