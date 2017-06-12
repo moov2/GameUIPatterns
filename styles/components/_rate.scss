@@ -1,0 +1,33 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $RATE
+ * -----------------------------------------------------------------------------
+ */
+
+.rate {
+    &--voted{
+        display: none;
+        transition: (all 0.3s);
+    }
+}
+
+.rate__control {
+    cursor: pointer;
+    color: $color-white;
+
+    &:before{
+        content: attr(data-text);
+    }
+
+    &--up{
+        background: $color-primary;
+    }
+
+    &--down {
+        background: $color-primary;
+    }
+}
+
+.rate--voted:before{
+        content: attr(data-text);
+}

@@ -883,6 +883,35 @@ section:after,
 
 /**
  * -----------------------------------------------------------------------------
+ * $RATE
+ * -----------------------------------------------------------------------------
+ */
+.rate--voted {
+  display: none;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+
+.rate__control {
+  cursor: pointer;
+  color: #fff;
+}
+.rate__control:before {
+  content: attr(data-text);
+}
+.rate__control--up {
+  background: #000;
+}
+.rate__control--down {
+  background: #000;
+}
+
+.rate--voted:before {
+  content: attr(data-text);
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $TRANSFORM
  * -----------------------------------------------------------------------------
  */
