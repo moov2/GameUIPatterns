@@ -11,7 +11,9 @@
 				<section class="section padding--top-large">
 					<div class="section__content">
 
-						<h1><?php the_title(); ?></h1>
+						<h1>
+							<?php the_title(); ?>
+						</h1>
 
 						<?php the_content(); ?>
 
