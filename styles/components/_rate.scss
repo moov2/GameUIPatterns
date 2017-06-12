@@ -1,0 +1,39 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $RATE
+ * -----------------------------------------------------------------------------
+ */
+
+.rate {
+    width: 50px;
+    text-align: center;
+}
+
+.rate__control {
+    cursor: pointer;
+
+    svg {
+        max-width: $spacing-default;
+        fill: $color-white;
+
+        @include active-states() {
+            fill: $color-primary;
+        }
+    }
+
+    &--down {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    &--voted {
+        svg {
+            fill: $color-primary;
+
+            @include active-states() {
+                fill: lighten($color-primary, 5%);
+            }
+        }
+    }
+}

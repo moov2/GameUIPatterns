@@ -13,3 +13,26 @@
     display: block;
     position: relative;
 }
+
+.box--description {
+    @include rem(padding-bottom, $spacing-default);
+    @include rem(padding-left, $spacing-default);
+    @include rem(padding-right, $spacing-default);
+    @include rem(padding-top, $spacing-default);
+
+    background-color: $color-grey-lightest;
+
+    @media all and (min-width: $bp-tablet) {
+        border-radius: $border-radius-default;
+    }
+
+    a {
+        color: $color-orange;
+        text-decoration: underline;
+
+        &:hover {
+            color: $color-orange;
+            text-decoration: none;
+        }
+    }
+}
