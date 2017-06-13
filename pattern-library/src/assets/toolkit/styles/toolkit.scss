@@ -72,6 +72,22 @@ Version: 1.0
  *
  * Example usage is `@include rem(font-size, 1.6rem);`
  */
+/**
+ * -----------------------------------------------------------------------------
+ * $SVG
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $STRING
+ * -----------------------------------------------------------------------------
+ */
+/**
+* Replaces sub string within a string with the provided replacement.
+*/
+/**
+ * Removes the # from the colour variable.
+ */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -679,15 +695,71 @@ ol > li:last-child {
  */
 nav {
   display: none;
+  font-size: 1rem;
 }
 @media all and (min-width: 768px) {
   nav {
     display: block;
   }
 }
-nav ul {
-  list-style: none;
+nav > ul {
   padding-left: 0;
+  list-style: none;
+}
+nav > ul > li {
+  border-bottom: 1px solid #ebebeb;
+}
+nav > ul > li > a {
+  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  padding-right: 5px;
+  padding-right: 0.5rem;
+  padding-top: 5px;
+  padding-top: 0.5rem;
+  display: block;
+  position: relative;
+  font-weight: 700;
+}
+nav > ul > li > a:before {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2214.8%22%20viewBox%3D%220%200%2024%2014.8%22%3E%3Cpath%20d%3D%22M2.8%200L12%209.2%2021.2%200%2024%202.8l-12%2012-12-12L2.8%200z%22%20fill%3D%22%23909090%22%2F%3E%3C%2Fsvg%3E");
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 0.5rem;
+  width: 16px;
+  height: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav .sub-menu {
+  margin-bottom: 10px;
+  margin-bottom: 1rem;
+  padding-left: 0;
+  list-style: none;
+}
+nav .sub-menu > li {
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  padding-right: 5px;
+  padding-right: 0.5rem;
+}
+nav .sub-menu > li > a {
+  padding-bottom: 2.5px;
+  padding-bottom: 0.25rem;
+  padding-left: 5px;
+  padding-left: 0.5rem;
+  padding-right: 5px;
+  padding-right: 0.5rem;
+  padding-top: 2.5px;
+  padding-top: 0.25rem;
+  display: block;
+}
+nav .sub-menu > li > a:hover {
+  background-color: #909090;
+  color: #fff;
+  text-decoration: none;
 }
 
 /**

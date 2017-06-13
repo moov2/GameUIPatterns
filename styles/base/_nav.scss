@@ -7,12 +7,73 @@
 nav {
     display: none;
 
+    font-size: $font-size-small;
+
     @include bp-min-width($bp-tablet) {
         display: block;
     }
 
-    ul {
-        list-style: none;
+    > ul {
         padding-left: 0;
+
+        list-style: none;
+
+        > li {
+            border-bottom: 1px solid $color-grey-light;
+
+            > a {
+                @include rem(padding-bottom, $spacing-tiny);
+                @include rem(padding-left, $spacing-tiny);
+                @include rem(padding-right, $spacing-tiny);
+                @include rem(padding-top, $spacing-tiny);
+
+                display: block;
+                position: relative;
+
+                font-weight: $font-weight-bold;
+
+                &:before {
+                    @include svg-chevron-icon();
+
+                    content: '';
+                    position: absolute;
+                    top: 14px;
+                    right: $spacing-tiny;
+                    width: 16px;
+                    height: 10px;
+
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+
+    .sub-menu {
+        @include rem(margin-bottom, $spacing-small);
+
+        padding-left: 0;
+
+        list-style: none;
+
+        > li {
+            @include rem(padding-left, $spacing-tiny);
+            @include rem(padding-right, $spacing-tiny);
+
+            > a {
+                @include rem(padding-bottom, $spacing-tiny / 2);
+                @include rem(padding-left, $spacing-tiny);
+                @include rem(padding-right, $spacing-tiny);
+                @include rem(padding-top, $spacing-tiny / 2);
+
+                display: block;
+
+                &:hover {
+                    background-color: $color-grey;
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
