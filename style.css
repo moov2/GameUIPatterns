@@ -857,6 +857,7 @@ section:after,
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 .examples > .examples__item h4 {
   margin-right: 0;
