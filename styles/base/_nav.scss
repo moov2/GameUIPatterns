@@ -22,10 +22,7 @@ nav {
             border-bottom: 1px solid $color-grey-light;
 
             > a {
-                @include rem(padding-bottom, $spacing-tiny);
-                @include rem(padding-left, $spacing-tiny);
-                @include rem(padding-right, $spacing-tiny);
-                @include rem(padding-top, $spacing-tiny);
+                @include rem(padding, $spacing-tiny);
 
                 display: block;
                 position: relative;

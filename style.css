@@ -710,14 +710,8 @@ nav > ul > li {
   border-bottom: 1px solid #ebebeb;
 }
 nav > ul > li > a {
-  padding-bottom: 5px;
-  padding-bottom: 0.5rem;
-  padding-left: 5px;
-  padding-left: 0.5rem;
-  padding-right: 5px;
-  padding-right: 0.5rem;
-  padding-top: 5px;
-  padding-top: 0.5rem;
+  padding: 5px;
+  padding: 0.5rem;
   display: block;
   position: relative;
   font-weight: 700;
