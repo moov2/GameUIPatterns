@@ -8,6 +8,8 @@
 
 			<h1><?php single_cat_title(); ?></h1>
 
+			<?php query_posts('post_type=gameui') ?>
+
 			<?php get_template_part('loop'); ?>
 
 			<?php get_template_part('pagination'); ?>
