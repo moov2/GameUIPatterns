@@ -5,47 +5,57 @@
  */
 
 .examples {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     color: $color-white;
 
-    justify-content: space-between;
-    align-items: flex-end;
-
-
     @include bp-min-width($bp-tablet) {
+        flex-direction: row;
         justify-content: flex-start;
     }
 
-
     & > .examples__item {
-        text-align: center;
-        padding: $spacing-small;
-        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        margin-bottom: $spacing-default;
         width: 100%;
 
+        text-align: center;
+
+        &:last-child { margin-bottom: 0; }
+
         h4 {
+            margin-bottom: 0;
             margin-right: 0;
         }
 
-        @include bp-min-width($bp-mobile-large) {
-            width: 50%;
-        }
-
         @include bp-min-width($bp-tablet) {
-            width: 20%;
+            width: 50%;
             flex-direction: row;
-            flex-wrap: wrap;
             justify-content: center;
+            padding: $spacing-small;
 
             h4 {
-                margin-bottom: 0;
                 margin-right: 0;
             }
+        }
+
+        @include bp-min-width($bp-desktop-medium) {
+            width: 33.333%;
+        }
+
+        @include bp-min-width($bp-desktop-large) {
+            width: 25%;
         }
     }
 
     &__thumbnail {
         min-width: 100%;
-        margin-bottom: $spacing-default;
+        margin-bottom: $spacing-small;
     }
 }
