@@ -22,7 +22,7 @@
 
     background-color: $color-grey-lightest;
 
-    @media all and (min-width: $bp-tablet) {
+    @include bp-min-width($bp-tablet) {
         border-radius: $border-radius-default;
     }
 
