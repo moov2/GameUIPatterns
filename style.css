@@ -709,6 +709,12 @@ nav > ul {
 nav > ul > li {
   border-bottom: 1px solid #ebebeb;
 }
+nav > ul > li.current-menu-ancestor .sub-menu, nav > ul > li.current-menu-item .sub-menu {
+  display: block;
+}
+nav > ul > li .sub-menu {
+  display: none;
+}
 nav > ul > li > a {
   padding: 5px;
   padding: 0.5rem;
@@ -751,6 +757,11 @@ nav .sub-menu > li > a {
   display: block;
 }
 nav .sub-menu > li > a:hover {
+  background-color: #909090;
+  color: #fff;
+  text-decoration: none;
+}
+nav .sub-menu > li.current-menu-item > a {
   background-color: #909090;
   color: #fff;
   text-decoration: none;
