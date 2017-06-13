@@ -889,6 +889,66 @@ section:after,
 
 /**
  * -----------------------------------------------------------------------------
+ * $EXAMPLES
+ * -----------------------------------------------------------------------------
+ */
+.examples {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #fff;
+}
+@media all and (min-width: 768px) {
+  .examples {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+.examples > .examples__item {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.examples > .examples__item:last-child {
+  margin-bottom: 0;
+}
+.examples > .examples__item h4 {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+@media all and (min-width: 768px) {
+  .examples > .examples__item {
+    width: 50%;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .examples > .examples__item h4 {
+    margin-right: 0;
+  }
+}
+@media all and (min-width: 1440px) {
+  .examples > .examples__item {
+    width: 33.333%;
+  }
+}
+@media all and (min-width: 1920px) {
+  .examples > .examples__item {
+    width: 25%;
+  }
+}
+.examples__thumbnail {
+  min-width: 100%;
+  margin-bottom: 1rem;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $LIST
  * -----------------------------------------------------------------------------
  */
@@ -978,7 +1038,8 @@ section:after,
  * -----------------------------------------------------------------------------
  */
 .rate {
-  width: 50px;
+  margin-right: 1rem;
+  min-width: 50px;
   text-align: center;
 }
 
@@ -990,16 +1051,16 @@ section:after,
   fill: #fff;
 }
 .rate__control svg:hover, .rate__control svg:focus, .rate__control svg:active {
-  fill: #000;
+  fill: #ef6c07;
 }
 .rate__control--down svg {
   transform: rotate(180deg);
 }
 .rate__control--voted svg {
-  fill: #000;
+  fill: #ef6c07;
 }
 .rate__control--voted svg:hover, .rate__control--voted svg:focus, .rate__control--voted svg:active {
-  fill: #0d0d0d;
+  fill: #f98830;
 }
 
 /**
