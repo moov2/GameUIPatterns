@@ -21,6 +21,17 @@ nav {
         > li {
             border-bottom: 1px solid $color-grey-light;
 
+            &.current-menu-ancestor,
+            &.current-menu-item {
+                .sub-menu  {
+                    display: block;
+                }
+            }
+
+            .sub-menu  {
+                display: none;
+            }
+
             > a {
                 @include rem(padding, $spacing-tiny);
 
@@ -66,6 +77,14 @@ nav {
                 display: block;
 
                 &:hover {
+                    background-color: $color-grey;
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+
+            &.current-menu-item {
+                > a {
                     background-color: $color-grey;
                     color: $color-white;
                     text-decoration: none;
