@@ -1,0 +1,50 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $EXAMPLES
+ * -----------------------------------------------------------------------------
+ */
+
+.examples {
+    color: $color-white;
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+
+    @include bp-min-width($bp-tablet) {
+        justify-content: flex-start;
+    }
+
+
+    & > .examples__item {
+        text-align: center;
+        padding: $spacing-small;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4 {
+            margin-right: 0;
+        }
+
+        @include bp-min-width($bp-mobile-large) {
+            width: 50%;
+        }
+
+        @include bp-min-width($bp-tablet) {
+            width: 20%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            h4 {
+                margin-bottom: 0;
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__thumbnail {
+        min-width: 100%;
+        margin-bottom: $spacing-default;
+    }
+}

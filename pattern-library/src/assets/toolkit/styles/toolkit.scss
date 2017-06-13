@@ -823,6 +823,52 @@ section:after,
 
 /**
  * -----------------------------------------------------------------------------
+ * $EXAMPLES
+ * -----------------------------------------------------------------------------
+ */
+.examples {
+  color: #fff;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+@media all and (min-width: 768px) {
+  .examples {
+    justify-content: flex-start;
+  }
+}
+.examples > .examples__item {
+  text-align: center;
+  padding: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.examples > .examples__item h4 {
+  margin-right: 0;
+}
+@media all and (min-width: 425px) {
+  .examples > .examples__item {
+    width: 50%;
+  }
+}
+@media all and (min-width: 768px) {
+  .examples > .examples__item {
+    width: 20%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .examples > .examples__item h4 {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+.examples__thumbnail {
+  min-width: 100%;
+  margin-bottom: 2rem;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $LIST
  * -----------------------------------------------------------------------------
  */
@@ -924,16 +970,16 @@ section:after,
   fill: #fff;
 }
 .rate__control svg:hover, .rate__control svg:focus, .rate__control svg:active {
-  fill: #000;
+  fill: #ef6c07;
 }
 .rate__control--down svg {
   transform: rotate(180deg);
 }
 .rate__control--voted svg {
-  fill: #000;
+  fill: #ef6c07;
 }
 .rate__control--voted svg:hover, .rate__control--voted svg:focus, .rate__control--voted svg:active {
-  fill: #0d0d0d;
+  fill: #f98830;
 }
 
 /**
