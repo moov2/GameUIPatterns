@@ -9,13 +9,13 @@ $connected = new WP_Query( array(
 // Display connected pages
 if ( $connected->have_posts() ) :
     ?>
-    <div class="examples">
+    <div class="padding--large">
         <h3>Game Examples:</h3>
-        <ul>
+        <ul class="list examples flex flex--wrap">
             <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-                <li class="examples__item">
+                <li class="examples__item flex flex--align-center">
                     <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                        <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                        <?php the_post_thumbnail('examples__thumbnail', ['class' => 'examples__thumbnail', 'title' => 'Feature image']); // Fullsize image for the single post ?>
                     <?php endif; ?>
 
                     <?php if(get_field('display_title')) { echo '<h4>' . get_field('display_title') . '</h4>'; }?>
