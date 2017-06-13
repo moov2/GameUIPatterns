@@ -5,7 +5,8 @@
  */
 
 .rate {
-    width: 50px;
+    margin-right: $spacing-small;
+    min-width: 50px;
     text-align: center;
 }
 
@@ -17,7 +18,7 @@
         fill: $color-white;
 
         @include active-states() {
-            fill: $color-primary;
+            fill: $color-orange;
         }
     }
 
@@ -29,10 +30,10 @@
 
     &--voted {
         svg {
-            fill: $color-primary;
+            fill: $color-orange;
 
             @include active-states() {
-                fill: lighten($color-primary, 5%);
+                fill: lighten($color-orange, 10%);
             }
         }
     }
