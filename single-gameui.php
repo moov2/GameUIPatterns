@@ -104,19 +104,26 @@
 			<section class="section margin--bottom-huge">
 				<div class="section__content">
 
-					<h3>Technical Details</h3>
+					<h2>Technical Details</h2>
 
 					<?php if(get_field('technical_details'))
 					{
 						echo get_field('technical_details');
 					}
 
-					comments_template();
-
 					?>
 
 				</div>
 			</section>
+
+			<section class="section margin--bottom-huge padding--top-large">
+				<div class="section__content">
+
+					<?php get_template_part('partials/page', 'comments'); ?>
+
+				</div>
+			</section>
+
 		</article>
 		<!-- /article -->
 
