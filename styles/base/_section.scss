@@ -45,6 +45,11 @@ section,
         border-radius: $border-radius-default;
         text-align: center;
     }
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .section--examples {

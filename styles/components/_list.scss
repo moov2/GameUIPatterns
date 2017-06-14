@@ -15,23 +15,21 @@
         position: relative;
     }
 
-/**
- * Displays items adjacent to each other.
- *
-    <ul class="list list--horizontal">
-        <li class="list__item">
-            First List Item
-        </li><li class="list__item">
-            Second List Item
-        </li>
-        ...
-    </ul>
- *
- */
-
 .list--double {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include bp-min-width($bp-tablet) {
+        flex-direction: row;
+    }
+
     > .list__item {
-        width: 50%;
+        margin-bottom: $spacing-default;
+
+        @include bp-min-width($bp-tablet) {
+            width: 45%;
+        }
     }
 }
 

@@ -865,6 +865,10 @@ section:after,
   border-radius: 3px;
   text-align: center;
 }
+.section--blueprint svg {
+  width: 100%;
+  height: auto;
+}
 
 .section--examples {
   background-color: #151615;
@@ -986,21 +990,23 @@ section:after,
   position: relative;
 }
 
-/**
- * Displays items adjacent to each other.
- *
-    <ul class="list list--horizontal">
-        <li class="list__item">
-            First List Item
-        </li><li class="list__item">
-            Second List Item
-        </li>
-        ...
-    </ul>
- *
- */
+.list--double {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media all and (min-width: 768px) {
+  .list--double {
+    flex-direction: row;
+  }
+}
 .list--double > .list__item {
-  width: 50%;
+  margin-bottom: 2rem;
+}
+@media all and (min-width: 768px) {
+  .list--double > .list__item {
+    width: 45%;
+  }
 }
 
 /**
@@ -1279,6 +1285,10 @@ body:hover .display--hidden button {
 
 .text--grey {
   color: #909090;
+}
+
+.text--large {
+  font-size: 1.825rem;
 }
 
 /**
