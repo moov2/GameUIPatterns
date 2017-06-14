@@ -853,6 +853,10 @@ section:after,
   border-radius: 3px;
   text-align: center;
 }
+.section--blueprint svg {
+  width: 100%;
+  height: auto;
+}
 
 .section--examples {
   background-color: #151615;
