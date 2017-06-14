@@ -20,14 +20,14 @@
     flex-direction: column;
     justify-content: space-between;
 
-    @media all and (min-width: $bp-tablet) {
+    @include bp-min-width($bp-tablet) {
         flex-direction: row;
     }
 
     > .list__item {
         margin-bottom: $spacing-default;
 
-        @media all and (min-width: $bp-tablet) {
+        @include bp-min-width($bp-tablet) {
             width: 45%;
         }
     }
