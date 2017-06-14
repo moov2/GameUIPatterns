@@ -20,16 +20,34 @@ nav {
 
         > li {
             border-bottom: 1px solid $color-grey-light;
+            cursor:default;
 
             &.current-menu-ancestor,
             &.current-menu-item {
                 .sub-menu  {
-                    display: block;
+                    height: auto;
+
+                    opacity: 1;
                 }
             }
 
             .sub-menu  {
-                display: none;
+                height: 0;
+                overflow: hidden;
+
+                transition: opacity 0.3s ease-out;
+
+                opacity: 0;
+            }
+
+            &.menu-item-has-children {
+                @include active-states() {
+                    .sub-menu {
+                        height: auto;
+
+                        opacity: 1;
+                    }
+                }
             }
 
             > a {
@@ -52,6 +70,10 @@ nav {
 
                     background-size: cover;
                     background-repeat: no-repeat;
+                }
+
+                @include active-states() {
+                    text-decoration: none;
                 }
             }
         }
@@ -76,7 +98,7 @@ nav {
 
                 display: block;
 
-                &:hover {
+                @include active-states() {
                     background-color: $color-grey;
                     color: $color-white;
                     text-decoration: none;
