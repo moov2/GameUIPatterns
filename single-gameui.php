@@ -80,6 +80,17 @@
 				</div>
 			</section>
 
+			<?php
+
+			$connected = new WP_Query( array(
+			    'connected_type' => 'posts_to_pages',
+			    'connected_items' => get_queried_object(),
+			    'nopaging' => true,
+			) );
+
+			if ( $connected->have_posts() ) {
+			?>
+
 			<section class="section section--fill section--examples margin--bottom-huge">
 				<div class="section__content">
 
@@ -87,6 +98,8 @@
 
 				</div>
 			</section>
+
+			<?php } ?>
 
 			<section class="section margin--bottom-huge">
 				<div class="section__content">
