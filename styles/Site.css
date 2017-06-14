@@ -1269,6 +1269,10 @@ body:hover .display--hidden button {
   color: #909090;
 }
 
+.text--large {
+  font-size: 1.825rem;
+}
+
 /**
  * -----------------------------------------------------------------------------
  * $SPACING
