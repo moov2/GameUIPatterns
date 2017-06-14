@@ -865,6 +865,9 @@ section:after,
   border-radius: 3px;
   text-align: center;
 }
+.section--blueprint h3 {
+  color: #fff;
+}
 .section--blueprint svg {
   width: 100%;
   height: auto;
@@ -1103,6 +1106,9 @@ section:after,
 .animate--rotate-30 {
   animation-name: rotate-30;
 }
+.animate--rotate-30-rev {
+  animation-name: rotate-30-rev;
+}
 .animate--rotate-90 {
   animation-name: rotate-90;
 }
@@ -1120,6 +1126,17 @@ section:after,
   }
   50% {
     transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-30-rev {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
   }
   100% {
     transform: rotate(0deg);
