@@ -342,7 +342,8 @@ function create_post_type_gameui()
         'supports' => array(
             'title',
             'editor',
-            'thumbnail'
+            'thumbnail',
+            'comments'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
@@ -380,7 +381,8 @@ function create_post_type_gameexample()
         'supports' => array(
             'title',
             'editor',
-            'thumbnail'
+            'thumbnail',
+            'comments'
         ), // Go to Dashboard Custom HTML5 Blank post for supports
         'can_export' => true // Allows export in Tools > Export
     ));
