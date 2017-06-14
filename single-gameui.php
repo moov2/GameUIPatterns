@@ -54,10 +54,10 @@
 			<section class="section section--wide margin--bottom-huge">
 				<div class="section__content">
 
-					<ul class="list flex flex--direction-row flex--justify-between">
-						<li class="list__item width--45">
+					<ul class="list list--double padding--horizontal-default">
+						<li class="list__item">
 
-							<h3>When to use</h3>
+							<h2 class="text--large">When to use</h2>
 
 							<?php if(get_field('when_to_use'))
 							{
@@ -65,9 +65,9 @@
 							}; ?>
 
 						</li>
-						<li class="list__item width--45">
+						<li class="list__item">
 
-							<h3>Solution</h3>
+							<h2 class="text--large">Solution</h2>
 
 							<?php if(get_field('solution'))
 							{
