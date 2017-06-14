@@ -708,12 +708,22 @@ nav > ul {
 }
 nav > ul > li {
   border-bottom: 1px solid #ebebeb;
+  cursor: default;
 }
 nav > ul > li.current-menu-ancestor .sub-menu, nav > ul > li.current-menu-item .sub-menu {
-  display: block;
+  height: auto;
+  opacity: 1;
 }
 nav > ul > li .sub-menu {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 0.3s ease-out;
+          transition: opacity 0.3s ease-out;
+  opacity: 0;
+}
+nav > ul > li.menu-item-has-children:hover .sub-menu, nav > ul > li.menu-item-has-children:focus .sub-menu, nav > ul > li.menu-item-has-children:active .sub-menu {
+  height: auto;
+  opacity: 1;
 }
 nav > ul > li > a {
   padding: 5px;
@@ -732,6 +742,9 @@ nav > ul > li > a:before {
   height: 10px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+nav > ul > li > a:hover, nav > ul > li > a:focus, nav > ul > li > a:active {
+  text-decoration: none;
 }
 nav .sub-menu {
   margin-bottom: 10px;
@@ -756,7 +769,7 @@ nav .sub-menu > li > a {
   padding-top: 0.25rem;
   display: block;
 }
-nav .sub-menu > li > a:hover {
+nav .sub-menu > li > a:hover, nav .sub-menu > li > a:focus, nav .sub-menu > li > a:active {
   background-color: #909090;
   color: #fff;
   text-decoration: none;
