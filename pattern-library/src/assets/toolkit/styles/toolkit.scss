@@ -868,12 +868,27 @@ section:after,
 .section--blueprint .section__content {
   padding-bottom: 60px;
   padding-bottom: 6rem;
+  padding-left: 10px;
+  padding-left: 1rem;
+  padding-right: 10px;
+  padding-right: 1rem;
   padding-top: 60px;
   padding-top: 6rem;
   background-image: url(/wp-content/themes/GameUIPatterns/img/blueprint-bg-tile.png);
   background-repeat: repeat;
   border-radius: 3px;
   text-align: center;
+}
+@media all and (min-width: 1440px) {
+  .section--blueprint .section__content {
+    padding-left: 60px;
+    padding-left: 6rem;
+    padding-right: 60px;
+    padding-right: 6rem;
+  }
+}
+.section--blueprint h3 {
+  color: #fff;
 }
 .section--blueprint svg {
   width: 100%;
@@ -1113,6 +1128,9 @@ section:after,
 .animate--rotate-30 {
   animation-name: rotate-30;
 }
+.animate--rotate-30-rev {
+  animation-name: rotate-30-rev;
+}
 .animate--rotate-90 {
   animation-name: rotate-90;
 }
@@ -1130,6 +1148,17 @@ section:after,
   }
   50% {
     transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-30-rev {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
   }
   100% {
     transform: rotate(0deg);

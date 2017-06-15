@@ -38,13 +38,22 @@ section,
 .section--blueprint {
     .section__content {
         @include rem(padding-bottom, $spacing-huge);
+        @include rem(padding-left, $spacing-small);
+        @include rem(padding-right, $spacing-small);
         @include rem(padding-top, $spacing-huge);
 
         background-image: url(/wp-content/themes/GameUIPatterns/img/blueprint-bg-tile.png);
         background-repeat: repeat;
         border-radius: $border-radius-default;
         text-align: center;
+
+        @include bp-min-width($bp-desktop-medium) {
+            @include rem(padding-left, $spacing-huge);
+            @include rem(padding-right, $spacing-huge);
+        }
     }
+
+    h3 { color: $color-white; }
 
     svg {
         width: 100%;

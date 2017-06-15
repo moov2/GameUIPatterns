@@ -8,6 +8,7 @@
     animation-iteration-count: infinite;
 
     &--rotate-30 { animation-name: rotate-30; }
+    &--rotate-30-rev { animation-name: rotate-30-rev; }
     &--rotate-90 { animation-name: rotate-90; }
 }
 
@@ -25,6 +26,12 @@
 @keyframes rotate-30 {
     0%   { transform: rotate(0deg); }
     50%   { transform: rotate(-30deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes rotate-30-rev {
+    0%   { transform: rotate(0deg); }
+    50%   { transform: rotate(30deg); }
     100% { transform: rotate(0deg); }
 }
 
