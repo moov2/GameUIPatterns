@@ -10,14 +10,13 @@
     &--rotate-30 { animation-name: rotate-30; }
     &--rotate-30-rev { animation-name: rotate-30-rev; }
     &--rotate-90 { animation-name: rotate-90; }
+
+    &--slide-horizontal { animation-name: slide-horizontal; }
 }
 
 .animate-duration {
     &--four { animation-duration: 4s; }
 }
-
-
-
 
 /**
  * ROTATE
@@ -39,4 +38,11 @@
     0%   { transform: rotate(0deg); }
     50%   { transform: rotate(-90deg); }
     100% { transform: rotate(0deg); }
+}
+
+@keyframes slide-horizontal {
+    0%   { transform: translateX(0); }
+    30%   { transform: translateX(50px); }
+    70%   { transform: translateX(-50px); }
+    100% { transform: translateX(0); }
 }

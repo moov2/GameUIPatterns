@@ -1134,6 +1134,9 @@ section:after,
 .animate--rotate-90 {
   animation-name: rotate-90;
 }
+.animate--slide-horizontal {
+  animation-name: slide-horizontal;
+}
 
 .animate-duration--four {
   animation-duration: 4s;
@@ -1173,6 +1176,20 @@ section:after,
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes slide-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(50px);
+  }
+  70% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 /**
