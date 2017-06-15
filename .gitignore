@@ -1,3 +1,7 @@
+# Remove toolkit map from git repository
+
+pattern-library/src/assets/toolkit/styles/toolkit.scss.map
+
 # Created by https://www.gitignore.io/api/node,sass,grunt,windows,wordpress
 
 .DS_Store
