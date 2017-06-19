@@ -563,6 +563,18 @@ body {
   }
 }
 
+button {
+  border: none;
+  background-color: #ef6c07;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  transition: background-color 0.3s ease;
+}
+button:hover, button:focus, button:active {
+  background-color: #f98830;
+}
+
 /**
  * -----------------------------------------------------------------------------
  * $FORM
