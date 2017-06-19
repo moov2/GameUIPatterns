@@ -1,0 +1,26 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $COMMENT
+ * -----------------------------------------------------------------------------
+ */
+
+.comments {
+
+    & > .comment {
+        border-top: 1px solid $color-grey;
+        padding-top: $spacing-default;
+    }
+}
+
+.comment {
+
+    &__avatar {
+        margin: 0 auto $spacing-default;
+
+        @include bp-min-width($bp-desktop) {
+            position: absolute;
+            left: -$spacing-huge;
+            top: 0;
+        }
+    }
+}
