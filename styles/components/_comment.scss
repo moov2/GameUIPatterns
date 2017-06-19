@@ -4,23 +4,43 @@
  * -----------------------------------------------------------------------------
  */
 
-.comments {
+ .comment-list {
 
-    & > .comment {
-        border-top: 1px solid $color-grey;
-        padding-top: $spacing-default;
-    }
-}
+     & > .comment {
+         padding-top: $spacing-default;
 
-.comment {
+         border-top: 1px solid $color-grey;
 
-    &__avatar {
-        margin: 0 auto $spacing-default;
+         &:first-child {
+             border-top: none;
+         }
+     }
 
-        @include bp-min-width($bp-desktop) {
-            position: absolute;
-            left: -$spacing-huge;
-            top: 0;
-        }
-    }
-}
+     .children {
+         margin-top: $spacing-default;
+         padding-left: $spacing-default;
+
+         list-style: none;
+
+         .comment {
+             padding-top: $spacing-default;
+         }
+     }
+ }
+
+ .comment {
+
+     &__meta {
+         margin-bottom: 1rem
+     }
+
+     &__avatar {
+         margin: 0 auto $spacing-default;
+
+         @include bp-min-width($bp-desktop-medium) {
+             position: absolute;
+             top: $spacing-default;
+             left: -$spacing-huge;
+         }
+     }
+ }

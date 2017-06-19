@@ -944,19 +944,33 @@ section:after,
  * $COMMENT
  * -----------------------------------------------------------------------------
  */
-.comments > .comment {
+.comment-list > .comment {
+  padding-top: 2rem;
   border-top: 1px solid #909090;
+}
+.comment-list > .comment:first-child {
+  border-top: none;
+}
+.comment-list .children {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  list-style: none;
+}
+.comment-list .children .comment {
   padding-top: 2rem;
 }
 
+.comment__meta {
+  margin-bottom: 1rem;
+}
 .comment__avatar {
   margin: 0 auto 2rem;
 }
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1440px) {
   .comment__avatar {
     position: absolute;
+    top: 2rem;
     left: -6rem;
-    top: 0;
   }
 }
 
@@ -1375,6 +1389,10 @@ body:hover .display--hidden button {
 
 .text--grey {
   color: #909090;
+}
+
+.text--small {
+  font-size: 1rem;
 }
 
 .text--large {

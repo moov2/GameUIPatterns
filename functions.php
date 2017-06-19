@@ -449,19 +449,17 @@ function format_comment($comment, $args, $depth) {
 
         <?php echo get_avatar( $current_user->user_email, 64, null, null, array('class' => array('comment__avatar', 'border-radius--circle') ) ); ?>
 
+        <div class="comment__meta text--grey text--small">
+            Posted: <?php printf(__('%1$s'), get_comment_date(), get_comment_time()) ?> by <?php printf(__('%s'), get_comment_author_link()) ?>
+        </div>
+
         <?php if ($comment->comment_approved == '0') : ?>
             <php _e('Your comment is awaiting moderation.') ?><br />
         <?php endif; ?>
 
         <?php comment_text(); ?>
 
-        <div class="flex flex--align-end flex--justify-between margin--bottom-default">
-            <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
-
-            <div class="comment__meta text--grey">
-                Posted: <?php printf(__('%1$s'), get_comment_date(), get_comment_time()) ?> by <?php printf(__('%s'), get_comment_author_link()) ?>
-            </div>
-        </div>
+        <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
 
     </li>
 
@@ -475,5 +473,7 @@ function replace_reply_link_class($class){
     $class = str_replace("class='comment-reply-link", "class='comment__reply text--bold", $class);
     return $class;
 }
+
+
 
 ?>
