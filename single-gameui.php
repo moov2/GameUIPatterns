@@ -119,7 +119,7 @@
 			<section class="section margin--bottom-huge padding--top-large">
 				<div class="section__content">
 
-					<?php get_template_part('partials/page', 'comments'); ?>
+				    <?php comments_template(); ?>
 
 				</div>
 			</section>
