@@ -7,7 +7,7 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<section class="section margin--bottom-huge padding--top-large">
+			<section class="section margin--bottom-huge padding--small padding--top-large">
 				<div class="section__content">
 
 					<?php
@@ -51,7 +51,7 @@
 				</div>
 			</section>
 
-			<section class="section section--wide margin--bottom-huge">
+			<section class="section section--wide padding--small margin--bottom-huge">
 				<div class="section__content">
 
 					<ul class="list list--double padding--horizontal-default">
@@ -101,7 +101,7 @@
 
 			<?php } ?>
 
-			<section class="section margin--bottom-huge">
+			<section class="section padding--small margin--bottom-huge">
 				<div class="section__content">
 
 					<h2>Technical Details</h2>
@@ -116,7 +116,7 @@
 				</div>
 			</section>
 
-			<section class="section margin--bottom-huge padding--top-large">
+			<section class="section margin--bottom-huge padding--small">
 				<div class="section__content">
 
 				    <?php comments_template(); ?>
