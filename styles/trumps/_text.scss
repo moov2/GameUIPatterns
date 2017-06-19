@@ -5,6 +5,7 @@
  */
 
 .text--italic { font-style: italic; }
+.text--bold { font-weight: $font-weight-bold; }
 
 .text--grey-light { color: $color-grey-light; }
 .text--grey { color: $color-grey; }
