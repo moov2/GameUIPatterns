@@ -50,6 +50,14 @@ nav {
                 }
             }
 
+            &.show-children {
+                .sub-menu {
+                    height: auto;
+
+                    opacity: 1;
+                }
+            }
+
             > a {
                 @include rem(padding, $spacing-tiny);
 
