@@ -19,12 +19,14 @@ nav {
         list-style: none;
 
         > li {
-            border-bottom: 1px solid $color-grey-light;
             cursor:default;
 
+            border-bottom: 1px solid $color-grey-light;
+
             .sub-menu  {
-                height: 0;
                 overflow: hidden;
+
+                height: 0;
 
                 transition: opacity 0.3s ease-out;
 
@@ -38,6 +40,8 @@ nav {
                     height: auto;
 
                     opacity: 1;
+
+                    @include rem(margin-bottom, $spacing-small);
                 }
             }
 
@@ -46,29 +50,32 @@ nav {
             }
 
             &.menu-item-has-children > a {
-                @include rem(padding, $spacing-tiny);
+                position: relative;
 
                 display: block;
-                position: relative;
 
                 font-weight: $font-weight-bold;
 
-                &:before {
-                    @include svg-chevron-icon();
-
-                    content: '';
-                    position: absolute;
-                    top: 14px;
-                    right: $spacing-tiny;
-                    width: 16px;
-                    height: 10px;
-
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                }
+                @include rem(padding, $spacing-tiny);
 
                 @include active-states() {
                     text-decoration: none;
+                }
+
+                &:before {
+                    position: absolute;
+                    top: 14px;
+                    right: $spacing-tiny;
+
+                    width: 16px;
+                    height: 10px;
+
+                    content: '';
+
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    @include svg-chevron-icon();
                 }
             }
 
@@ -81,8 +88,6 @@ nav {
     }
 
     .sub-menu {
-        @include rem(margin-bottom, $spacing-small);
-
         padding-left: 0;
 
         list-style: none;
@@ -92,25 +97,28 @@ nav {
             @include rem(padding-right, $spacing-tiny);
 
             > a {
+                display: block;
+
                 @include rem(padding-bottom, $spacing-tiny / 2);
                 @include rem(padding-left, $spacing-tiny);
                 @include rem(padding-right, $spacing-tiny);
                 @include rem(padding-top, $spacing-tiny / 2);
-
-                display: block;
-
                 @include active-states() {
-                    background-color: $color-grey;
-                    color: $color-white;
                     text-decoration: none;
+
+                    color: $color-white;
+
+                    background-color: $color-grey;
                 }
             }
 
             &.current-menu-item {
                 > a {
-                    background-color: $color-grey;
-                    color: $color-white;
                     text-decoration: none;
+
+                    color: $color-white;
+
+                    background-color: $color-grey;
                 }
             }
         }
