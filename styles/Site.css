@@ -720,23 +720,21 @@ nav > ul > li {
   border-bottom: 1px solid #ebebeb;
   cursor: default;
 }
-nav > ul > li.current-menu-ancestor .sub-menu, nav > ul > li.current-menu-item .sub-menu {
-  height: auto;
-  opacity: 1;
-}
 nav > ul > li .sub-menu {
   height: 0;
   overflow: hidden;
   transition: opacity 0.3s ease-out;
   opacity: 0;
 }
-nav > ul > li.menu-item-has-children:hover .sub-menu, nav > ul > li.menu-item-has-children:focus .sub-menu, nav > ul > li.menu-item-has-children:active .sub-menu {
+nav > ul > li.current-menu-ancestor .sub-menu, nav > ul > li.current-menu-item .sub-menu, nav > ul > li.show-children .sub-menu {
   height: auto;
   opacity: 1;
 }
-nav > ul > li.show-children .sub-menu {
-  height: auto;
-  opacity: 1;
+nav > ul > li.menu-item-has-children {
+  cursor: pointer;
+}
+nav > ul > li.current-menu-ancestor {
+  cursor: default;
 }
 nav > ul > li > a {
   padding: 5px;

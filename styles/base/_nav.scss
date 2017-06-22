@@ -22,15 +22,6 @@ nav {
             border-bottom: 1px solid $color-grey-light;
             cursor:default;
 
-            &.current-menu-ancestor,
-            &.current-menu-item {
-                .sub-menu  {
-                    height: auto;
-
-                    opacity: 1;
-                }
-            }
-
             .sub-menu  {
                 height: 0;
                 overflow: hidden;
@@ -40,22 +31,22 @@ nav {
                 opacity: 0;
             }
 
-            &.menu-item-has-children {
-                @include active-states() {
-                    .sub-menu {
-                        height: auto;
-
-                        opacity: 1;
-                    }
-                }
-            }
-
+            &.current-menu-ancestor,
+            &.current-menu-item,
             &.show-children {
-                .sub-menu {
+                .sub-menu  {
                     height: auto;
 
                     opacity: 1;
                 }
+            }
+
+            &.menu-item-has-children {
+                cursor: pointer;
+            }
+
+            &.current-menu-ancestor {
+                cursor: default;
             }
 
             > a {
