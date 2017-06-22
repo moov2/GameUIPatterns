@@ -563,6 +563,11 @@ body {
   }
 }
 
+/**
+ * -----------------------------------------------------------------------------
+ * $BUTTON
+ * -----------------------------------------------------------------------------
+ */
 button {
   border: none;
   background-color: #ef6c07;
@@ -584,6 +589,19 @@ button:hover, button:focus, button:active {
 textarea {
   resize: vertical;
   width: 100%;
+}
+
+input[type="submit"] {
+  border: none;
+  background-color: #ef6c07;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  -webkit-transition: background-color 0.3s ease;
+          transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+  background-color: #f98830;
 }
 
 /**
