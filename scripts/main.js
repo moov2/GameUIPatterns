@@ -5,12 +5,12 @@ var start = new function() {
     for(i = 0; i < clickables.length; i++)
     {
         clickables[i].addEventListener("click", function(el) {
-            if(el.target.classList.contains("show-children")) {
-                el.target.classList.remove("show-children");
+            if(el.currentTarget.classList.contains("show-children")) {
+                el.currentTarget.classList.remove("show-children");
+                return;
             }
-            else {
-                el.target.classList.add("show-children");
-            }
+
+            el.currentTarget.classList.add("show-children");
         });
     }
 };

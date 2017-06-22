@@ -100,7 +100,7 @@ function gameui_styles()
 // Scripts minify
 wp_register_script('gameui-js', get_template_directory_uri() . '/scripts/main.js', array(), '1.0.0');
 // Enqueue Scripts
-wp_enqueue_script('gameui-js');
+wp_enqueue_script('gameui-js', get_template_directory_uri() . '/scripts/main.js', '', '', true);
 
 // Register HTML5 Blank Navigation
 function register_gameui_menu()
