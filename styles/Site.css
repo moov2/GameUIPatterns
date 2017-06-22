@@ -762,9 +762,6 @@ nav > ul > li.current-menu-ancestor .sub-menu, nav > ul > li.current-menu-item .
 nav > ul > li.menu-item-has-children {
   cursor: pointer;
 }
-nav > ul > li.current-menu-ancestor {
-  cursor: default;
-}
 nav > ul > li.menu-item-has-children > a {
   padding: 5px;
   padding: 0.5rem;

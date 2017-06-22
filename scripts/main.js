@@ -10,6 +10,11 @@ var start = new function() {
                 return;
             }
 
+            if(el.currentTarget.classList.contains("current-menu-ancestor")) {
+                el.currentTarget.classList.remove("current-menu-ancestor");
+                return;
+            }
+
             el.currentTarget.classList.add("show-children");
         });
     }
