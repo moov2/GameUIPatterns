@@ -765,14 +765,14 @@ nav > ul > li.menu-item-has-children {
 nav > ul > li.current-menu-ancestor {
   cursor: default;
 }
-nav > ul > li > a {
+nav > ul > li.menu-item-has-children > a {
   padding: 5px;
   padding: 0.5rem;
   display: block;
   position: relative;
   font-weight: 700;
 }
-nav > ul > li > a:before {
+nav > ul > li.menu-item-has-children > a:before {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2214.8%22%20viewBox%3D%220%200%2024%2014.8%22%3E%3Cpath%20d%3D%22M2.8%200L12%209.2%2021.2%200%2024%202.8l-12%2012-12-12L2.8%200z%22%20fill%3D%22%23909090%22%2F%3E%3C%2Fsvg%3E");
   content: '';
   position: absolute;
@@ -783,8 +783,11 @@ nav > ul > li > a:before {
   background-size: cover;
   background-repeat: no-repeat;
 }
-nav > ul > li > a:hover, nav > ul > li > a:focus, nav > ul > li > a:active {
+nav > ul > li.menu-item-has-children > a:hover, nav > ul > li.menu-item-has-children > a:focus, nav > ul > li.menu-item-has-children > a:active {
   text-decoration: none;
+}
+nav > ul > li.show-children > a:before {
+  transform: rotate(180deg);
 }
 nav .sub-menu {
   margin-bottom: 10px;

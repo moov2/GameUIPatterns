@@ -49,7 +49,7 @@ nav {
                 cursor: default;
             }
 
-            > a {
+            &.menu-item-has-children > a {
                 @include rem(padding, $spacing-tiny);
 
                 display: block;
@@ -73,6 +73,12 @@ nav {
 
                 @include active-states() {
                     text-decoration: none;
+                }
+            }
+
+            &.show-children > a {
+                &:before {
+                    transform: rotate(180deg);
                 }
             }
         }
