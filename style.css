@@ -1620,6 +1620,10 @@ body:hover .display--hidden button {
   color: #909090;
 }
 
+.text--grey-dark {
+  color: #737373;
+}
+
 .text--small {
   font-size: 1rem;
 }

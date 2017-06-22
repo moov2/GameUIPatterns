@@ -14,7 +14,7 @@
 						$categories = get_the_category();
 
 						if ( ! empty( $categories ) ) {
-							echo '<p itemscope itemtype="http://schema.org/Article" itemref="_articleSection2 _articleSection3 _articleSection4 _articleBody5" class="padding--horizontal-none@desktop margin--bottom-small text--grey">';
+							echo '<p itemscope itemtype="http://schema.org/Article" itemref="_articleSection2 _articleSection3 _articleSection4 _articleBody5" class="padding--horizontal-none@desktop margin--bottom-small text--grey-dark">';
 							echo esc_html( $categories[0]->name );
 							echo ' / </p>';
 						}
