@@ -1,19 +1,10 @@
 /**
  * -----------------------------------------------------------------------------
- * $FORM
+ * $BUTTON
  * -----------------------------------------------------------------------------
  */
 
-form {
-
-}
-
-textarea {
-    resize: vertical;
-    width: 100%;
-}
-
-input[type="submit"] {
+button {
     border: none;
 
     background-color: $color-orange;

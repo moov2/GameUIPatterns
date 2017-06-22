@@ -7,34 +7,35 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<section class="section margin--bottom-huge padding--top-large">
+			<section class="section margin--bottom-huge padding--small padding--top-large">
 				<div class="section__content">
 
 					<?php
 						$categories = get_the_category();
 
 						if ( ! empty( $categories ) ) {
-							echo '<p class="padding--horizontal-none@desktop margin--bottom-small text--grey">';
+							echo '<p itemscope itemtype="http://schema.org/Article" itemref="_articleSection2 _articleSection3 _articleSection4 _articleBody5" class="padding--horizontal-none@desktop margin--bottom-small text--grey">';
 							echo esc_html( $categories[0]->name );
 							echo ' / </p>';
 						}
 					?>
 
-					<!-- post title -->
-					<h1 class="padding--horizontal-none@desktop">
-						<?php the_title(); ?>
-					</h1>
-					<!-- /post title -->
+					<span itemscope itemtype="http://schema.org/Article" itemref="_articleSection2 _articleSection3 _articleSection4">
+						<h1 itemprop="name" class="padding--horizontal-none@desktop">
+							<?php the_title(); ?>
+						</h1>
+						<!-- /post title -->
 
-					<div class="box box--description">
+						<div id="_articleBody5" itemprop="articleBody" class="box box--description">
 
-						<?php
-						if(get_field('description'))
-						{
-							echo get_field('description');
-						}; ?>
+							<?php
+							if(get_field('description'))
+							{
+								echo get_field('description');
+							}; ?>
 
-					</div>
+						</div>
+					</span>
 
 				</div>
 			</section>
@@ -51,11 +52,11 @@
 				</div>
 			</section>
 
-			<section class="section section--wide margin--bottom-huge">
+			<section class="section section--wide padding--small margin--bottom-huge">
 				<div class="section__content">
 
 					<ul class="list list--double padding--horizontal-default">
-						<li class="list__item">
+						<li id="_articleSection2" itemprop="articleSection" class="list__item">
 
 							<h2 class="text--large">When to use</h2>
 
@@ -65,7 +66,7 @@
 							}; ?>
 
 						</li>
-						<li class="list__item">
+						<li id="_articleSection3" itemprop="articleSection" class="list__item">
 
 							<h2 class="text--large">Solution</h2>
 
@@ -101,8 +102,8 @@
 
 			<?php } ?>
 
-			<section class="section margin--bottom-huge">
-				<div class="section__content">
+			<section class="section padding--small margin--bottom-huge">
+				<div id="_articleSection4" itemprop="articleSection" class="section__content">
 
 					<h2>Technical Details</h2>
 
@@ -116,10 +117,10 @@
 				</div>
 			</section>
 
-			<section class="section margin--bottom-huge padding--top-large">
+			<section class="section margin--bottom-huge padding--small">
 				<div class="section__content">
 
-					<?php get_template_part('partials/page', 'comments'); ?>
+				    <?php comments_template(); ?>
 
 				</div>
 			</section>

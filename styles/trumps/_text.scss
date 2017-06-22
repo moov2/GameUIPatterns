@@ -5,8 +5,10 @@
  */
 
 .text--italic { font-style: italic; }
+.text--bold { font-weight: $font-weight-bold; }
 
 .text--grey-light { color: $color-grey-light; }
 .text--grey { color: $color-grey; }
 
+.text--small { font-size: $font-size-small; }
 .text--large { font-size: $font-size-large; }
