@@ -1,0 +1,46 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $COMMENT
+ * -----------------------------------------------------------------------------
+ */
+
+ .comment-list {
+
+     & > .comment {
+         padding-top: $spacing-default;
+
+         border-top: 1px solid $color-grey;
+
+         &:first-child {
+             border-top: none;
+         }
+     }
+
+     .children {
+         margin-top: $spacing-default;
+         padding-left: $spacing-default;
+
+         list-style: none;
+
+         .comment {
+             padding-top: $spacing-default;
+         }
+     }
+ }
+
+ .comment {
+
+     &__meta {
+         margin-bottom: 1rem
+     }
+
+     &__avatar {
+         margin: 0 auto $spacing-default;
+
+         @include bp-min-width($bp-desktop-medium) {
+             position: absolute;
+             top: $spacing-default;
+             left: -$spacing-huge;
+         }
+     }
+ }
