@@ -13,9 +13,5 @@ a {
     display: inline-block;
     font-weight: $font-weight-default;
     max-width: 100%;
-    text-decoration: none;
-
-    @include active-states() {
-        text-decoration: underline;
-    }
+    text-decoration: underline;
 }
