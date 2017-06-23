@@ -642,8 +642,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   line-height: 1;
+}
+@media all and (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
 
 h2 {
@@ -691,9 +696,6 @@ a {
   display: inline-block;
   font-weight: 400;
   max-width: 100%;
-  text-decoration: none;
-}
-a:hover, a:focus, a:active {
   text-decoration: underline;
 }
 
