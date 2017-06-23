@@ -8,7 +8,7 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<!-- section -->
-				<section class="section padding--top-large">
+				<section class="section padding--default padding--top-large">
 					<div class="section__content">
 
 						<h1>
