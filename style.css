@@ -654,7 +654,12 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
+}
+@media all and (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
 }
 
 h3 {

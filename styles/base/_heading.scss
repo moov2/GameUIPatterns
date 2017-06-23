@@ -20,7 +20,11 @@ h1 {
 }
 
 h2 {
-    font-size: $font-size-subheading;
+    font-size: $font-size-subheading-mobile;
+
+    @include bp-min-width($bp-tablet) {
+        font-size: $font-size-subheading;
+    }
 }
 
 h3 {
