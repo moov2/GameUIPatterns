@@ -5,8 +5,10 @@
  */
 
 .logo {
-    padding-bottom: $spacing-large;
-    padding-top: $spacing-large;
+
+    @include bp-min-width($bp-tablet) {
+        padding-top: $spacing-large;
+    }
 
     a {
         display: block;
@@ -16,16 +18,24 @@
     }
 }
 
-    .logo__icon {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100px;
-        width: 100%;
-    }
+.logo__icon {
+    display: none;
 
-    .logo__text {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100px;
+    width: 100%;
+
+    @include bp-min-width($bp-tablet) {
+        display: block;
+    }
+}
+
+.logo__text {
+    font-weight: $font-weight-bold;
+
+    @include bp-min-width($bp-tablet) {
         font-size: $font-size-large;
-        font-weight: $font-weight-bold;
         text-align: center;
     }
+}

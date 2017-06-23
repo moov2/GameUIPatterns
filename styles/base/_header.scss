@@ -5,6 +5,15 @@
  */
 
 header {
+    display: flex;
+
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    @include bp-min-width($bp-tablet) {
+        display: block;
+    }
 
     form {
         margin-left: auto;
@@ -12,19 +21,37 @@ header {
 
     label {
         display: inline-block;
-        cursor: pointer;
 
-        &:before {
-            display: inline-block;
-            content: "";
-            height: 25px;
-            width: 25px;
-            background-image: url('img/icons/bars.svg');
-            background-size: 25px 25px;
-        }
+        cursor: pointer;
 
         @include bp-min-width($bp-tablet) {
             display: none;
+        }
+
+        &:before {
+            display: inline-block;
+
+            width: 25px;
+            height: 25px;
+
+            content: "";
+
+            background-image: url('img/icons/bars.svg');
+            background-size: 25px 25px;
+        }
+    }
+
+    nav {
+        min-width: 100%;
+
+        padding-top: $spacing-default;
+
+        @include bp-min-width($bp-tablet) {
+            padding-top: $spacing-large;
+        }
+
+        a {
+            text-decoration: none;
         }
     }
 
