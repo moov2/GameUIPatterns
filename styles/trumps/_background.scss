@@ -20,7 +20,9 @@
 
 .bg--color- {
     &grey-lightest { background-color: $color-grey-lightest; }
+    &grey { background-color: $color-grey; }
 
     &blue { background-color: $color-blue; }
+    &green { background-color: $color-green; }
     &orange { background-color: $color-orange; }
 }
