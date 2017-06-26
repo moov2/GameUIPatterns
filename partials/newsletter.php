@@ -1,9 +1,9 @@
-<div class="newsletter">
-    <h4>Newsletter Signup</h4>
-    <h3>Game UI patterns. Once a month. No spam.</h3>
-    <p>Get monthly updates and articles from guest writers in the games industry.<p>
+<div class="newsletter padding--small padding--vertical-default bg--color-grey-lightest">
+    <span class="text--grey text--small margin--bottom-small">Newsletter Signup</span>
+    <h3 class="margin--bottom-small">Game UI patterns. Once a month. No spam.</h3>
+    <p class="text--small">Get monthly updates and articles from guest writers in the games industry.<p>
     <form>
-        <input type="text">Enter your email address</input>
-        <button type="submit">Submit</button>
+        <input type="text" placeholder="Enter your email address" class="margin--bottom-small text--white"></input>
+        <button type="submit" class="bg--color-green">Submit</button>
     </form>
 </div>
