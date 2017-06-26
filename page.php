@@ -11,13 +11,11 @@
 				<section class="section padding--default padding--top-large">
 					<div class="section__content">
 
-						<h1>
-							<?php the_title(); ?>
-						</h1>
+						<?php if( get_field('show_title') == 'yes' ): ?>
+							<h1><?php the_title(); ?></h1>
+						<?php endif; ?>
 
 						<?php the_content(); ?>
-
-						<?php edit_post_link(); ?>
 
 					</div>
 				</section>

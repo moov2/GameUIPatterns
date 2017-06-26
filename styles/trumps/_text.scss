@@ -13,3 +13,9 @@
 
 .text--small { font-size: $font-size-small; }
 .text--large { font-size: $font-size-large; }
+
+.text-align {
+    &--left { text-align: left; }
+    &--center { text-align: center; }
+    &--right { text-align: right; }
+}
