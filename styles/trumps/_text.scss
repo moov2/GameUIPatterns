@@ -13,6 +13,10 @@
 .text--grey-dark { color: $color-grey-dark; }
 .text--white { color: $color-white; }
 
+.text--blue { color: $color-blue; }
+.text--orange { color: $color-orange; }
+.text--red { color: $color-red; }
+
 .text--small { font-size: $font-size-small; }
 .text--large { font-size: $font-size-large; }
 
@@ -20,4 +24,10 @@
     &--left { text-align: left; }
     &--center { text-align: center; }
     &--right { text-align: right; }
+}
+
+.text--chevron {
+    &:after {
+        content: "\00BB";
+    }
 }
