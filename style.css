@@ -1505,6 +1505,9 @@ section:after,
 .bg--color-grey-lightest {
   background-color: #f8f8f8;
 }
+.bg--color-grey {
+  background-color: #909090;
+}
 .bg--color-blue {
   background-color: #366db6;
 }
@@ -1722,6 +1725,18 @@ body:hover .display--hidden button {
   color: #fff;
 }
 
+.text--blue {
+  color: #366db6;
+}
+
+.text--orange {
+  color: #ef6c07;
+}
+
+.text--red {
+  color: #dd352e;
+}
+
 .text--small {
   font-size: 1rem;
 }
@@ -1738,6 +1753,10 @@ body:hover .display--hidden button {
 }
 .text-align--right {
   text-align: right;
+}
+
+.text--chevron:after {
+  content: "\00BB";
 }
 
 /**
