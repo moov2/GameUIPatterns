@@ -14,10 +14,6 @@
     }
 }
 
-.column {
-
-}
-
 .column-size--4,
 .column-size--3,
 .column-size--2 {
@@ -31,7 +27,6 @@
     .column {
         @include bp-min-width($bp-tablet) {
             max-width: 50%;
-            width: 100%;
         }
     }
 }
@@ -40,7 +35,6 @@
     .column {
         @include bp-min-width($bp-tablet) {
             max-width: 33.33%;
-            width: 100%;
         }
     }
 }
@@ -48,8 +42,11 @@
 .column-size--4 {
     .column {
         @include bp-min-width($bp-tablet) {
+            max-width: 50%;
+        }
+
+        @include bp-min-width($bp-desktop) {
             max-width: 25%;
-            width: 100%;
         }
     }
 }
