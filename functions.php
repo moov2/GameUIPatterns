@@ -701,3 +701,11 @@ add_filter( 'login_url', 'dmk_strip_loggedout', 1, 1 );
 function dmk_strip_loggedout( $login_url ) {
         return str_replace( '%3Floggedout%3Dtrue', '', $login_url );
 }
+
+
+
+
+function custom_login_logo() {
+	echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/img/logo.png) !important; width: 179px !important; background-size: cover !important; }</style>';
+}
+add_action('login_head', 'custom_login_logo');
