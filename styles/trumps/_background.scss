@@ -26,3 +26,15 @@
     &green { background-color: $color-green; }
     &orange { background-color: $color-orange; }
 }
+
+.bg--image- {
+    &pattern {
+        background-image: url('/wp-content/themes/GameUIPatterns/img/repeating-pattern.png');
+        background-size: 40%;
+    }
+
+    &pattern-fade {
+        background-image: url('/wp-content/themes/GameUIPatterns/img/repeating-pattern-fade.png');
+        background-size: 40%;
+    }
+}
