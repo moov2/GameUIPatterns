@@ -703,9 +703,21 @@ function dmk_strip_loggedout( $login_url ) {
 }
 
 
-
-
 function custom_login_logo() {
 	echo '<style type="text/css">h1 a { background: url('.get_bloginfo('template_directory').'/img/logo.png) !important; width: 179px !important; background-size: cover !important; }</style>';
 }
 add_action('login_head', 'custom_login_logo');
+
+
+// Newsletter Shortcode
+function newsletter_shortcode() {
+	get_template_part( 'partials/newsletter' );
+}
+add_shortcode( 'newsletter', 'newsletter_shortcode' );
+
+
+// Newsletter Shortcode
+function latest_blog_post_shortcode() {
+	get_template_part( 'partials/latest-blog-post' );
+}
+add_shortcode( 'latest-blog-post', 'latest_blog_post_shortcode' );
