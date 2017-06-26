@@ -10,9 +10,9 @@ if ( $connected->have_posts() ) :
     ?>
     <section class="padding--default">
         <h3 class="padding--horizontal-small">Latest UI Patterns</h3>
-        <div class="column-container column-size--4">
+        <div class="column-container column-container--grow column-size--4">
             <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-                <div class="column padding--small">
+                <div class="column padding--small flex flex--direction-column flex--grow">
                     <h4 class="margin--bottom-tiny"><?php the_title(); ?></h4>
 
                     <?php
@@ -31,7 +31,9 @@ if ( $connected->have_posts() ) :
                     <?php if($meta) {?>
                         <p><?php echo $meta;?></p>
                     <?php } ?>
-                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">Read more</a>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="text--orange text--chevron text--small text--bold">Read more </a>
+
+                    <hr class="hr hr--grey-light">
                 </div>
             <?php endwhile; ?>
         </div>
