@@ -718,10 +718,18 @@ function newsletter_shortcode() {
 add_shortcode( 'newsletter', 'newsletter_shortcode' );
 
 
-// Newsletter Shortcode
+// Latest blog Shortcode
 function latest_blog_post_shortcode() {
     ob_start();
 	get_template_part( 'partials/latest-blog-post' );
     return ob_get_clean();
 }
 add_shortcode( 'latest-blog-post', 'latest_blog_post_shortcode' );
+
+// Twelve GameUI post types Shortcode
+function twelve_gameui_shortcode() {
+    ob_start();
+	get_template_part( 'partials/gameui-twelve' );
+    return ob_get_clean();
+}
+add_shortcode( 'twelve-gameui', 'twelve_gameui_shortcode' );
