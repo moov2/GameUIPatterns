@@ -15,7 +15,7 @@
 
     svg {
         max-width: $spacing-default;
-        fill: $color-white;
+        fill: $color-grey-dark;
 
         @include active-states() {
             fill: $color-orange;

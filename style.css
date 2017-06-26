@@ -1283,7 +1283,7 @@ section:after,
 }
 .rate__control svg {
   max-width: 2rem;
-  fill: #fff;
+  fill: #737373;
 }
 .rate__control svg:hover, .rate__control svg:focus, .rate__control svg:active {
   fill: #ef6c07;
