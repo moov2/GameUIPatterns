@@ -10,15 +10,25 @@
 
     transition: background-color 0.3s ease;
     text-decoration: none;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
 
     color: $color-white;
-
     border: none;
-    border-radius: $spacing-default;
+    border-radius: 6px;
     background-color: $color-blue-light;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.2);
+
+    font-size: 0.8rem;
+    font-weight: $font-weight-bold;
 
     @include active-states() {
         background-color: lighten($color-blue-light, 10%);
+    }
+
+    &:after {
+        margin-left: $spacing-tiny;
+
+        content: "\00BB";
     }
 }
