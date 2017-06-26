@@ -696,6 +696,28 @@ h3 {
 
 /**
  * -----------------------------------------------------------------------------
+ * $HR
+ * -----------------------------------------------------------------------------
+ */
+hr, .hr {
+  height: 1px;
+  color: #151615;
+  background: #151615;
+  font-size: 0;
+  border: 0;
+}
+
+.hr--grey {
+  color: #909090;
+  background: #909090;
+}
+.hr--grey-light {
+  color: #ebebeb;
+  background: #ebebeb;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $HTML
  * -----------------------------------------------------------------------------
  */
@@ -1421,21 +1443,23 @@ section:after,
 @media all and (min-width: 768px) {
   .column-size--2 .column {
     max-width: 50%;
-    width: 100%;
   }
 }
 
 @media all and (min-width: 768px) {
   .column-size--3 .column {
     max-width: 33.33%;
-    width: 100%;
   }
 }
 
 @media all and (min-width: 768px) {
   .column-size--4 .column {
+    max-width: 50%;
+  }
+}
+@media all and (min-width: 1024px) {
+  .column-size--4 .column {
     max-width: 25%;
-    width: 100%;
   }
 }
 
