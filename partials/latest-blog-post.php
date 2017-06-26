@@ -8,7 +8,7 @@ $connected = new WP_Query( array(
 // Display connected pages
 if ( $connected->have_posts() ) :
     ?>
-    <div class="padding--small padding--vertical-default">
+    <div class="padding--default">
         <div class="flex flex--justify-between margin--bottom-small text--small">
             <span class="text--grey">Latest Blog Post</span>
             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="text--grey text--chevron">Visit blog </a>
