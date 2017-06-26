@@ -1,10 +1,11 @@
 /**
  * -----------------------------------------------------------------------------
- * $BUTTON
+ * $CTA
  * -----------------------------------------------------------------------------
  */
 
-button {
+
+.cta {
     padding: $spacing-tiny $spacing-small;
 
     transition: background-color 0.3s ease;
@@ -14,10 +15,10 @@ button {
 
     border: none;
     border-radius: $spacing-default;
-    background-color: $color-orange;
+    background-color: $color-blue-light;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 
     @include active-states() {
-        background-color: lighten($color-orange, 10%);
+        background-color: lighten($color-blue-light, 10%);
     }
 }

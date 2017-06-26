@@ -569,12 +569,14 @@ body {
  * -----------------------------------------------------------------------------
  */
 button {
-  border: none;
-  background-color: #ef6c07;
-  color: #fff;
   padding: 0.5rem 1rem;
-  border-radius: 2rem;
   transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ef6c07;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
 button:hover, button:focus, button:active {
   background-color: #f98830;
@@ -1040,6 +1042,25 @@ section:after,
     top: 2rem;
     left: -6rem;
   }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $CTA
+ * -----------------------------------------------------------------------------
+ */
+.cta {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  background-color: #619cea;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+.cta:hover, .cta:focus, .cta:active {
+  background-color: #8eb8f0;
 }
 
 /**
