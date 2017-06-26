@@ -17,7 +17,7 @@
     border: none;
     border-radius: 6px;
     background-color: $color-blue-light;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.05);
 
     font-size: 0.8rem;
     font-weight: $font-weight-bold;
@@ -30,5 +30,13 @@
         margin-left: $spacing-tiny;
 
         content: "\00BB";
+    }
+}
+
+.cta--green {
+    background-color: $color-green;
+
+    @include active-states() {
+        background-color: lighten($color-green, 10%);
     }
 }
