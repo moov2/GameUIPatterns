@@ -18,6 +18,9 @@
  * Colours
  */
 
-.bg--color-grey-lightest {
-    background-color: $color-grey-lightest;
+.bg--color- {
+    &grey-lightest { background-color: $color-grey-lightest; }
+
+    &blue { background-color: $color-blue; }
+    &orange { background-color: $color-orange; }
 }
