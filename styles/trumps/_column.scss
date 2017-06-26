@@ -1,0 +1,44 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $COLUMN
+ * -----------------------------------------------------------------------------
+ */
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+
+    @include bp-min-width($bp-tablet) {
+        flex-direction: row;
+    }
+}
+
+.column {
+
+}
+
+.column--4,
+.column--3,
+.column--2 {
+    .column {
+        width: 100%;
+    }
+}
+
+.column--2 {
+    @include bp-min-width($bp-tablet) {
+        width: 50%;
+    }
+}
+
+.column--3 {
+    @include bp-min-width($bp-tablet) {
+        width: 33.33%;
+    }
+}
+
+.column--4 {
+    @include bp-min-width($bp-tablet) {
+        width: 25%;
+    }
+}

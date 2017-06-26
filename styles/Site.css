@@ -1377,6 +1377,15 @@ section:after,
   background-color: #ef6c07;
 }
 
+.bg--image-pattern {
+  background-image: url("/wp-content/themes/GameUIPatterns/img/repeating-pattern.png");
+  background-size: 40%;
+}
+.bg--image-pattern-fade {
+  background-image: url("/wp-content/themes/GameUIPatterns/img/repeating-pattern-fade.png");
+  background-size: 40%;
+}
+
 /**
  * -----------------------------------------------------------------------------
  * $BORDER
@@ -1384,6 +1393,45 @@ section:after,
  */
 .border-radius--circle {
   border-radius: 50%;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $COLUMN
+ * -----------------------------------------------------------------------------
+ */
+.column-container {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .column-container {
+    flex-direction: row;
+  }
+}
+
+.column--4 .column,
+.column--3 .column,
+.column--2 .column {
+  width: 100%;
+}
+
+@media all and (min-width: 768px) {
+  .column--2 {
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .column--3 {
+    width: 33.33%;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .column--4 {
+    width: 25%;
+  }
 }
 
 /**
