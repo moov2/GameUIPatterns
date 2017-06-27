@@ -12,6 +12,7 @@
     text-decoration: none;
     letter-spacing: 0.4px;
     text-transform: uppercase;
+    display: inline-block;
 
     color: $color-white;
     border: none;
@@ -38,5 +39,13 @@
 
     @include active-states() {
         background-color: lighten($color-green, 10%);
+    }
+}
+
+.cta--orange {
+    background-color: $color-orange;
+
+    @include active-states() {
+        background-color: lighten($color-orange, 10%);
     }
 }

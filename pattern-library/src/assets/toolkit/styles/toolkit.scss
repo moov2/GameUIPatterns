@@ -1115,6 +1115,7 @@ section:after,
   text-decoration: none;
   letter-spacing: 0.4px;
   text-transform: uppercase;
+  display: inline-block;
   color: #fff;
   border: none;
   border-radius: 6px;
@@ -1136,6 +1137,13 @@ section:after,
 }
 .cta--green:hover, .cta--green:focus, .cta--green:active {
   background-color: #63c379;
+}
+
+.cta--orange {
+  background-color: #ef6c07;
+}
+.cta--orange:hover, .cta--orange:focus, .cta--orange:active {
+  background-color: #f98830;
 }
 
 /**
