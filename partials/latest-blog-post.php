@@ -11,7 +11,7 @@ if ( $connected->have_posts() ) :
     <div class="padding--default">
         <div class="flex flex--justify-between margin--bottom-small text--small">
             <span class="text--grey">Latest Blog Post</span>
-            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="text--grey text--chevron">Visit blog </a>
+            <a href="/blog-posts" title="<?php the_title_attribute(); ?>" class="text--grey text--chevron">Visit blog </a>
         </div>
         <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
             <div>
