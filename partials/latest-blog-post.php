@@ -24,7 +24,7 @@ if ( $connected->have_posts() ) :
             <?php if($meta) {?>
                 <p class="margin--bottom-small text--small"><?php echo $meta;?></p>
             <?php } ?>
-                <a href="<?php the_permalink(); ?>" title="Read more about <?php the_title_attribute(); ?>" class="text--red text--small text--bold text--chevron">Read more </a>
+                <a href="<?php the_permalink(); ?>" title="Read more about <?php the_title_attribute(); ?>" class="text--orange text--small text--bold text--chevron">Read more </a>
             </div>
         <?php endwhile; ?>
     </div>
