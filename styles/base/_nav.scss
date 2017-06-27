@@ -9,7 +9,7 @@ nav {
 
     font-size: $font-size-small;
 
-    @include bp-min-width($bp-tablet) {
+    @include bp-min-width($bp-desktop) {
         display: block;
     }
 

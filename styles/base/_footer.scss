@@ -4,11 +4,11 @@
  * -----------------------------------------------------------------------------
  */
 
-.footer {
+footer {
     .copyright {
         display: block;
 
-        @include bp-min-width($bp-tablet) {
+        @include bp-min-width($bp-desktop) {
             display: none;
         }
     }

@@ -1,9 +1,11 @@
 
 		<?php wp_footer(); ?>
 
-		<div class="padding--small">
-			<?php get_template_part('partials/copyright'); ?>
-		</div>
+		<footer class="footer">
+			<div class="padding--small text-align--center">
+				<?php get_template_part('partials/copyright'); ?>
+			</div>
+		</footer>
 
 		<!-- W3TC-include-js-head -->
 

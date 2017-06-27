@@ -585,6 +585,20 @@ button:hover, button:focus, button:active {
 
 /**
  * -----------------------------------------------------------------------------
+ * $FOOTER
+ * -----------------------------------------------------------------------------
+ */
+footer .copyright {
+  display: block;
+}
+@media all and (min-width: 1024px) {
+  footer .copyright {
+    display: none;
+  }
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $FORM
  * -----------------------------------------------------------------------------
  */
@@ -633,7 +647,7 @@ header {
           align-items: flex-start;
   padding: 2rem 1rem;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   header {
     display: block;
     padding: 2rem;
@@ -648,7 +662,7 @@ header label {
   display: inline-block;
   cursor: pointer;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   header label {
     display: none;
   }
@@ -668,7 +682,7 @@ header nav {
   min-width: 100%;
   padding-top: 2rem;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   header nav {
     padding-top: 4rem;
   }
@@ -682,7 +696,7 @@ header [type=checkbox]:checked + nav {
 header .copyright {
   display: none;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   header .copyright {
     display: block;
   }
@@ -831,7 +845,7 @@ nav {
   display: none;
   font-size: 1rem;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   nav {
     display: block;
   }
@@ -1318,7 +1332,7 @@ section:after,
  * $LOGO
  * -----------------------------------------------------------------------------
  */
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   .logo {
     padding-top: 4rem;
   }
@@ -1336,7 +1350,7 @@ section:after,
   max-width: 100px;
   width: 100%;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   .logo__icon {
     display: block;
   }
@@ -1345,7 +1359,7 @@ section:after,
 .logo__text {
   font-weight: 700;
 }
-@media all and (min-width: 768px) {
+@media all and (min-width: 1024px) {
   .logo__text {
     font-size: 1.825rem;
     text-align: center;

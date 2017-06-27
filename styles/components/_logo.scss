@@ -6,7 +6,7 @@
 
 .logo {
 
-    @include bp-min-width($bp-tablet) {
+    @include bp-min-width($bp-desktop) {
         padding-top: $spacing-large;
     }
 
@@ -26,7 +26,7 @@
     max-width: 100px;
     width: 100%;
 
-    @include bp-min-width($bp-tablet) {
+    @include bp-min-width($bp-desktop) {
         display: block;
     }
 }
@@ -34,7 +34,7 @@
 .logo__text {
     font-weight: $font-weight-bold;
 
-    @include bp-min-width($bp-tablet) {
+    @include bp-min-width($bp-desktop) {
         font-size: $font-size-large;
         text-align: center;
     }
