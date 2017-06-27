@@ -7,7 +7,7 @@
 		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-			<section class="section margin--bottom-huge padding--small padding--top-large">
+			<section class="section  margin--bottom-default margin--bottom-huge@desktop padding--small padding--top-large">
 				<div class="section__content">
 
 					<?php
@@ -41,7 +41,7 @@
 				</div>
 			</section>
 
-			<section class="section section--wide section--blueprint margin--bottom-huge">
+			<section class="section section--wide section--blueprint margin--bottom-default margin--bottom-huge@desktop">
 				<div class="section__content">
 
 					<?php
@@ -53,7 +53,7 @@
 				</div>
 			</section>
 
-			<section class="section section--wide padding--small margin--bottom-huge">
+			<section class="section section--wide padding--small margin--bottom-default margin--bottom-huge@desktop">
 				<div class="section__content">
 
 					<ul class="list list--double padding--horizontal-default">
@@ -93,7 +93,7 @@
 			if ( $connected->have_posts() ) {
 			?>
 
-			<section class="section section--fill section--examples margin--bottom-huge">
+			<section class="section section--fill section--examples margin--bottom-default margin--bottom-huge@desktop">
 				<div class="section__content">
 
 					<?php get_template_part('partials/gameui', 'examples'); ?>
@@ -103,7 +103,7 @@
 
 			<?php } ?>
 
-			<section class="section padding--small margin--bottom-huge">
+			<section class="section padding--small margin--bottom-default margin--bottom-huge@desktop">
 				<div id="_articleSection4" itemprop="articleSection" class="section__content">
 
 					<h2>Technical Details</h2>
@@ -118,7 +118,7 @@
 				</div>
 			</section>
 
-			<section class="section margin--bottom-huge padding--small">
+			<section class="section margin--bottom-default margin--bottom-huge@desktop padding--small">
 				<div class="section__content">
 
 				    <?php comments_template(); ?>

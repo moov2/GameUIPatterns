@@ -1793,6 +1793,13 @@ body:hover .display--hidden button {
   margin-bottom: 6rem;
 }
 
+@media all and (min-width: 1024px) {
+  .margin--bottom-huge\@desktop {
+    margin-bottom: 60px;
+    margin-bottom: 6rem;
+  }
+}
+
 .margin--bottom-none {
   margin-bottom: 0 !important;
 }
@@ -1981,6 +1988,13 @@ body:hover .display--hidden button {
 .padding--bottom-huge {
   padding-bottom: 60px;
   padding-bottom: 6rem;
+}
+
+@media all and (min-width: 1024px) {
+  .padding--bottom-huge\@desktop {
+    padding-bottom: 60px;
+    padding-bottom: 6rem;
+  }
 }
 
 .padding--bottom-none {
