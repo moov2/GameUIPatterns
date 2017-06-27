@@ -9,7 +9,7 @@ fabricator: true
 
 <p>This guide contains real working examples, code snippets, documentation, and style guidelines.</p>
 
-<h2>Colour</h2>
+<h2>Colours</h2>
 
 {{#each toolkit.colors}}
 	<div class="f-color-chips">
@@ -22,13 +22,109 @@ fabricator: true
 	</div>
 {{/each}}
 
-<h2>Typography</h2>
+<div class="column-container column-size--2 margin--top-large padding--bottom-large">
+	<div class="column padding--default">
+		<div class="width--optimal">
+		<h2>Including a Game Pattern</h2>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam enim sunt sapiente molestias, sed dicta inventore consectetur beatae asperiores, aliquid laboriosam animi, praesentium repudiandae et, quam saepe sint cupiditate reiciendis.</p>
+		<p>To add a new game UI pattern, you will first need to login to the website via the WordPress login form at <a href="/wp-login">/wp-login</a>.</p>
 
-<h1>Heading Level 1</h1>
-<h2>Heading Level 2</h2>
-<h3>Heading Level 3</h3>
-<h4>Heading Level 4</h4>
-<h5>Heading Level 5</h5>
-<h6>Heading Level 6</h6>
+		<p>Once logged in, navigate to the "UI Component" menu item on the dashboard and select the child "Add New"</p>
+
+		<img class="margin--bottom-default" src="https://i.imgur.com/t7hBDbH.png" alt="From within the WordPress dashboard, navigate to UI Component and then the child item Add New.">
+
+		<h3>Page Fields</h3>
+
+		<h4>Title</h4>
+
+		<p>The title field will be displayed at the top of game pattern pages.</p>
+
+		<h4>Blueprint SVG Code</h4>
+
+		<p>It is recommended that before pasting your code into the WordPress field that you review any of the CSS in the <span class="text--bold text--red">&lt;style&gt;</span> tag. To avoid any conflicts, it is recommended to remove any font-family styles as these will be applied via the external CSS stylesheet. Font weights and colours may still be included.</p>
+		<p>For optimal performance, it is recommended that the tool <a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a> is used to minify the output generated for the SVG.</p>
+
+		<h4>Description</h4>
+
+		<p>The description field will be displayed directly after the title. No classes are <span class="text--bold">required</span>, however if you wish to modify the text you can do so using <a href="/components.html#text">text trumps</a> found in the pattern library.</p>
+
+		<h4>When To Use</h4>
+
+		<p>When to use is a section to show the need for the component. What type of games benefit from the component? Which games <span class="text--bold">require</span> the component?</p>
+
+		<p>It is recommended that for the "When To Use" and "Solution" a list is used for each field. This field usually uses the "Divided" and "Bullets" classes. More can be found about the list components over at <a href="/components.html#lists">the lists documentation</a>.</p>
+
+		<p>If unsure of how to layout the classes, view an existing example to get an understanding of the structure</p>
+
+		<h4>Solution</h4>
+
+		<p>The solution is how the pattern is used. Think about what the component needs to convey, colours often used, icongraphy and labels that are included.</p>
+
+		<p>As mentioned in the "When To Use" description, it is recommended that for the "When To Use" and "Solution" a list is used for each field. This field usually uses the "Divided" and "Bullets" classes. More can be found about the list components over at <a href="/components.html#lists">the lists documentation</a>.</p>
+
+		<p>If unsure of how to layout the classes, view an existing example to get an understanding of the structure</p>
+
+		<h4>Technical Details</h4>
+
+		<p>This is where any information related to the pattern that hasn't already been listed can be included. If there is a geeky fact you have found out about the pattern, or perhaps heavy documentation that wouldn't be included in the previous fields, this is the section to include it in.</p>
+
+		<h4>Categories</h4>
+
+		<p>All patterns fit into one of several categories. Select at least one category so that the pattern has helpful breadcrumbs.</p>
+
+		<h4>Featured Image</h4>
+
+		<p>This image may be used throughout the website to represent the pattern.</p>
+
+		<p>The featured image can be the original blueprint or a game example you think represents the pattern well.</p>
+
+		<h3>Attatching to existing examples</h3>
+
+		<img src="http://i.imgur.com/admQ73A.png" alt="The create connections form on the page allows for components and examples to link">
+
+		<p>You may sometimes find that you have included pattern examples <span class="text--bold">before</span> you've created the pattern page itself.</p>
+
+		<p>This is no problem, within the pattern page editor, you are able to select pattern examples that have been created and link them to the page. These examples will show on the pages front end when published.</p>
+		</div>
+	</div>
+
+	<div class="column padding--default">
+		<div class="width--optimal">
+			<h2>Including a Pattern Example</h2>
+
+			<p>To add a new pattern example, you will first need to login to the website via the WordPress login form at <a href="/wp-login">/wp-login</a>.</p>
+
+			<p>Once logged in, navigate to the "Game Example" menu item on the dashboard and select the child "Add New"</p>
+
+			<img class="margin--bottom-default" src="http://i.imgur.com/17YoNIH.png" alt="From within the WordPress dashboard, navigate to Game Example and then the child item Add New.">
+
+			<h3>Page Fields</h3>
+
+			<h4>Title</h4>
+
+			<h5 class="text--grey">Example: GTA IV - Mini Map</h5>
+
+			<p>The title will be used to identify the pattern example from within the WordPress dashboard and functions.</p>
+
+			<h4>Description</h4>
+
+			<p>The description field should be used to write a short description about the component, the current theme does not include this but may in the future.</p>
+
+			<h4>Display Title</h4>
+
+			<h5 class="text--grey">Example: GTA IV</h5>
+
+			<p>The title field will be displayed on the front end of the Game UI Pattern page.</p>
+
+			<h4>Featured Image</h4>
+
+			<p>This image will be used throughout the website to represent the pattern example.</p>
+
+			<h3>Attatching to a Game Pattern Component</h3>
+
+			<img src="http://i.imgur.com/B3bs8Zu.png" alt="The create connections form on the page allows for components and examples to link">
+
+			<p>To link your example to an existing component, you will need to connect the example to the related component. This form can be found beneath the featured image field on the page editor page.</p>
+		</div>
+	</div>
+</div>
