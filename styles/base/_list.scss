@@ -11,13 +11,17 @@
 ul,
 ol {
     @include rem(margin-bottom, $spacing-large);
-    @include rem(padding-left, $spacing-large);
+    @include rem(padding-left, $spacing-default);
 
     box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     width: 100%;
+
+    @include bp-min-width($bp-tablet) {
+        @include rem(padding-left, $spacing-large);
+    }
 
     > li {
 

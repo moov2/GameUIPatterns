@@ -783,13 +783,20 @@ ul,
 ol {
   margin-bottom: 40px;
   margin-bottom: 4rem;
-  padding-left: 40px;
-  padding-left: 4rem;
+  padding-left: 20px;
+  padding-left: 2rem;
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   width: 100%;
+}
+@media all and (min-width: 768px) {
+  ul,
+  ol {
+    padding-left: 40px;
+    padding-left: 4rem;
+  }
 }
 ul > li:first-child,
 ol > li:first-child {
