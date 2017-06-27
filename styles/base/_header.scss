@@ -10,9 +10,12 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
+    padding: $spacing-default $spacing-small;
 
     @include bp-min-width($bp-tablet) {
         display: block;
+        padding: $spacing-default;
+
         height: 100%;
     }
 
@@ -21,6 +24,8 @@ header {
     }
 
     label {
+        position: relative;
+
         display: inline-block;
 
         cursor: pointer;
@@ -30,6 +35,10 @@ header {
         }
 
         &:before {
+            position: absolute;
+            top: 1px;
+            left: -32px;
+
             display: inline-block;
 
             width: 25px;
@@ -44,7 +53,6 @@ header {
 
     nav {
         min-width: 100%;
-
         padding-top: $spacing-default;
 
         @include bp-min-width($bp-tablet) {

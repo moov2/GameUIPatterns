@@ -631,10 +631,12 @@ header {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding: 2rem 1rem;
 }
 @media all and (min-width: 768px) {
   header {
     display: block;
+    padding: 2rem;
     height: 100%;
   }
 }
@@ -642,6 +644,7 @@ header form {
   margin-left: auto;
 }
 header label {
+  position: relative;
   display: inline-block;
   cursor: pointer;
 }
@@ -651,6 +654,9 @@ header label {
   }
 }
 header label:before {
+  position: absolute;
+  top: 1px;
+  left: -32px;
   display: inline-block;
   width: 25px;
   height: 25px;

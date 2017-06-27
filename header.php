@@ -24,7 +24,7 @@
 
 		<aside>
 
-			<header class="header padding--default" role="banner">
+			<header class="header" role="banner">
 
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
