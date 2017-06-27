@@ -31,3 +31,38 @@
         content: "\00BB";
     }
 }
+
+.text-align--left\@tablet {
+    @media all and (min-width: $bp-tablet) {
+        text-align: left;
+    }
+}
+.text-align--left\@desktop {
+    @media all and (min-width: $bp-desktop) {
+        text-align: left;
+    }
+}
+
+
+.text-align--center\@tablet {
+    @media all and (min-width: $bp-tablet) {
+        text-align: center;
+    }
+}
+.text-align--center\@desktop {
+    @media all and (min-width: $bp-desktop) {
+        text-align: center;
+    }
+}
+
+
+.text-align--right\@tablet {
+    @media all and (min-width: $bp-tablet) {
+        text-align: right;
+    }
+}
+.text-align--right\@desktop {
+    @media all and (min-width: $bp-desktop) {
+        text-align: right;
+    }
+}
