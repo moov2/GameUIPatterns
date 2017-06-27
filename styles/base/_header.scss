@@ -9,10 +9,11 @@ header {
 
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     padding: $spacing-default $spacing-small;
 
     @include bp-min-width($bp-desktop) {
+        align-items: flex-start;
         display: block;
         padding: $spacing-default;
 

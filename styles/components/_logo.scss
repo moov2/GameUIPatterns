@@ -11,7 +11,17 @@
     }
 
     a {
+        align-items: center;
         display: block;
+
+        @include bp-min-width($bp-mobile-large) {
+            display: flex;
+
+        }
+
+        @include bp-min-width($bp-desktop) {
+            display: block;
+        }
 
         color: $color-black;
         text-decoration: none;
@@ -22,12 +32,17 @@
     display: none;
 
     margin-left: auto;
-    margin-right: auto;
+    margin-right: $spacing-small;
     max-width: 100px;
     width: 100%;
 
-    @include bp-min-width($bp-desktop) {
+    @include bp-min-width($bp-mobile-large) {
         display: block;
+    }
+
+    @include bp-min-width($bp-desktop) {
+        margin-bottom: $spacing-small;
+        margin-right: auto;
     }
 }
 
