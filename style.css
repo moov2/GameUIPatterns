@@ -862,6 +862,13 @@ nav > ul > li {
   border-bottom: 1px solid #ebebeb;
   cursor: default;
 }
+nav > ul > li > a {
+  padding: 5px;
+  padding: 0.5rem;
+  display: block;
+  position: relative;
+  font-weight: 700;
+}
 nav > ul > li .sub-menu {
   height: 0;
   overflow: hidden;
@@ -877,13 +884,6 @@ nav > ul > li.menu-item-has-children {
   cursor: pointer;
   margin-top: 10px;
   margin-top: 1rem;
-}
-nav > ul > li.menu-item-has-children > a {
-  padding: 5px;
-  padding: 0.5rem;
-  display: block;
-  position: relative;
-  font-weight: 700;
 }
 nav > ul > li.menu-item-has-children > a:before {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2214.8%22%20viewBox%3D%220%200%2024%2014.8%22%3E%3Cpath%20d%3D%22M2.8%200L12%209.2%2021.2%200%2024%202.8l-12%2012-12-12L2.8%200z%22%20fill%3D%22%23909090%22%2F%3E%3C%2Fsvg%3E");

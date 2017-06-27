@@ -22,6 +22,15 @@ nav {
             border-bottom: 1px solid $color-grey-light;
             cursor:default;
 
+            & > a {
+                @include rem(padding, $spacing-tiny);
+
+                display: block;
+                position: relative;
+
+                font-weight: $font-weight-bold;
+            }
+
             .sub-menu  {
                 height: 0;
                 overflow: hidden;
@@ -47,13 +56,6 @@ nav {
             }
 
             &.menu-item-has-children > a {
-                @include rem(padding, $spacing-tiny);
-
-                display: block;
-                position: relative;
-
-                font-weight: $font-weight-bold;
-
                 &:before {
                     @include svg-chevron-icon();
 
