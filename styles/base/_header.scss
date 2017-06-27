@@ -69,4 +69,12 @@ header {
             display: block;
         }
     }
+
+    .copyright {
+        display: none;
+
+        @include bp-min-width($bp-tablet) {
+            display: block;
+        }
+    }
 }

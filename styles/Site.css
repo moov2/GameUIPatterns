@@ -666,6 +666,14 @@ header nav a {
 header [type=checkbox]:checked + nav {
   display: block;
 }
+header .copyright {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  header .copyright {
+    display: block;
+  }
+}
 
 /**
  * -----------------------------------------------------------------------------

@@ -37,9 +37,7 @@
 					<input name="hamburger" type="checkbox" id="hamburger" class="display--hidden"></input>
 					<nav class="nav" role="navigation">
 						<?php gameui_nav(); ?>
-						<p class="copyright">
-							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>.
-						</p>
+						<?php get_template_part('partials/copyright'); ?>
 					</nav>
 
 			</header>

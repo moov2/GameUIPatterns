@@ -1,6 +1,10 @@
 
 		<?php wp_footer(); ?>
 
+		<div class="padding--small">
+			<?php get_template_part('partials/copyright'); ?>
+		</div>
+
 		<!-- W3TC-include-js-head -->
 
 		<script>

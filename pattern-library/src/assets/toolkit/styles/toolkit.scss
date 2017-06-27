@@ -584,6 +584,20 @@ button:hover, button:focus, button:active {
 
 /**
  * -----------------------------------------------------------------------------
+ * $FOOTER
+ * -----------------------------------------------------------------------------
+ */
+.footer .copyright {
+  display: block;
+}
+@media all and (min-width: 768px) {
+  .footer .copyright {
+    display: none;
+  }
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * $FORM
  * -----------------------------------------------------------------------------
  */
@@ -665,6 +679,14 @@ header nav a {
 }
 header [type=checkbox]:checked + nav {
   display: block;
+}
+header .copyright {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  header .copyright {
+    display: block;
+  }
 }
 
 /**
