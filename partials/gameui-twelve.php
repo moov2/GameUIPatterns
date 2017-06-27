@@ -34,7 +34,7 @@ if ( $connected->have_posts() ) :
                         <?php } ?>
                         <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="text--orange text--chevron text--small text--bold">Read more </a>
 
-                        <hr class="hr hr--grey-light">
+                        <hr class="hr hr--grey-light margin--top-small">
                     </div>
                 <?php endwhile; ?>
             </div>
