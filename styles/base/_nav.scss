@@ -57,7 +57,7 @@ nav {
 
             &.menu-item-has-children > a {
                 &:before {
-                    @include svg-chevron-icon();
+                    background-image: url('/wp-content/themes/GameUIPatterns/img/icons/angle-down.png');
 
                     content: '';
                     position: absolute;
