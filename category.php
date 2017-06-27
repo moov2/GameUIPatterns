@@ -2,7 +2,7 @@
 
 <main role="main">
 	<!-- section -->
-	<section class="section padding--top-large">
+	<section class="section padding--small padding--top-large">
 
 		<div class="section__content">
 
