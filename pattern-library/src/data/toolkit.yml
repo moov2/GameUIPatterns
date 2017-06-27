@@ -1,6 +1,10 @@
 colors:
   primary:
+    Blue: "#366db6"
+    Blue Light: "#619cea"
+    Green: "#43b05c"
     Orange: "#ef6c07"
+    Red: "#dd352e"
   secondary:
     White: "#fff"
     Grey Lightest: "#f8f8f8"
