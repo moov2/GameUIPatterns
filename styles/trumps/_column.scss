@@ -25,4 +25,4 @@
 
 .column-size--2 { .column { @include bp-min-width($bp-tablet) { max-width: 50%; } } }
 .column-size--3 { .column { @include bp-min-width($bp-tablet) { max-width: 33.33%; } } }
-.column-size--4 { .column { @include bp-min-width($bp-tablet) { max-width: 50%; } @include bp-min-width($bp-desktop) { max-width: 25%; } } }
+.column-size--4 { .column { @include bp-min-width($bp-tablet) { max-width: 50%; } @include bp-min-width($bp-desktop-medium) { max-width: 25%; } } }
