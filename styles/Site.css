@@ -884,7 +884,7 @@ nav > ul > li.menu-item-has-children > a:hover, nav > ul > li.menu-item-has-chil
   text-decoration: none;
 }
 nav > ul > li.show-children > a:before, nav > ul > li.current-menu-item > a:before {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 nav .sub-menu {
   margin-bottom: 10px;
