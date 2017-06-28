@@ -1,6 +1,6 @@
-## Including a Pattern Example
+## Including a Game Example
 
-To add a new pattern example, you will first need to login to the website via the WordPress login form at [/wp-login](/wp-login).
+To add a new Game example, you will first need to login to the website via the WordPress login form at [/wp-login](/wp-login).
 
 Once logged in, navigate to the "Game Example" menu item on the dashboard and select the child "Add New"
 

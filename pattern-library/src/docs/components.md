@@ -1,6 +1,6 @@
-## Including a Game Component
+## Including a UI Component
 
-To add a new game UI component, you will first need to login to the website via the WordPress login form at [/wp-login](/wp-login).
+To add a new UI component, you will first need to login to the website via the WordPress login form at [/wp-login](/wp-login).
 
 Once logged in, navigate to the "UI Component" menu item on the dashboard and select the child "Add New"
 
