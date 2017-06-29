@@ -1369,6 +1369,9 @@ section:after,
 .animate--rotate-90 {
   animation-name: rotate-90;
 }
+.animate--rotate-360-repeat {
+  animation-name: rotate-360-repeat;
+}
 .animate--slide-horizontal {
   animation-name: slide-horizontal;
 }
@@ -1411,6 +1414,14 @@ section:after,
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+@keyframes rotate-360-repeat {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes slide-horizontal {

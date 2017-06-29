@@ -1455,6 +1455,10 @@ section:after,
   -webkit-animation-name: rotate-90;
           animation-name: rotate-90;
 }
+.animate--rotate-360-repeat {
+  -webkit-animation-name: rotate-360-repeat;
+          animation-name: rotate-360-repeat;
+}
 .animate--slide-horizontal {
   -webkit-animation-name: slide-horizontal;
           animation-name: slide-horizontal;
@@ -1550,6 +1554,26 @@ section:after,
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes rotate-360-repeat {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate-360-repeat {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 @-webkit-keyframes slide-horizontal {
