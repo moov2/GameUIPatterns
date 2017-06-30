@@ -1,9 +1,9 @@
 <?php
-// Custom Gravatar in Settings > Discussion
-function html5blankgravatar ($avatar_defaults)
-{
-    $myavatar = get_template_directory_uri() . '/img/gravatar.jpg';
-    $avatar_defaults[$myavatar] = "Custom Gravatar";
-    return $avatar_defaults;
+//* Create a custom Gravatar
+add_filter( 'avatar_defaults', 'sp_custom_gravatar' );
+function sp_custom_gravatar ($avatar) {
+	$custom_avatar = get_stylesheet_directory_uri() . '/img/gravatar.png';
+	$avatar[$custom_avatar] = "Custom Gravatar";
+	return $avatar;
 }
 ?>
