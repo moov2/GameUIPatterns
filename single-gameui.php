@@ -63,7 +63,13 @@
 
 							<?php if(get_field('when_to_use'))
 							{
-								echo get_field('when_to_use');
+								$field_name = "when_to_use";
+								$field = get_field_object($field_name);
+								$str = $field['value'];
+								$str = str_replace('<ul', '<ul class="list list--bullets list--divided"', $str);
+								$str = str_replace('<li', '<li class="list__item"', $str);
+
+								echo $str;
 							}; ?>
 
 						</li>
@@ -73,7 +79,13 @@
 
 							<?php if(get_field('solution'))
 							{
-								echo get_field('solution');
+								$field_name = "solution";
+								$field = get_field_object($field_name);
+								$str = $field['value'];
+								$str = str_replace('<ul', '<ul class="list list--bullets list--divided"', $str);
+								$str = str_replace('<li', '<li class="list__item"', $str);
+
+								echo $str;
 							}; ?>
 
 						</li>
