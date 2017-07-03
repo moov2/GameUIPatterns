@@ -26,7 +26,7 @@ if ( $connected->have_posts() ) :
                         ?>
 
                         <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                            <?php the_post_thumbnail('pattern__thumbnail', ['class' => 'ui__thumbnail margin--bottom-default', 'title' => 'Feature image']); // Fullsize image for the single post ?>
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class=""><?php the_post_thumbnail('pattern__thumbnail', ['class' => 'ui__thumbnail margin--bottom-default', 'title' => 'Feature image']); // Fullsize image for the single post ?></a>
                         <?php endif; ?>
                         <?php $meta = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true); ?>
                         <?php if($meta) {?>

@@ -14,7 +14,7 @@ if ( $connected->have_posts() ) :
             <li class="pattern__item margin--bottom-default">
                 <div>
                 <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                    <?php the_post_thumbnail('pattern__thumbnail', ['class' => 'pattern__thumbnail', 'title' => 'Feature image']); // Fullsize image for the single post ?>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class=""><?php the_post_thumbnail('pattern__thumbnail', ['class' => 'pattern__thumbnail', 'title' => 'Feature image']); // Fullsize image for the single post ?></a>
                 <?php endif; ?>
 
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class=""><h4 class="margin--bottom-tiny"><?php the_title(); ?></h4></a>
