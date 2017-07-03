@@ -17,7 +17,7 @@ if ( $connected->have_posts() ) :
                     <?php the_post_thumbnail('pattern__thumbnail', ['class' => 'pattern__thumbnail', 'title' => 'Feature image']); // Fullsize image for the single post ?>
                 <?php endif; ?>
 
-                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><h4><?php the_title(); ?></h4></a>
+                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class=""><h4 class="margin--bottom-tiny"><?php the_title(); ?></h4></a>
                 <?php $meta = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true); ?>
                 <?php if($meta) {?>
                     <p><?php echo $meta;?></p>

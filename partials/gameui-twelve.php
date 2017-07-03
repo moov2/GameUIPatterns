@@ -14,7 +14,7 @@ if ( $connected->have_posts() ) :
             <div class="column-container column-container--grow column-size--4">
                 <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
                     <div class="column padding--small flex flex--direction-column flex--grow margin--bottom-default">
-                        <h4 class="margin--bottom-tiny"><?php the_title(); ?></h4>
+                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class=""><h4 class="margin--bottom-tiny"><?php the_title(); ?></h4></a>
 
                         <?php
                         $categories = get_the_category();
