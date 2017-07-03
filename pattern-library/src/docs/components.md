@@ -26,17 +26,9 @@ The description field will be displayed directly after the title. No classes are
 
 When to use is a section to show the need for the component. What type of games benefit from the component? Which games <span class="text--bold">require</span> the component?
 
-It is recommended that for the "When To Use" and "Solution" a list is used for each field. This field usually uses the "Divided" and "Bullets" classes. More can be found about the list components over at [the lists documentation](/components.html#lists).
-
-If unsure of how to layout the classes, view an existing example to get an understanding of the structure
-
 #### Solution
 
 The solution is how the pattern is used. Think about what the component needs to convey, colours often used, icongraphy and labels that are included.
-
-As mentioned in the "When To Use" description, it is recommended that for the "When To Use" and "Solution" a list is used for each field. This field usually uses the "Divided" and "Bullets" classes. More can be found about the list components over at [the lists documentation](/components.html#lists).
-
-If unsure of how to layout the classes, view an existing example to get an understanding of the structure
 
 #### Technical Details
 
