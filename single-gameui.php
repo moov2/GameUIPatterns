@@ -138,6 +138,10 @@
 				</div>
 			</section>
 
+			<?php $post_link_text = 'Edit ' . get_the_title() . ' Page'; ?>
+
+			<?php edit_post_link( __( $post_link_text, 'textdomain' ), '', '', null, 'link link--float' ); ?>
+
 		</article>
 		<!-- /article -->
 

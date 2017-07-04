@@ -43,6 +43,10 @@
 
 				</div>
 			</section>
+
+			<?php $post_link_text = 'Edit Post'; ?>
+
+			<?php edit_post_link( __( $post_link_text, 'textdomain' ), '', '', null, 'link link--float' ); ?>
 		</article>
 		<!-- /article -->
 
