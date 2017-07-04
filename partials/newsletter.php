@@ -26,6 +26,15 @@
         #mc_embed_signup .button:active {
             background-color: #f99649;
         }
+
+        mc_embed_signup div.response {
+            margin: 0 0 1em 0;
+            padding: 0 .5em .5em 0;
+        }
+
+        #mc_embed_signup div#mce-responses {
+            margin: 0;
+        }
     </style>
 
     <div id="mc_embed_signup">
