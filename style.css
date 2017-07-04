@@ -571,7 +571,7 @@ body {
  * $BUTTON
  * -----------------------------------------------------------------------------
  */
-button {
+button, .button {
   padding: 0.5rem 1rem;
   -webkit-transition: background-color 0.3s ease;
           transition: background-color 0.3s ease;
@@ -582,7 +582,7 @@ button {
   background-color: #ef6c07;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
-button:hover, button:focus, button:active {
+button:hover, button:focus, button:active, .button:hover, .button:focus, .button:active {
   background-color: #f98830;
 }
 
@@ -611,7 +611,7 @@ textarea {
 }
 
 input {
-  border: 1px solid #ebebeb;
+  border: 1px solid #909090;
 }
 
 input[type="submit"] {

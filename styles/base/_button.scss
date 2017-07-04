@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  */
 
-button {
+button, .button {
     padding: $spacing-tiny $spacing-small;
 
     transition: background-color 0.3s ease;
