@@ -28,7 +28,7 @@
 
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
-							<img class="logo__icon" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo">
+							<img class="logo__icon" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" width="100" height="47">
 							<p class="logo__text"><?php printf( get_bloginfo ( 'name' ) ); ?></p>
 						</a>
 					</div>
