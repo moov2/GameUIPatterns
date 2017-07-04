@@ -18,3 +18,23 @@ a {
         text-decoration: none;
     }
 }
+
+.link--float {
+    position: fixed;
+    z-index: $z-index-front;
+    top: 0;
+    right: 0;
+
+    padding: $spacing-tiny;
+
+    transition: 0.4s background-color ease;
+
+    color: $color-white;
+    background-color: rgba($color-black, 0.8);
+
+    font-size: $font-size-small;
+
+    @include active-states() {
+        background-color: rgba($color-black, 1);
+    }
+}

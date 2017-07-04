@@ -32,6 +32,9 @@ Version: 1.0
  * FONT
  */
 /**
+ * Z-INDEX
+ */
+/**
  * -----------------------------------------------------------------------------
  * $ACTIVE-STATES
  * -----------------------------------------------------------------------------
@@ -801,6 +804,22 @@ a {
 }
 a:hover, a:focus, a:active {
   text-decoration: none;
+}
+
+.link--float {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  padding: 0.5rem;
+  -webkit-transition: 0.4s background-color ease;
+          transition: 0.4s background-color ease;
+  color: #fff;
+  background-color: rgba(21, 22, 21, 0.8);
+  font-size: 1rem;
+}
+.link--float:hover, .link--float:focus, .link--float:active {
+  background-color: #151615;
 }
 
 /**
