@@ -1462,6 +1462,10 @@ section:after,
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
+.animate--grow-horizontal {
+  -webkit-animation-name: grow-horizontal;
+          animation-name: grow-horizontal;
+}
 .animate--rotate-30 {
   -webkit-animation-name: rotate-30;
           animation-name: rotate-30;
@@ -1488,6 +1492,25 @@ section:after,
           animation-duration: 4s;
 }
 
+/**
+ * GROW
+ */
+@-webkit-keyframes grow-horizontal {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes grow-horizontal {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 /**
  * ROTATE
  */
@@ -1595,6 +1618,9 @@ section:after,
             transform: rotate(360deg);
   }
 }
+/**
+ * SLIDE
+ */
 @-webkit-keyframes slide-horizontal {
   0% {
     -webkit-transform: translateX(0);
