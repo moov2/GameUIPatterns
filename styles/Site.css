@@ -1400,6 +1400,9 @@ section:after,
 .animate-duration--four {
   animation-duration: 4s;
 }
+.animate-duration--twelve {
+  animation-duration: 12s;
+}
 
 /**
  * GROW

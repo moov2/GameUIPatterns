@@ -1491,6 +1491,10 @@ section:after,
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
+.animate-duration--twelve {
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
 
 /**
  * GROW
