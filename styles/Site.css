@@ -866,6 +866,36 @@ nav > ul {
 nav > ul > li {
   border-bottom: 1px solid #ebebeb;
   cursor: default;
+            /*
+
+            .sub-menu  {
+                height: 0;
+                overflow: hidden;
+
+                transition: opacity 0.3s ease-out;
+
+                opacity: 0;
+            }
+
+            &.current-menu-ancestor,
+            &.current-menu-item,
+            &.show-children {
+                .sub-menu  {
+                    height: auto;
+
+                    opacity: 1;
+                }
+            }
+
+            */
+  /*
+  &.show-children > a,
+  &.current-menu-item > a {
+      &:before {
+          transform: rotate(180deg);
+      }
+  }
+  */
 }
 nav > ul > li > a {
   padding: 5px;
@@ -874,38 +904,31 @@ nav > ul > li > a {
   position: relative;
   font-weight: 700;
 }
-nav > ul > li .sub-menu {
-  height: 0;
-  overflow: hidden;
-  transition: opacity 0.3s ease-out;
-  opacity: 0;
-}
-nav > ul > li.current-menu-ancestor .sub-menu, nav > ul > li.current-menu-item .sub-menu, nav > ul > li.show-children .sub-menu {
-  height: auto;
-  opacity: 1;
-}
 nav > ul > li.menu-item-has-children {
   cursor: pointer;
   margin-top: 10px;
   margin-top: 1rem;
 }
-nav > ul > li.menu-item-has-children > a:before {
-  background-image: url("/wp-content/themes/GameUIPatterns/img/icons/angle-down.png");
-  content: '';
-  position: absolute;
-  top: 14px;
-  right: 0.5rem;
-  width: 16px;
-  height: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: 0.2s transform ease;
+nav > ul > li.menu-item-has-children > a {
+                /*
+                &:before {
+                    background-image: url('/wp-content/themes/GameUIPatterns/img/icons/angle-down.png');
+
+                    content: '';
+                    position: absolute;
+                    top: 14px;
+                    right: $spacing-tiny;
+                    width: 16px;
+                    height: 10px;
+
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    transition: 0.2s transform ease;
+                }
+                */
 }
 nav > ul > li.menu-item-has-children > a:hover, nav > ul > li.menu-item-has-children > a:focus, nav > ul > li.menu-item-has-children > a:active {
   text-decoration: none;
-}
-nav > ul > li.show-children > a:before, nav > ul > li.current-menu-item > a:before {
-  transform: rotate(180deg);
 }
 nav .sub-menu {
   margin-bottom: 10px;

@@ -31,6 +31,8 @@ nav {
                 font-weight: $font-weight-bold;
             }
 
+            /*
+
             .sub-menu  {
                 height: 0;
                 overflow: hidden;
@@ -50,12 +52,15 @@ nav {
                 }
             }
 
+            */
+
             &.menu-item-has-children {
                 cursor: pointer;
                 @include rem(margin-top, $spacing-small);
             }
 
             &.menu-item-has-children > a {
+                /*
                 &:before {
                     background-image: url('/wp-content/themes/GameUIPatterns/img/icons/angle-down.png');
 
@@ -70,18 +75,21 @@ nav {
                     background-repeat: no-repeat;
                     transition: 0.2s transform ease;
                 }
+                */
 
                 @include active-states() {
                     text-decoration: none;
                 }
             }
 
+            /*
             &.show-children > a,
             &.current-menu-item > a {
                 &:before {
                     transform: rotate(180deg);
                 }
             }
+            */
         }
     }
 
