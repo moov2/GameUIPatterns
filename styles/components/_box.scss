@@ -15,10 +15,7 @@
 }
 
 .box--description {
-    @include rem(padding-bottom, $spacing-default);
-    @include rem(padding-left, $spacing-default);
-    @include rem(padding-right, $spacing-default);
-    @include rem(padding-top, $spacing-default);
+    @include rem(padding, $spacing-default);
 
     background-color: $color-grey-lightest;
 
