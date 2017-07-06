@@ -1,21 +1,17 @@
 <?php get_header(); ?>
 
 <main role="main">
-	<!-- section -->
-	<section class="section padding--small padding--top-large">
-
+	<section class="section section--wide padding--small padding--top-large">
 		<div class="section__content">
-
 			<h1><?php single_cat_title(); ?></h1>
 
-			<?php get_template_part('loop'); ?>
-
-			<?php get_template_part('pagination'); ?>
-
+			<div class="column-container column-container--grow column-size--4">
+				<?php get_template_part('loop'); ?>
+			</div>
 		</div>
-
 	</section>
-	<!-- /section -->
+
+	<?php get_template_part('pagination'); ?>
 </main>
 
 <?php get_footer(); ?>
