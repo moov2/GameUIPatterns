@@ -27,7 +27,11 @@
 						</h1>
 						<!-- /post title -->
 
-						<?php get_template_part('partials/social', 'share'); ?>
+						<div class="flex flex--justify-between flex--direction-column flex--direction-row@tablet flex--align-center@tablet">
+							<?php get_template_part('partials/author', 'strap'); ?>
+							<?php get_template_part('partials/social', 'share'); ?>
+						</div>
+
 
 						<div id="_articleBody5" itemprop="articleBody" class="box box--description">
 
