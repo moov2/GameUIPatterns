@@ -638,13 +638,13 @@ header {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 1rem;
+  overflow-y: auto;
 }
 @media all and (min-width: 1024px) {
   header {
     align-items: flex-start;
     display: block;
-    padding: 2rem;
     height: 100%;
   }
 }
@@ -793,16 +793,18 @@ a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
-.link--float {
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  padding: 0.5rem;
-  transition: 0.4s background-color ease;
-  color: #fff;
-  background-color: rgba(21, 22, 21, 0.8);
-  font-size: 1rem;
+@media all and (min-width: 1024px) {
+  .link--float {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+    transition: 0.4s background-color ease;
+    color: #fff;
+    background-color: rgba(21, 22, 21, 0.8);
+    font-size: 1rem;
+  }
 }
 .link--float:hover, .link--float:focus, .link--float:active {
   background-color: #151615;
@@ -1739,6 +1741,24 @@ body:hover .display--hidden button {
 
 .flex--wrap-no {
   flex-wrap: nowrap;
+}
+
+@media all and (min-width: 768px) {
+  .flex--direction-column\@tablet {
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .flex--direction-row\@tablet {
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .flex--align-center\@tablet {
+    align-items: center;
+  }
 }
 
 /**
