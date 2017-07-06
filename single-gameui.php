@@ -27,6 +27,8 @@
 						</h1>
 						<!-- /post title -->
 
+						<?php get_template_part('partials/social', 'share'); ?>
+
 						<div id="_articleBody5" itemprop="articleBody" class="box box--description">
 
 							<?php
