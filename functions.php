@@ -43,10 +43,8 @@ include_once ('includes/remove_thumbnail_dimensions.php');
 include_once ('includes/remove_wp_emoji.php');
 
 include_once ('includes/shortcode_blog_latest.php');
-include_once ('includes/shortcode_blog_twelve.php');
-include_once ('includes/shortcode_gameui_all.php');
-include_once ('includes/shortcode_gameui_twelve.php');
 include_once ('includes/shortcode_newsletter.php');
+include_once ('includes/shortcode_posts.php');
 
 include_once ('includes/theme_languages.php');
 include_once ('includes/theme_menus.php');
