@@ -4,7 +4,6 @@
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-		<!-- article -->
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 			<section class="section  margin--bottom-default margin--bottom-huge@desktop padding--small padding--top-large">
@@ -25,7 +24,6 @@
 						<h1 itemprop="name" class="padding--horizontal-none@desktop">
 							<?php the_title(); ?>
 						</h1>
-						<!-- /post title -->
 
 						<div class="flex flex--justify-between flex--direction-column flex--direction-row@tablet flex--align-center@tablet">
 							<?php get_template_part('partials/author', 'strap'); ?>
@@ -149,19 +147,16 @@
 			<?php edit_post_link( __( $post_link_text, 'textdomain' ), '', '', null, 'link link--float' ); ?>
 
 		</article>
-		<!-- /article -->
 
 	<?php endwhile; ?>
 
 	<?php else: ?>
 
-		<!-- article -->
 		<article>
 
 			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
 
 		</article>
-		<!-- /article -->
 
 	<?php endif; ?>
 
