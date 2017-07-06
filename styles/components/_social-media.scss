@@ -1,0 +1,40 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $SOCIAL-MEDIA
+ * -----------------------------------------------------------------------------
+ */
+
+.social-media {
+    svg {
+        height: $spacing-default;
+        max-width: $spacing-default;
+    }
+}
+
+.icon {
+    transition: 0.3s fill ease;
+}
+
+.icon--facebook {
+    fill: $color-facebook;
+
+    @include active-states() {
+        fill: lighten($color-facebook, 20%);
+    }
+}
+
+.icon--twitter {
+    fill: $color-twitter;
+
+    @include active-states() {
+        fill: lighten($color-twitter, 20%);
+    }
+}
+
+.icon--google-plus {
+    fill: $color-google-plus;
+
+    @include active-states() {
+        fill: lighten($color-google-plus, 20%);
+    }
+}

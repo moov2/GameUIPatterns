@@ -1085,14 +1085,8 @@ section:after,
 }
 
 .box--description {
-  padding-bottom: 20px;
-  padding-bottom: 2rem;
-  padding-left: 20px;
-  padding-left: 2rem;
-  padding-right: 20px;
-  padding-right: 2rem;
-  padding-top: 20px;
-  padding-top: 2rem;
+  padding: 20px;
+  padding: 2rem;
   background-color: #f8f8f8;
 }
 @media all and (min-width: 768px) {
@@ -1451,6 +1445,42 @@ section:after,
 }
 .rate__control--voted svg:hover, .rate__control--voted svg:focus, .rate__control--voted svg:active {
   fill: #f98830;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $SOCIAL-MEDIA
+ * -----------------------------------------------------------------------------
+ */
+.social-media svg {
+  height: 2rem;
+  max-width: 2rem;
+}
+
+.icon {
+  -webkit-transition: 0.3s fill ease;
+          transition: 0.3s fill ease;
+}
+
+.icon--facebook {
+  fill: #3B5998;
+}
+.icon--facebook:hover, .icon--facebook:focus, .icon--facebook:active {
+  fill: #718dc8;
+}
+
+.icon--twitter {
+  fill: #1DA1F2;
+}
+.icon--twitter:hover, .icon--twitter:focus, .icon--twitter:active {
+  fill: #7dc9f8;
+}
+
+.icon--google-plus {
+  fill: #DC4E41;
+}
+.icon--google-plus:hover, .icon--google-plus:focus, .icon--google-plus:active {
+  fill: #ec9e97;
 }
 
 /**
