@@ -1,6 +1,6 @@
 <?php
     $args = array(
-        'post_type' => 'gameui',
+        'post_type' => get_post_type(),
         'posts_per_page' => 3,
         'orderby' => 'rand'
     );
@@ -8,7 +8,7 @@
     $the_query = new WP_Query( $args );
 ?>
 
-<h2 class="padding--horizontal-small margin--bottom-small">Related Patterns</h2>
+<h2 class="padding--horizontal-small margin--bottom-small">Related Content</h2>
 <div class="column-container column-container--grow column-size--3">
     <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
     <div class="column padding--small flex flex--direction-column flex--grow margin--bottom-default">
@@ -35,9 +35,6 @@
         <hr class="hr hr--grey-light margin--top-small">
     </div>
 <?php endwhile; else : ?>
-
-    <p>There were no testimonials :( </p>
-
 <?php endif;
 wp_reset_postdata(); ?>
 </div>

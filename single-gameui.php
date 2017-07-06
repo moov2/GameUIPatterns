@@ -134,7 +134,7 @@
 				</div>
 			</section>
 
-			<section class="section margin--bottom-default padding--small">
+			<section class="section padding--small margin--bottom-default margin--bottom-huge@desktop">
 				<div class="section__content">
 
 				    <?php comments_template(); ?>
@@ -146,7 +146,7 @@
 
 			<?php edit_post_link( __( $post_link_text, 'textdomain' ), '', '', null, 'link link--float' ); ?>
 
-			<section class="section section--wide margin--bottom-default margin--bottom-huge@desktop padding--small">
+			<section class="section section--wide padding--small margin--bottom-default">
 				<div class="section__content">
 					<?php get_template_part('partials/related', 'random'); ?>
 				</div>

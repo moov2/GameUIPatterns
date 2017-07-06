@@ -47,8 +47,16 @@
 			<?php $post_link_text = 'Edit Post'; ?>
 
 			<?php edit_post_link( __( $post_link_text, 'textdomain' ), '', '', null, 'link link--float' ); ?>
+
+			<!-- REMOVE COMMENTS TO ENABLE RELATED ITEMS
+			<section class="section section--wide padding--small margin--bottom-default">
+				<div class="section__content">
+					<?php get_template_part('partials/related', 'random'); ?>
+				</div>
+			</section>
+			-->
+
 		</article>
-		<!-- /article -->
 
 	<?php endwhile; ?>
 
