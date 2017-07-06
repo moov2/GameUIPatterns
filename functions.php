@@ -6,7 +6,7 @@
 
 include_once ('includes/add_link_pattern_library.php');
 include_once ('includes/add_post_connections.php');
-include_once ('includes/add_scripts.php');
+/* include_once ('includes/add_scripts.php'); */
 include_once ('includes/add_slug_body_class.php');
 include_once ('includes/add_styles.php');
 include_once ('includes/add_svg_upload.php');
