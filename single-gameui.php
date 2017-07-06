@@ -152,6 +152,12 @@
 				</div>
 			</section>
 
+			<section class="section section--wide padding--small margin--bottom-default">
+				<div class="section__content">
+					<?php get_template_part('partials/newsletter'); ?>
+				</div>
+			</section>
+
 		</article>
 
 	<?php endwhile; ?>

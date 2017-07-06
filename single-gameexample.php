@@ -58,6 +58,11 @@
 
 			<?php edit_post_link( __( $post_link_text, 'textdomain' ), '', '', null, 'link link--float' ); ?>
 
+			<section class="section section--wide padding--small margin--bottom-default">
+				<div class="section__content">
+					<?php get_template_part('partials/newsletter'); ?>
+				</div>
+			</section>
 		</article>
 		<!-- /article -->
 
