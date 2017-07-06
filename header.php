@@ -37,6 +37,7 @@
 					<input name="hamburger" type="checkbox" id="hamburger" class="display--hidden"></input>
 					<nav class="nav" role="navigation">
 						<?php gameui_nav(); ?>
+						<?php get_template_part('partials/social', 'follow'); ?>
 						<?php get_template_part('partials/copyright'); ?>
 					</nav>
 

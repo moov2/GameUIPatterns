@@ -1,10 +1,13 @@
 
 		<?php wp_footer(); ?>
 
-		<footer class="footer">
-			<div class="padding--small text-align--center">
+		<footer class="footer padding--small text-align--center">
+			<div>
 				<?php get_template_part('partials/copyright'); ?>
 			</div>
+			<nav class="margin--top-default">
+				<?php get_template_part('partials/social', 'follow'); ?>
+			</nav>
 		</footer>
 
 		<!-- W3TC-include-js-head -->

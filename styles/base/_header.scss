@@ -71,7 +71,7 @@ header {
         }
     }
 
-    .copyright {
+    .copyright, .social-media {
         display: none;
 
         @include bp-min-width($bp-desktop) {

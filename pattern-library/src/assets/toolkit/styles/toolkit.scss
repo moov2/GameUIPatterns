@@ -590,13 +590,16 @@ button:hover, button:focus, button:active, .button:hover, .button:focus, .button
  * $FOOTER
  * -----------------------------------------------------------------------------
  */
-footer .copyright {
+footer .copyright, footer nav {
   display: block;
 }
 @media all and (min-width: 1024px) {
-  footer .copyright {
+  footer .copyright, footer nav {
     display: none;
   }
+}
+footer .social-media {
+  justify-content: center;
 }
 
 /**
@@ -684,11 +687,11 @@ header nav a {
 header [type=checkbox]:checked + nav {
   display: block;
 }
-header .copyright {
+header .copyright, header .social-media {
   display: none;
 }
 @media all and (min-width: 1024px) {
-  header .copyright {
+  header .copyright, header .social-media {
     display: block;
   }
 }
