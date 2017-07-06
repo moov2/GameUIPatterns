@@ -20,19 +20,21 @@ a {
 }
 
 .link--float {
-    position: fixed;
-    z-index: $z-index-front;
-    top: 0;
-    right: 0;
+    @include bp-min-width($bp-desktop) {
+        position: fixed;
+        z-index: $z-index-front;
+        top: 0;
+        right: 0;
 
-    padding: $spacing-tiny;
+        padding: $spacing-tiny;
 
-    transition: 0.4s background-color ease;
+        transition: 0.4s background-color ease;
 
-    color: $color-white;
-    background-color: rgba($color-black, 0.8);
+        color: $color-white;
+        background-color: rgba($color-black, 0.8);
 
-    font-size: $font-size-small;
+        font-size: $font-size-small;
+    }
 
     @include active-states() {
         background-color: rgba($color-black, 1);
