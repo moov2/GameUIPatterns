@@ -23,7 +23,8 @@ nav {
             cursor:default;
 
             & > a {
-                @include rem(padding, $spacing-tiny);
+                @include rem(padding-top, $spacing-tiny);
+                @include rem(padding-bottom, $spacing-tiny);
 
                 display: block;
                 position: relative;

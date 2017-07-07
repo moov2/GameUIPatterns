@@ -654,7 +654,7 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   overflow-y: auto;
 }
 @media all and (min-width: 1024px) {
@@ -664,6 +664,7 @@ header {
         -ms-flex-align: start;
             align-items: flex-start;
     display: block;
+    padding: 2rem;
     height: 100%;
   }
 }
@@ -920,8 +921,10 @@ nav > ul > li {
   */
 }
 nav > ul > li > a {
-  padding: 5px;
-  padding: 0.5rem;
+  padding-top: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.5rem;
   display: block;
   position: relative;
   font-weight: 700;
