@@ -7,6 +7,9 @@
 .animate {
     animation-iteration-count: infinite;
 
+    &--fade-in { animation-name: fade-in; }
+    &--fade-in-hold { animation-name: fade-in; }
+
     &--grow-horizontal { animation-name: grow-horizontal; }
     &--grow-horizontal-hold { animation-name: grow-horizontal-hold; }
 
@@ -22,6 +25,22 @@
     &--four { animation-duration: 4s; }
     &--eight { animation-duration: 8s; }
     &--twelve { animation-duration: 12s; }
+}
+
+
+/**
+ * FADE
+ */
+
+@keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade-in-hold {
+    0%   { opacity: 0; }
+    100%   { opacity: 1; }
+    100% { opacity: 1; }
 }
 
 
