@@ -8,6 +8,7 @@
     animation-iteration-count: infinite;
 
     &--grow-horizontal { animation-name: grow-horizontal; }
+    &--grow-horizontal-hold { animation-name: grow-horizontal-hold; }
 
     &--rotate-30 { animation-name: rotate-30; }
     &--rotate-30-rev { animation-name: rotate-30-rev; }
@@ -19,6 +20,7 @@
 
 .animate-duration {
     &--four { animation-duration: 4s; }
+    &--eight { animation-duration: 8s; }
     &--twelve { animation-duration: 12s; }
 }
 
@@ -31,6 +33,13 @@
     0%   { width: 0%; }
     100% { width: 100%; }
 }
+
+@keyframes grow-horizontal-hold {
+    0%   { width: 0%; }
+    50%   { width: 100%; }
+    100% { width: 100%; }
+}
+
 
 /**
  * ROTATE

@@ -1523,6 +1523,10 @@ section:after,
   -webkit-animation-name: grow-horizontal;
           animation-name: grow-horizontal;
 }
+.animate--grow-horizontal-hold {
+  -webkit-animation-name: grow-horizontal-hold;
+          animation-name: grow-horizontal-hold;
+}
 .animate--rotate-30 {
   -webkit-animation-name: rotate-30;
           animation-name: rotate-30;
@@ -1548,6 +1552,10 @@ section:after,
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
 }
+.animate-duration--eight {
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+}
 .animate-duration--twelve {
   -webkit-animation-duration: 12s;
           animation-duration: 12s;
@@ -1567,6 +1575,28 @@ section:after,
 @keyframes grow-horizontal {
   0% {
     width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@-webkit-keyframes grow-horizontal-hold {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes grow-horizontal-hold {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
   }
   100% {
     width: 100%;

@@ -1438,6 +1438,9 @@ section:after,
 .animate--grow-horizontal {
   animation-name: grow-horizontal;
 }
+.animate--grow-horizontal-hold {
+  animation-name: grow-horizontal-hold;
+}
 .animate--rotate-30 {
   animation-name: rotate-30;
 }
@@ -1457,6 +1460,9 @@ section:after,
 .animate-duration--four {
   animation-duration: 4s;
 }
+.animate-duration--eight {
+  animation-duration: 8s;
+}
 .animate-duration--twelve {
   animation-duration: 12s;
 }
@@ -1467,6 +1473,17 @@ section:after,
 @keyframes grow-horizontal {
   0% {
     width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes grow-horizontal-hold {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
   }
   100% {
     width: 100%;
