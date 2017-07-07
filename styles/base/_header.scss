@@ -10,13 +10,15 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: $spacing-small;
+    padding: $spacing-default $padding-small;
 
     overflow-y: auto;
 
     @include bp-min-width($bp-desktop) {
         align-items: flex-start;
         display: block;
+
+        padding: $spacing-default;
 
         height: 100%;
     }
