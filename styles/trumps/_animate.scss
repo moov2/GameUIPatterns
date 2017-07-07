@@ -14,11 +14,16 @@
 
     &--grow-horizontal { animation-name: grow-horizontal; }
     &--grow-horizontal-hold { animation-name: grow-horizontal-hold; }
+    &--grow-horizontal-loop { animation-name: grow-horizontal-loop; }
 
     &--rotate-30 { animation-name: rotate-30; }
     &--rotate-30-rev { animation-name: rotate-30-rev; }
     &--rotate-90 { animation-name: rotate-90; }
     &--rotate-360-repeat { animation-name: rotate-360-repeat; }
+
+    &--shrink-horizontal { animation-name: shrink-horizontal; }
+    &--shrink-horizontal-hold { animation-name: shrink-horizontal-hold; }
+    &--shrink-horizontal-loop { animation-name: shrink-horizontal-loop; }
 
     &--slide-horizontal { animation-name: slide-horizontal; }
 }
@@ -83,6 +88,13 @@
     100% { width: 100%; }
 }
 
+@keyframes grow-horizontal-loop {
+    0%   { width: 0%; }
+    33%   { width: 100%; }
+    66%   { width: 100%; }
+    100% { width: 0%; }
+}
+
 
 /**
  * ROTATE
@@ -110,6 +122,29 @@
     0%   { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
+/**
+ * SHRINK
+ */
+
+@keyframes shrink-horizontal {
+    0%   { width: 100%; }
+    100% { width: 0%; }
+}
+
+@keyframes shrink-horizontal-hold {
+    0%   { width: 100%; }
+    50%   { width: 0%; }
+    100% { width: 0%; }
+}
+
+@keyframes shrink-horizontal-loop {
+    0%   { width: 100%; }
+    33%   { width: 0%; }
+    66%   { width: 0%; }
+    100% { width: 100%; }
+}
+
 
 /**
  * SLIDE

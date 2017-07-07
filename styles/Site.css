@@ -1453,6 +1453,9 @@ section:after,
 .animate--grow-horizontal-hold {
   animation-name: grow-horizontal-hold;
 }
+.animate--grow-horizontal-loop {
+  animation-name: grow-horizontal-loop;
+}
 .animate--rotate-30 {
   animation-name: rotate-30;
 }
@@ -1464,6 +1467,15 @@ section:after,
 }
 .animate--rotate-360-repeat {
   animation-name: rotate-360-repeat;
+}
+.animate--shrink-horizontal {
+  animation-name: shrink-horizontal;
+}
+.animate--shrink-horizontal-hold {
+  animation-name: shrink-horizontal-hold;
+}
+.animate--shrink-horizontal-loop {
+  animation-name: shrink-horizontal-loop;
 }
 .animate--slide-horizontal {
   animation-name: slide-horizontal;
@@ -1567,6 +1579,20 @@ section:after,
     width: 100%;
   }
 }
+@keyframes grow-horizontal-loop {
+  0% {
+    width: 0%;
+  }
+  33% {
+    width: 100%;
+  }
+  66% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
 /**
  * ROTATE
  */
@@ -1609,6 +1635,42 @@ section:after,
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/**
+ * SHRINK
+ */
+@keyframes shrink-horizontal {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes shrink-horizontal-hold {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes shrink-horizontal-loop {
+  0% {
+    width: 100%;
+  }
+  33% {
+    width: 0%;
+  }
+  66% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
   }
 }
 /**
