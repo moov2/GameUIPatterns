@@ -17,7 +17,12 @@ if ( $connected->have_posts() ) :
                     <?=function_exists('thumbs_rating_getlink') ? thumbs_rating_getlink() : ''?>
                     <div>
                     <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                        <?php the_post_thumbnail('examples__thumbnail', ['class' => 'examples__thumbnail', 'title' => 'Feature image']); // Fullsize image for the single post ?>
+                        <?php $featured_img_url = get_the_post_thumbnail_url($post->ID, 'examples__thumbnail'); ?>
+                        <?php if(get_field('focus_image')) { ?>
+                            <img class="examples__thumbnail" src="<?php echo $featured_img_url; ?>" onmouseover="this.src='<?php echo get_field('focus_image'); ?>'" onmouseout="this.src='<?php echo $featured_img_url; ?>'">
+                        <?php } else { ?>
+                            <img class="examples__thumbnail" src="<?php echo $featured_img_url; ?>" onmouseover="this.src='<?php echo $featured_img_url; ?>'" onmouseout="this.src='<?php echo $featured_img_url; ?>'">
+                        <?php } ?>
                     <?php endif; ?>
 
                     <?php if(get_field('display_title')) { echo '<h4>' . get_field('display_title') . '</h4>'; }?>
