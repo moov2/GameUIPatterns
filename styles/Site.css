@@ -1439,7 +1439,13 @@ section:after,
   animation-name: fade-in;
 }
 .animate--fade-in-hold {
-  animation-name: fade-in;
+  animation-name: fade-in-hold;
+}
+.animate--fade-in-out {
+  animation-name: fade-in-out;
+}
+.animate--fade-in-short {
+  animation-name: fade-in-short;
 }
 .animate--grow-horizontal {
   animation-name: grow-horizontal;
@@ -1461,6 +1467,22 @@ section:after,
 }
 .animate--slide-horizontal {
   animation-name: slide-horizontal;
+}
+
+.animate-delay--two {
+  animation-delay: 2s;
+}
+.animate-delay--four {
+  animation-delay: 4s;
+}
+.animate-delay--six {
+  animation-delay: 6s;
+}
+.animate-delay--eight {
+  animation-delay: 8s;
+}
+.animate-delay--ten {
+  animation-delay: 10s;
 }
 
 .animate-duration--four {
@@ -1488,7 +1510,35 @@ section:after,
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
   100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-in-short {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
     opacity: 1;
   }
   100% {
@@ -1804,6 +1854,18 @@ body:hover .display--hidden button {
   .flex--align-center\@tablet {
     align-items: center;
   }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $OPACITY
+ * -----------------------------------------------------------------------------
+ */
+.opacity--none {
+  opacity: 0;
+}
+.opacity--full {
+  opacity: 1;
 }
 
 /**

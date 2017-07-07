@@ -8,7 +8,9 @@
     animation-iteration-count: infinite;
 
     &--fade-in { animation-name: fade-in; }
-    &--fade-in-hold { animation-name: fade-in; }
+    &--fade-in-hold { animation-name: fade-in-hold; }
+    &--fade-in-out { animation-name: fade-in-out; }
+    &--fade-in-short { animation-name: fade-in-short; }
 
     &--grow-horizontal { animation-name: grow-horizontal; }
     &--grow-horizontal-hold { animation-name: grow-horizontal-hold; }
@@ -19,6 +21,14 @@
     &--rotate-360-repeat { animation-name: rotate-360-repeat; }
 
     &--slide-horizontal { animation-name: slide-horizontal; }
+}
+
+.animate-delay {
+    &--two { animation-delay: 2s; }
+    &--four { animation-delay: 4s; }
+    &--six { animation-delay: 6s; }
+    &--eight { animation-delay: 8s; }
+    &--ten { animation-delay: 10s; }
 }
 
 .animate-duration {
@@ -39,7 +49,21 @@
 
 @keyframes fade-in-hold {
     0%   { opacity: 0; }
-    100%   { opacity: 1; }
+    50%   { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes fade-in-out {
+    0%   { opacity: 0; }
+    40% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fade-in-short {
+    0%   { opacity: 0; }
+    25%   { opacity: 0; }
+    75%   { opacity: 1; }
     100% { opacity: 1; }
 }
 

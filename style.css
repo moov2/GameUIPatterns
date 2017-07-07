@@ -1524,8 +1524,16 @@ section:after,
           animation-name: fade-in;
 }
 .animate--fade-in-hold {
-  -webkit-animation-name: fade-in;
-          animation-name: fade-in;
+  -webkit-animation-name: fade-in-hold;
+          animation-name: fade-in-hold;
+}
+.animate--fade-in-out {
+  -webkit-animation-name: fade-in-out;
+          animation-name: fade-in-out;
+}
+.animate--fade-in-short {
+  -webkit-animation-name: fade-in-short;
+          animation-name: fade-in-short;
 }
 .animate--grow-horizontal {
   -webkit-animation-name: grow-horizontal;
@@ -1554,6 +1562,27 @@ section:after,
 .animate--slide-horizontal {
   -webkit-animation-name: slide-horizontal;
           animation-name: slide-horizontal;
+}
+
+.animate-delay--two {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.animate-delay--four {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+.animate-delay--six {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+.animate-delay--eight {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
+}
+.animate-delay--ten {
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
 .animate-duration--four {
@@ -1592,7 +1621,7 @@ section:after,
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
   }
   100% {
@@ -1603,7 +1632,63 @@ section:after,
   0% {
     opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
   100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fade-in-short {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-short {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
     opacity: 1;
   }
   100% {
@@ -2102,6 +2187,18 @@ body:hover .display--hidden button {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $OPACITY
+ * -----------------------------------------------------------------------------
+ */
+.opacity--none {
+  opacity: 0;
+}
+.opacity--full {
+  opacity: 1;
 }
 
 /**
