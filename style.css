@@ -664,7 +664,6 @@ header {
         -ms-flex-align: start;
             align-items: flex-start;
     display: block;
-    padding: 2rem;
     height: 100%;
   }
 }

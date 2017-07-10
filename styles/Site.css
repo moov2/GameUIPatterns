@@ -645,7 +645,6 @@ header {
   header {
     align-items: flex-start;
     display: block;
-    padding: 2rem;
     height: 100%;
   }
 }
