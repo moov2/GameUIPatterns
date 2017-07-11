@@ -16,7 +16,7 @@ if ( $connected->have_posts() ) :
         <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
             <div>
             <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('pattern__thumbnail', ['class' => 'post__thumbnail margin--bottom-small', 'title' => get_the_title()]); // Fullsize image for the single post ?></a>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('blog__thumbnail', ['class' => 'post__thumbnail margin--bottom-small', 'title' => get_the_title()]); // Fullsize image for the single post ?></a>
             <?php endif; ?>
 
             <h3 class="margin--bottom-small"><?php the_title(); ?></h3>
