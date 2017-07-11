@@ -29,6 +29,11 @@
 							<h1 itemprop="name" class="padding--horizontal-none@desktop"><?php the_title(); ?></h1>
 						<?php endif; ?>
 
+						<div class="flex flex--justify-between flex--direction-column flex--direction-row@tablet flex--align-center@tablet">
+							<?php get_template_part('partials/author', 'strap'); ?>
+							<?php get_template_part('partials/social', 'share'); ?>
+						</div>
+
 						<!-- post thumbnail -->
 						<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 							<div title="<?php the_title(); ?>" class="margin--bottom-default">
