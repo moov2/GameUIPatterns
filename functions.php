@@ -43,7 +43,7 @@ include_once ('includes/custom_post_dashboard_glance.php');
 include_once ('includes/custom_post_gameexample.php');
 include_once ('includes/custom_post_gameui.php');
 
-include_once ('includes/login_force.php');
+/* include_once ('includes/login_force.php'); */
 include_once ('includes/login_logo_url.php');
 include_once ('includes/login_logo.php');
 
