@@ -1,0 +1,16 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $ANIMATE
+ * -----------------------------------------------------------------------------
+ */
+
+@import "vars";
+
+@import "mixins/active-states";
+@import "mixins/clearfix";
+@import "mixins/media-queries";
+@import "mixins/rem";
+@import "mixins/svg";
+@import "mixins/string";
+
+@import "trumps/animate";

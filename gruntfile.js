@@ -33,6 +33,7 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'styles/Site.css': 'styles/Site.scss',  // 'destination': 'source'
+                    'styles/Animate.css': 'styles/Animate.scss',  // 'destination': 'source'
                     'pattern-library/src/assets/toolkit/styles/toolkit.scss': 'styles/Site.scss'  // 'destination': 'source'
                 }
             }
@@ -44,7 +45,8 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    'style.css': 'styles/Site.css'
+                    'style.css': 'styles/Site.css',
+                    'animate.css': 'styles/Animate.css'
                 }
             }
         }

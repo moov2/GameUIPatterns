@@ -1,0 +1,441 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $ANIMATE
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $VARS
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * BORDERS
+ */
+/**
+ * BREAKPOINTS
+ */
+/**
+ * CONTENT
+ */
+/**
+ * COLOURS
+ */
+/**
+ * FONT
+ */
+/**
+ * Z-INDEX
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $ACTIVE-STATES
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $CLEARFIX
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Micro clearfix by Nicolas Gallagher for clearing floats.
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+/**
+ * Adds micro clearfix to element.
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $MEDIA-QUERIES
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Mixins for defining media queries. These mixins should always be used
+ * to define media query breakpoints.
+ */
+/**
+ * Only use in rare circumstances, favour `bp-min-width`.
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $REM
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * Useful mixin to assist with using REM units with a PX fallback.
+ * Mixin is courtesy of Hugo Giraudel
+ * http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+ *
+ * Example usage is `@include rem(font-size, 1.6rem);`
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $SVG
+ * -----------------------------------------------------------------------------
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $STRING
+ * -----------------------------------------------------------------------------
+ */
+/**
+* Replaces sub string within a string with the provided replacement.
+*/
+/**
+ * Removes the # from the colour variable.
+ */
+/**
+ * -----------------------------------------------------------------------------
+ * $TRANSFORM
+ * -----------------------------------------------------------------------------
+ */
+.animate {
+  animation-iteration-count: infinite;
+}
+.animate--fade-in {
+  animation-name: fade-in;
+}
+.animate--fade-in-hold {
+  animation-name: fade-in-hold;
+}
+.animate--fade-in-out {
+  animation-name: fade-in-out;
+}
+.animate--fade-in-short {
+  animation-name: fade-in-short;
+}
+.animate--fade-in-0-20 {
+  animation-name: fade-in-0-20;
+}
+.animate--fade-in-20-40 {
+  animation-name: fade-in-20-40;
+}
+.animate--fade-in-40-60 {
+  animation-name: fade-in-40-60;
+}
+.animate--fade-in-60-80 {
+  animation-name: fade-in-60-80;
+}
+.animate--fade-in-80-100 {
+  animation-name: fade-in-80-100;
+}
+.animate--fade-out {
+  animation-name: fade-out;
+}
+.animate--grow-horizontal {
+  animation-name: grow-horizontal;
+}
+.animate--grow-horizontal-hold {
+  animation-name: grow-horizontal-hold;
+}
+.animate--grow-horizontal-loop {
+  animation-name: grow-horizontal-loop;
+}
+.animate--rotate-30 {
+  animation-name: rotate-30;
+}
+.animate--rotate-30-rev {
+  animation-name: rotate-30-rev;
+}
+.animate--rotate-90 {
+  animation-name: rotate-90;
+}
+.animate--rotate-360-repeat {
+  animation-name: rotate-360-repeat;
+}
+.animate--shrink-horizontal {
+  animation-name: shrink-horizontal;
+}
+.animate--shrink-horizontal-hold {
+  animation-name: shrink-horizontal-hold;
+}
+.animate--shrink-horizontal-loop {
+  animation-name: shrink-horizontal-loop;
+}
+.animate--slide-horizontal {
+  animation-name: slide-horizontal;
+}
+.animate--slide-left {
+  animation-name: slide-left;
+}
+.animate--slide-right {
+  animation-name: slide-right;
+}
+
+.animate-delay--two {
+  animation-delay: 2s;
+}
+.animate-delay--four {
+  animation-delay: 4s;
+}
+.animate-delay--six {
+  animation-delay: 6s;
+}
+.animate-delay--eight {
+  animation-delay: 8s;
+}
+.animate-delay--ten {
+  animation-delay: 10s;
+}
+
+.animate-duration--four {
+  animation-duration: 4s;
+}
+.animate-duration--eight {
+  animation-duration: 8s;
+}
+.animate-duration--twelve {
+  animation-duration: 12s;
+}
+
+/**
+ * FADE-IN
+ */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-hold {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-in-short {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-0-20 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+@keyframes fade-in-20-40 {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+@keyframes fade-in-40-60 {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+@keyframes fade-in-60-80 {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@keyframes fade-in-80-100 {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/**
+ * FADE-OUT
+ */
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/**
+ * GROW
+ */
+@keyframes grow-horizontal {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes grow-horizontal-hold {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes grow-horizontal-loop {
+  0% {
+    width: 0%;
+  }
+  33% {
+    width: 100%;
+  }
+  66% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+/**
+ * ROTATE
+ */
+@keyframes rotate-30 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-30-rev {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-90 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotate-360-repeat {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/**
+ * SHRINK
+ */
+@keyframes shrink-horizontal {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes shrink-horizontal-hold {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes shrink-horizontal-loop {
+  0% {
+    width: 100%;
+  }
+  33% {
+    width: 0%;
+  }
+  66% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+/**
+ * SLIDE
+ */
+@keyframes slide-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(50px);
+  }
+  70% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+/*# sourceMappingURL=Animate.css.map */
