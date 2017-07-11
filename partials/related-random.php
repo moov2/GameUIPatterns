@@ -2,7 +2,8 @@
     $args = array(
         'post_type' => get_post_type(),
         'posts_per_page' => 3,
-        'orderby' => 'rand'
+        'orderby' => 'rand',
+        'post__not_in' => array( $post->ID )
     );
 
     $the_query = new WP_Query( $args );
