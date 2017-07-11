@@ -1220,6 +1220,9 @@ section:after,
 .examples > .examples__item:last-child {
   margin-bottom: 0;
 }
+.examples > .examples__item div {
+  width: 100%;
+}
 .examples > .examples__item h4 {
   margin-bottom: 0;
   margin-right: 0;
