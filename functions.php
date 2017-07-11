@@ -14,6 +14,7 @@ if (function_exists('add_theme_support'))
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
     add_image_size('examples__thumbnail', 400, 300, true);
+    add_image_size('blog__thumbnail', '', 200, true);
     add_image_size('wrapper', 850, '', true);
     add_image_size('wrapper-full', 1560, '', true);
     // Enables post and comment RSS feed links to head
