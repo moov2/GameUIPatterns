@@ -11,7 +11,7 @@ if ( $connected->have_posts() ) :
     ?>
     <div class="padding--large">
         <h3>Game Examples:</h3>
-        <p>Tap on or hover over an example thumbnail to view the context of the, if a screenshot exists.</p>
+        <p>Tap on or hover over an example thumbnail to view the context of the <?php the_title(); ?>, if a screenshot exists.</p>
         <ul class="list examples">
             <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
                 <li class="examples__item">
