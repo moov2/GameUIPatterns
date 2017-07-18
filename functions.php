@@ -35,6 +35,8 @@ include_once ('includes/add_styles_animation.php');
 include_once ('includes/add_styles.php');
 include_once ('includes/add_svg_upload.php');
 
+include_once ('includes/category_alphabetical_order.php');
+
 include_once ('includes/comment_custom_gravatar.php');
 include_once ('includes/comment_format.php');
 include_once ('includes/comment_reply_link.php');
