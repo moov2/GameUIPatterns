@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main" id="main_content">
 		<!-- section -->
 		<section class="section padding--top-large">
 

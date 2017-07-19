@@ -21,31 +21,32 @@
 
 	</head>
 	<body <?php body_class(); ?>>
+		<a href="#main_content" class="display--hidden">Skip to Main Content</a>
 
 		<aside>
 
 			<header class="header" role="banner">
 
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<img class="logo__icon" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" width="100" height="47">
-							<p class="logo__text"><?php printf( get_bloginfo ( 'name' ) ); ?></p>
-						</a>
-					</div>
+				<div class="logo">
+					<a href="<?php echo home_url(); ?>">
+						<img class="logo__icon" src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" width="100" height="47">
+						<p class="logo__text"><?php printf( get_bloginfo ( 'name' ) ); ?></p>
+					</a>
+				</div>
 
-					<label for="hamburger">Menu</label>
-					<input name="hamburger" type="checkbox" id="hamburger" class="display--hidden"></input>
+				<label for="hamburger">Menu</label>
+				<input name="hamburger" type="checkbox" id="hamburger" class="display--hidden"></input>
 
-					<div class="navigation-container">
-						<nav class="nav" role="navigation" aria-label="Primary">
-							<?php gameui_nav(); ?>
-						</nav>
+				<div class="navigation-container">
+					<nav class="nav" role="navigation" aria-label="Primary">
+						<?php gameui_nav(); ?>
+					</nav>
 
-						<nav class="nav" role="navigation" aria-label="Secondary">
-							<?php get_template_part('partials/social', 'follow'); ?>
-							<?php get_template_part('partials/copyright'); ?>
-						</nav>
-					</div>
+					<nav class="nav" role="navigation" aria-label="Secondary">
+						<?php get_template_part('partials/social', 'follow'); ?>
+						<?php get_template_part('partials/copyright'); ?>
+					</nav>
+				</div>
 
 			</header>
 
