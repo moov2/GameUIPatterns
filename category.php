@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <main role="main">
-	<section class="section section--wide padding--small padding--top-large">
-		<div class="section__content">
+	<section class="section section--wide">
+		<div class="section__content padding--large">
 			<h1><?php single_cat_title(); ?></h1>
 
 			<div class="column-container column-container--grow column-size--4">
