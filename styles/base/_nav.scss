@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  */
 
-nav {
+.navigation-container  {
     display: none;
 
     font-size: $font-size-small;
@@ -13,12 +13,12 @@ nav {
         display: block;
     }
 
-    > ul {
+    nav > ul {
         padding-left: 0;
 
         list-style: none;
 
-        > li {
+        & > li {
             border-bottom: 1px solid $color-grey-light;
             cursor:default;
 

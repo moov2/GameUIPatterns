@@ -53,7 +53,7 @@ header {
         }
     }
 
-    nav {
+    .navigation-container {
         min-width: 100%;
         padding-top: $spacing-default;
 
@@ -67,7 +67,7 @@ header {
     }
 
     [type=checkbox] {
-        &:checked + nav {
+        &:checked + .navigation-container {
             display: block;
         }
     }

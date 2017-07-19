@@ -673,19 +673,19 @@ header label:before {
   background-image: url("img/icons/bars.svg");
   background-size: 25px 25px;
 }
-header nav {
+header .navigation-container {
   min-width: 100%;
   padding-top: 2rem;
 }
 @media all and (min-width: 1024px) {
-  header nav {
+  header .navigation-container {
     padding-top: 4rem;
   }
 }
-header nav a {
+header .navigation-container a {
   text-decoration: none;
 }
-header [type=checkbox]:checked + nav {
+header [type=checkbox]:checked + .navigation-container {
   display: block;
 }
 header .copyright, header .social-media {
@@ -853,20 +853,20 @@ ol > li:last-child {
  * $NAV
  * -----------------------------------------------------------------------------
  */
-nav {
+.navigation-container {
   display: none;
   font-size: 1rem;
 }
 @media all and (min-width: 1024px) {
-  nav {
+  .navigation-container {
     display: block;
   }
 }
-nav > ul {
+.navigation-container nav > ul {
   padding-left: 0;
   list-style: none;
 }
-nav > ul > li {
+.navigation-container nav > ul > li {
   border-bottom: 1px solid #ebebeb;
   cursor: default;
             /*
@@ -900,7 +900,7 @@ nav > ul > li {
   }
   */
 }
-nav > ul > li > a {
+.navigation-container nav > ul > li > a {
   padding-top: 5px;
   padding-top: 0.5rem;
   padding-bottom: 5px;
@@ -909,12 +909,12 @@ nav > ul > li > a {
   position: relative;
   font-weight: 700;
 }
-nav > ul > li.menu-item-has-children {
+.navigation-container nav > ul > li.menu-item-has-children {
   cursor: pointer;
   margin-top: 10px;
   margin-top: 1rem;
 }
-nav > ul > li.menu-item-has-children > a {
+.navigation-container nav > ul > li.menu-item-has-children > a {
                 /*
                 &:before {
                     background-image: url('/wp-content/themes/GameUIPatterns/img/icons/angle-down.png');
@@ -932,22 +932,22 @@ nav > ul > li.menu-item-has-children > a {
                 }
                 */
 }
-nav > ul > li.menu-item-has-children > a:hover, nav > ul > li.menu-item-has-children > a:focus, nav > ul > li.menu-item-has-children > a:active {
+.navigation-container nav > ul > li.menu-item-has-children > a:hover, .navigation-container nav > ul > li.menu-item-has-children > a:focus, .navigation-container nav > ul > li.menu-item-has-children > a:active {
   text-decoration: none;
 }
-nav .sub-menu {
+.navigation-container .sub-menu {
   margin-bottom: 10px;
   margin-bottom: 1rem;
   padding-left: 0;
   list-style: none;
 }
-nav .sub-menu > li {
+.navigation-container .sub-menu > li {
   padding-left: 5px;
   padding-left: 0.5rem;
   padding-right: 5px;
   padding-right: 0.5rem;
 }
-nav .sub-menu > li > a {
+.navigation-container .sub-menu > li > a {
   padding-bottom: 2.5px;
   padding-bottom: 0.25rem;
   padding-left: 5px;
@@ -958,12 +958,12 @@ nav .sub-menu > li > a {
   padding-top: 0.25rem;
   display: block;
 }
-nav .sub-menu > li > a:hover, nav .sub-menu > li > a:focus, nav .sub-menu > li > a:active {
+.navigation-container .sub-menu > li > a:hover, .navigation-container .sub-menu > li > a:focus, .navigation-container .sub-menu > li > a:active {
   background-color: #909090;
   color: #fff;
   text-decoration: none;
 }
-nav .sub-menu > li.current-menu-item > a {
+.navigation-container .sub-menu > li.current-menu-item > a {
   background-color: #909090;
   color: #fff;
   text-decoration: none;

@@ -35,11 +35,17 @@
 
 					<label for="hamburger">Menu</label>
 					<input name="hamburger" type="checkbox" id="hamburger" class="display--hidden"></input>
-					<nav class="nav" role="navigation">
-						<?php gameui_nav(); ?>
-						<?php get_template_part('partials/social', 'follow'); ?>
-						<?php get_template_part('partials/copyright'); ?>
-					</nav>
+
+					<div class="navigation-container">
+						<nav class="nav" role="navigation" aria-label="Primary">
+							<?php gameui_nav(); ?>
+						</nav>
+
+						<nav class="nav" role="navigation" aria-label="Secondary">
+							<?php get_template_part('partials/social', 'follow'); ?>
+							<?php get_template_part('partials/copyright'); ?>
+						</nav>
+					</div>
 
 			</header>
 
