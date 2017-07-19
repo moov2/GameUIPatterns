@@ -1540,7 +1540,7 @@ section:after,
   background-color: #909090;
 }
 .bg--color-blue {
-  background-color: #366db6;
+  background-color: #0957ae;
 }
 .bg--color-green {
   background-color: #43b05c;
@@ -1869,7 +1869,7 @@ body:hover .display--hidden button {
 }
 
 .text--blue {
-  color: #366db6;
+  color: #0957ae;
 }
 
 .text--orange {
@@ -2422,6 +2422,36 @@ body:hover .display--hidden button {
   -webkit-transform-origin: right bottom;
       -ms-transform-origin: right bottom;
           transform-origin: right bottom;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $TRANSITION
+ * -----------------------------------------------------------------------------
+ */
+.transition--scale-down {
+  -webkit-transition: 0.4s -webkit-transform ease;
+          transition: 0.4s transform ease;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+.transition--scale-down:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.transition--scale-up {
+  -webkit-transition: 0.4s -webkit-transform ease;
+          transition: 0.4s transform ease;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+.transition--scale-up:hover {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 /**

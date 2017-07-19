@@ -1457,7 +1457,7 @@ section:after,
   background-color: #909090;
 }
 .bg--color-blue {
-  background-color: #366db6;
+  background-color: #0957ae;
 }
 .bg--color-green {
   background-color: #43b05c;
@@ -1707,7 +1707,7 @@ body:hover .display--hidden button {
 }
 
 .text--blue {
-  color: #366db6;
+  color: #0957ae;
 }
 
 .text--orange {
@@ -2242,6 +2242,26 @@ body:hover .display--hidden button {
 }
 .transform-origin--right-bottom {
   transform-origin: right bottom;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * $TRANSITION
+ * -----------------------------------------------------------------------------
+ */
+.transition--scale-down {
+  transition: 0.4s transform ease;
+  transform: scale(1);
+}
+.transition--scale-down:hover {
+  transform: scale(0.9);
+}
+.transition--scale-up {
+  transition: 0.4s transform ease;
+  transform: scale(0.9);
+}
+.transition--scale-up:hover {
+  transform: scale(1);
 }
 
 /**

@@ -45,11 +45,16 @@ function rmcc_post_listing_parameters_shortcode( $atts ) {
                             ?>
 
                             <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class=""><?php the_post_thumbnail('pattern__thumbnail', ['class' => 'ui__thumbnail margin--bottom-default', 'title' => 'Feature image']); // Fullsize image for the single post ?></a>
+                                <?php $post_type = get_post_type( $post->ID ); ?>
+                                <?php if($post_type == 'gameui') { ?>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"  class="bg--color-blue"><?php the_post_thumbnail('pattern__thumbnail', ['class' => 'ui__thumbnail transition--scale-down', 'title' => 'Feature image']); // Fullsize image for the single post ?></a>
+                                <?php } else { ?>
+                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class=""><?php the_post_thumbnail('pattern__thumbnail', ['class' => 'ui__thumbnail', 'title' => 'Feature image']); // Fullsize image for the single post ?></a>
+                                <?php } ?>
                             <?php endif; ?>
                             <?php $meta = get_post_meta(get_the_ID(), '_yoast_wpseo_metadesc', true); ?>
                             <?php if($meta) {?>
-                                <p><?php echo $meta;?></p>
+                                <p class="margin--top-default"><?php echo $meta;?></p>
                             <?php } ?>
                             <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="text--orange text--chevron text--small text--bold">Read more </a>
 

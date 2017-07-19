@@ -160,6 +160,14 @@
   -webkit-animation-name: rotate-360-repeat;
           animation-name: rotate-360-repeat;
 }
+.animate--scale-down {
+  -webkit-animation-name: scale-down;
+          animation-name: scale-down;
+}
+.animate--scale-up {
+  -webkit-animation-name: scale-up;
+          animation-name: scale-up;
+}
 .animate--shrink-horizontal {
   -webkit-animation-name: shrink-horizontal;
           animation-name: shrink-horizontal;
@@ -589,6 +597,65 @@
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+  }
+}
+/**
+ * SCALE
+ */
+@-webkit-keyframes scale-down {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-down {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes scale-up {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+@keyframes scale-up {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 /**

@@ -142,6 +142,12 @@
 .animate--rotate-360-repeat {
   animation-name: rotate-360-repeat;
 }
+.animate--scale-down {
+  animation-name: scale-down;
+}
+.animate--scale-up {
+  animation-name: scale-up;
+}
 .animate--shrink-horizontal {
   animation-name: shrink-horizontal;
 }
@@ -366,6 +372,31 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+/**
+ * SCALE
+ */
+@keyframes scale-down {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.8);
   }
 }
 /**

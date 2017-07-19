@@ -1,0 +1,19 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $TRANSITION
+ * -----------------------------------------------------------------------------
+ */
+
+.transition {
+    &--scale-down {
+        transition: 0.4s transform ease;
+        transform: scale(1);
+         &:hover { transform: scale(0.9); }
+    }
+
+    &--scale-up {
+        transition: 0.4s transform ease;
+        transform: scale(0.9);
+         &:hover { transform: scale(1); }
+    }
+}
