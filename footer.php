@@ -1,7 +1,7 @@
 
 		<?php wp_footer(); ?>
 
-		<footer class="footer padding--small text-align--center">
+		<footer role="contentinfo" class="footer padding--small text-align--center">
 			<div>
 				<?php get_template_part('partials/copyright'); ?>
 			</div>
