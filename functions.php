@@ -63,6 +63,7 @@ include_once ('includes/remove_admin_footer.php');
 include_once ('includes/remove_author_pages.php');
 include_once ('includes/remove_category_relationship.php');
 include_once ('includes/remove_jquery.php');
+include_once ('includes/remove_login_errors.php');
 include_once ('includes/remove_navigation_attributes.php');
 include_once ('includes/remove_navigation_div.php');
 include_once ('includes/remove_recent_comments_styles.php');
