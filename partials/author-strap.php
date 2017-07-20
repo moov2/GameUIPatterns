@@ -9,22 +9,12 @@
         </div>
     <?php } else { ?>
         <div class="author__avatar">
+
             <?php
-            $image = get_field('author_avatar');
-
-            // vars
-            $url = $image['url'];
-            $title = $image['title'];
-            $alt = $image['alt'];
-            $caption = $image['caption'];
-
-            // thumbnail
-            $size = 'thumbnail';
-            $thumb = $image['sizes'][ $size ];
-            $width = '64px';
+                $image = get_field('author_avatar');
             ?>
 
-            <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" class="border-radius--circle">
+            <img src="<?php echo $image['sizes']['avatar']; ?>" alt="<?php echo $image['alt'] ?>" width="<?php echo $image['sizes']['avatar-width'] ?>" class="border-radius--circle">
         </div>
         <div class="author__meta margin--left-small">
             <h4 class="margin--bottom-none">Created by <?php the_field('author_name')?></h4>

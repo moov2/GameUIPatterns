@@ -13,6 +13,7 @@ if (function_exists('add_theme_support'))
 {
     // Add Thumbnail Theme Support
     add_theme_support('post-thumbnails');
+    add_image_size('avatar', 64, 64, true);
     add_image_size('examples__thumbnail', 400, 300, true);
     add_image_size('blog__thumbnail', 720, 200, true);
     add_image_size('wrapper', 850, '', true);
