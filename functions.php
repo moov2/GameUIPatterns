@@ -60,6 +60,7 @@ include_once ('includes/plugin_required.php');
 
 include_once ('includes/remove_admin_bar.php');
 include_once ('includes/remove_admin_footer.php');
+include_once ('includes/remove_author_pages.php');
 include_once ('includes/remove_category_relationship.php');
 include_once ('includes/remove_jquery.php');
 include_once ('includes/remove_navigation_attributes.php');
