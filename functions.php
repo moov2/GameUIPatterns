@@ -116,3 +116,12 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
+
+
+add_action('init', "initHook", 0);  // We use the 0 to bypass priority
+
+function initHook() {
+    if(function_exists('acf')) {
+        acf()->settings["dir"] = WP_CONTENT_URL."/plugins/advanced-custom-fields/";
+    }    
+}
