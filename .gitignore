@@ -73,6 +73,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Webpack cache
+.cache-loader/
 
 ### Sass ###
 .sass-cache/

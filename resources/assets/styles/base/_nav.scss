@@ -1,0 +1,80 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $NAV
+ * -----------------------------------------------------------------------------
+ */
+
+.navigation-container {
+    display: none;
+    font-size: $font-size-small;
+
+    @include bp-min-width($bp-desktop) {
+        display: block;
+    }
+
+    nav > ul {
+        padding-left: 0;
+        list-style: none;
+
+        & > li {
+            border-bottom: 1px solid $color-grey-light;
+            cursor: default;
+
+            & > a {
+                @include rem(padding-top, $spacing-tiny);
+                @include rem(padding-bottom, $spacing-tiny);
+
+                display: block;
+                position: relative;
+                font-weight: $font-weight-bold;
+            }
+
+            &.menu-item-has-children {
+                cursor: pointer;
+
+                @include rem(margin-top, $spacing-small);
+            }
+
+            &.menu-item-has-children > a {
+                @include active-states() {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .sub-menu {
+        @include rem(margin-bottom, $spacing-small);
+
+        padding-left: 0;
+        list-style: none;
+
+        > li {
+            @include rem(padding-left, $spacing-tiny);
+            @include rem(padding-right, $spacing-tiny);
+
+            > a {
+                @include rem(padding-bottom, $spacing-tiny / 2);
+                @include rem(padding-left, $spacing-tiny);
+                @include rem(padding-right, $spacing-tiny);
+                @include rem(padding-top, $spacing-tiny / 2);
+
+                display: block;
+
+                @include active-states() {
+                    background-color: $color-grey;
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+
+            &.current-menu-item {
+                > a {
+                    background-color: $color-grey;
+                    color: $color-white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

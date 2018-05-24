@@ -1,0 +1,20 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $FOOTER
+ * -----------------------------------------------------------------------------
+ */
+
+footer {
+    .copyright,
+    nav {
+        display: block;
+
+        @include bp-min-width($bp-desktop) {
+            display: none;
+        }
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+}

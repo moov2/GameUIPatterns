@@ -1,0 +1,20 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $BODY
+ * -----------------------------------------------------------------------------
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700');
+
+body {
+    box-sizing: border-box;
+    min-height: 100%;
+    color: $color-black;
+    font-family: $font-family-default;
+    font-size: $font-size-default;
+    line-height: $line-height-default;
+
+    @include bp-min-width($bp-desktop) {
+        padding-left: $aside-width;
+    }
+}

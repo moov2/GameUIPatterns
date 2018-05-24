@@ -1,0 +1,46 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $CTA
+ * -----------------------------------------------------------------------------
+ */
+
+.cta {
+    padding: $spacing-tiny $spacing-small;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: $color-white;
+    border: none;
+    border-radius: 6px;
+    background-color: $color-blue-light;
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.05);
+    font-size: 0.8rem;
+    font-weight: $font-weight-bold;
+
+    @include active-states() {
+        background-color: lighten($color-blue-light, 10%);
+    }
+
+    &::after {
+        margin-left: $spacing-tiny;
+        content: "\00BB";
+    }
+}
+
+.cta--green {
+    background-color: $color-green;
+
+    @include active-states() {
+        background-color: lighten($color-green, 10%);
+    }
+}
+
+.cta--orange {
+    background-color: $color-orange;
+
+    @include active-states() {
+        background-color: lighten($color-orange, 10%);
+    }
+}

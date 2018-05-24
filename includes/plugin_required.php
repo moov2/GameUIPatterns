@@ -58,16 +58,6 @@ function my_theme_register_required_plugins() {
 	 * If the source is NOT from the .org repo, then source is also required.
 	 */
 	$plugins = array(
-
-        // Require custom Thumbs Rating plugin
-		array(
-			'name'      => 'Thumbs Rating',
-			'slug'      => 'ratings',
-			'source'    => 'https://github.com/Jack-Moov2/ratings/blob/master/master.zip',
-            'external_url' => 'https://github.com/Jack-Moov2/ratings/blob/master/master.zip', // If set, overrides default API URL and points to an external URL.
-            'required'     => false, // If false, the plugin is only 'recommended' instead of required.
-		),
-
         // Require Advanced Custom Fields plugin
         array(
             'name'        => 'Advanced Custom Fields',

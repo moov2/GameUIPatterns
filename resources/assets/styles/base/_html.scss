@@ -1,0 +1,17 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $HTML
+ * -----------------------------------------------------------------------------
+ */
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}

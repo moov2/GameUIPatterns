@@ -1,0 +1,66 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $TEXT
+ * -----------------------------------------------------------------------------
+ */
+
+.text--italic { font-style: italic; }
+.text--bold { font-weight: $font-weight-bold; }
+.text--black { color: $color-black; }
+.text--grey-light { color: $color-grey-light; }
+.text--grey { color: $color-grey; }
+.text--grey-dark { color: $color-grey-dark; }
+.text--white { color: $color-white; }
+.text--blue { color: $color-blue; }
+.text--orange { color: $color-orange; }
+.text--red { color: $color-red; }
+.text--small { font-size: $font-size-small; }
+.text--large { font-size: $font-size-large; }
+
+.text-align {
+    &--left { text-align: left; }
+    &--center { text-align: center; }
+    &--right { text-align: right; }
+}
+
+.text--chevron {
+    &::after {
+        content: "\00BB";
+    }
+}
+
+.text-align--left\@tablet {
+    @media all and (min-width: $bp-tablet) {
+        text-align: left;
+    }
+}
+
+.text-align--left\@desktop {
+    @media all and (min-width: $bp-desktop) {
+        text-align: left;
+    }
+}
+
+.text-align--center\@tablet {
+    @media all and (min-width: $bp-tablet) {
+        text-align: center;
+    }
+}
+
+.text-align--center\@desktop {
+    @media all and (min-width: $bp-desktop) {
+        text-align: center;
+    }
+}
+
+.text-align--right\@tablet {
+    @media all and (min-width: $bp-tablet) {
+        text-align: right;
+    }
+}
+
+.text-align--right\@desktop {
+    @media all and (min-width: $bp-desktop) {
+        text-align: right;
+    }
+}

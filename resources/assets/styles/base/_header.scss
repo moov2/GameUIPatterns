@@ -1,0 +1,75 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $HEADER
+ * -----------------------------------------------------------------------------
+ */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: $spacing-default $spacing-small;
+    overflow-y: auto;
+
+    @include bp-min-width($bp-desktop) {
+        align-items: flex-start;
+        display: block;
+        height: 100%;
+    }
+
+    form {
+        margin-left: auto;
+    }
+
+    label {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+
+        @include bp-min-width($bp-desktop) {
+            display: none;
+        }
+
+        &::before {
+            position: absolute;
+            top: 1px;
+            left: -32px;
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            content: "";
+
+            //background-image: url('img/icons/bars.svg');
+            background-size: 25px 25px;
+        }
+    }
+
+    .navigation-container {
+        min-width: 100%;
+        padding-top: $spacing-default;
+
+        @include bp-min-width($bp-desktop) {
+            padding-top: $spacing-large;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    [type=checkbox] {
+        &:checked + .navigation-container {
+            display: block;
+        }
+    }
+
+    .copyright,
+    .social-media {
+        display: none;
+
+        @include bp-min-width($bp-desktop) {
+            display: block;
+        }
+    }
+}

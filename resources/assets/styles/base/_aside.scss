@@ -1,0 +1,20 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $ASIDE
+ * -----------------------------------------------------------------------------
+ */
+
+aside {
+    width: 100%;
+    background-color: $color-grey-lightest;
+
+    @include bp-min-width($bp-desktop) {
+        max-width: $aside-width;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        z-index: 10;
+        border-right: 1px solid $color-grey-light;
+    }
+}

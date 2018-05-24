@@ -1,0 +1,38 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $LINK
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Styles for the hyperlink elements.
+ */
+
+a {
+    color: $color-black;
+    display: inline-block;
+    font-weight: $font-weight-default;
+    max-width: 100%;
+
+    @include active-states() {
+        text-decoration: none;
+    }
+}
+
+.link--float {
+    @include bp-min-width($bp-desktop) {
+        position: fixed;
+        z-index: $z-index-front;
+        top: 0;
+        right: 0;
+        padding: $spacing-tiny;
+        transition: 0.4s background-color ease;
+        color: $color-white;
+        background-color: rgba($color-black, 0.8);
+        font-size: $font-size-small;
+    }
+
+    @include active-states() {
+        background-color: rgba($color-black, 1);
+    }
+}

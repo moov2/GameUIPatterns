@@ -45,7 +45,7 @@ function rmcc_post_listing_parameters_shortcode( $atts ) {
                             ?>
 
                             <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                                <?php $post_type = get_post_type( $post->ID ); ?>
+                                <?php $post_type = get_post_type(); ?>
                                 <?php if($post_type == 'gameui') { ?>
                                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"  class="bg--color-blue"><?php the_post_thumbnail('pattern__thumbnail', ['class' => 'ui__thumbnail transition--scale-down', 'title' => 'Feature image']); // Fullsize image for the single post ?></a>
                                 <?php } else { ?>

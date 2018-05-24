@@ -4,6 +4,12 @@
 	Theme Support
 \*------------------------------------*/
 
+$homepage = get_page_by_title('Homepage');
+if (isset($homepage) && $homepage){
+    update_option( 'page_on_front', $homepage->ID );
+    update_option( 'show_on_front', 'page' );
+}
+
 
 if (!isset($content_width))
 {
@@ -60,10 +66,8 @@ include_once ('includes/plugin_required.php');
 
 include_once ('includes/remove_admin_bar.php');
 include_once ('includes/remove_admin_footer.php');
-include_once ('includes/remove_author_pages.php');
 include_once ('includes/remove_category_relationship.php');
 include_once ('includes/remove_jquery.php');
-include_once ('includes/remove_login_errors.php');
 include_once ('includes/remove_navigation_attributes.php');
 include_once ('includes/remove_navigation_div.php');
 include_once ('includes/remove_recent_comments_styles.php');
@@ -74,6 +78,7 @@ include_once ('includes/remove_wp_emoji.php');
 include_once ('includes/shortcode_blog_latest.php');
 include_once ('includes/shortcode_newsletter.php');
 include_once ('includes/shortcode_posts.php');
+include_once ('includes/acf_custom.php');
 
 /*------------------------------------*\
 	Actions + Filters + ShortCodes
@@ -116,12 +121,3 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
-
-
-add_action('init', "initHook", 0);  // We use the 0 to bypass priority
-
-function initHook() {
-    if(function_exists('acf')) {
-        acf()->settings["dir"] = WP_CONTENT_URL."/plugins/advanced-custom-fields/";
-    }    
-}

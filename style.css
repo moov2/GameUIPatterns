@@ -937,7 +937,7 @@ ol > li:last-child {
 .navigation-container nav > ul > li.menu-item-has-children > a {
                 /*
                 &:before {
-                    background-image: url('/wp-content/themes/GameUIPatterns/img/icons/angle-down.png');
+                    background-image: url('/app/themes/GameUIPatterns/dist/images/icons/angle-down.png');
 
                     content: '';
                     position: absolute;
@@ -1074,7 +1074,7 @@ section:after,
   padding-right: 1rem;
   padding-top: 60px;
   padding-top: 6rem;
-  background-image: url(/wp-content/themes/GameUIPatterns/img/blueprint-bg-tile.png);
+  background-image: url(/app/themes/GameUIPatterns/dist/images/blueprint-bg-tile.png);
   background-repeat: repeat;
   border-radius: 3px;
   text-align: center;
@@ -1550,11 +1550,11 @@ section:after,
 }
 
 .bg--image-pattern {
-  background-image: url("/wp-content/themes/GameUIPatterns/img/repeating-pattern.png");
+  background-image: url("/app/themes/GameUIPatterns/dist/images/repeating-pattern.png");
   background-size: 40%;
 }
 .bg--image-pattern-fade {
-  background-image: url("/wp-content/themes/GameUIPatterns/img/repeating-pattern-fade.png");
+  background-image: url("/app/themes/GameUIPatterns/dist/images/repeating-pattern-fade.png");
   background-size: 40%;
 }
 

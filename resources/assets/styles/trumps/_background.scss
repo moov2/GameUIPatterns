@@ -1,0 +1,40 @@
+/**
+ * -----------------------------------------------------------------------------
+ * $BACKGROUND
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * Utility classes for adding background properties.
+ */
+
+.bg--cover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/**
+ * Colours
+ */
+
+.bg--color- {
+    &grey-lightest { background-color: $color-grey-lightest; }
+    &grey { background-color: $color-grey; }
+
+    &blue { background-color: $color-blue; }
+    &green { background-color: $color-green; }
+    &orange { background-color: $color-orange; }
+}
+
+.bg--image- {
+    &pattern {
+        background-image: url('/app/themes/GameUIPatterns/dist/images/repeating-pattern.png');
+        background-size: 40%;
+    }
+
+    &pattern-fade {
+        background-image: url('/app/themes/GameUIPatterns/dist/images/repeating-pattern-fade.png');
+        background-size: 40%;
+    }
+}
