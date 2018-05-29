@@ -3,7 +3,7 @@
 function format_comment($comment, $args, $depth) {
     $GLOBALS['comment'] = $comment; ?>
 
-    <li class="comment list__item margin--bottom-default">
+    <li class="comment list__item margin--bottom-default" id="div-comment-<?php comment_ID(); ?>">
 
         <?php echo get_avatar( $current_user->user_email, 64, null, null, array('class' => array('comment__avatar', 'border-radius--circle') ) ); ?>
 
@@ -16,8 +16,15 @@ function format_comment($comment, $args, $depth) {
         <?php endif; ?>
 
         <?php comment_text(); ?>
-
-        <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+        
+        <?php comment_reply_link(array_merge($args,[
+            'add_below' => 'div-comment',
+            'depth'     => $depth,
+            'max_depth' => $args['max_depth'],
+            'before'    => '<div class="reply">',
+            'after'     => '</div>'
+        ]));
+        ?>
 
     </li>
 
